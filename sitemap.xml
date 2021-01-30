@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2021/01/29/linux%E7%AE%80%E4%BB%8B/</loc>
+    <loc>http://yoursite.com/2018/03/18/linux%E7%AE%80%E4%BB%8B/</loc>
     
-    <lastmod>2018-03-18T13:26:09.994Z</lastmod>
+    <lastmod>2021-01-30T12:27:51.299Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/02/06/%E6%90%AD%E5%BB%BAhexo%E9%97%AE%E9%A2%98/</loc>
+    
+    <lastmod>2021-01-30T12:25:13.332Z</lastmod>
     
   </url>
   
@@ -110,13 +117,6 @@
     <loc>http://yoursite.com/2021/01/29/Command%E6%A8%A1%E5%BC%8F/</loc>
     
     <lastmod>2018-02-12T15:16:50.719Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2021/01/29/%E6%90%AD%E5%BB%BAhexo%E9%97%AE%E9%A2%98/</loc>
-    
-    <lastmod>2018-02-11T06:50:59.933Z</lastmod>
     
   </url>
   
