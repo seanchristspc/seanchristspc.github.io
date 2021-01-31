@@ -3,11 +3,11 @@
   <title>seanchrist</title>
   <icon>https://www.gravatar.com/avatar/8f82f58f298afd6be845bca97fcac8e3</icon>
   <subtitle>We sat and drank with the sun on our shoulder&#39;s and felt like free men.</subtitle>
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <link href="http://yoursite/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://yoursite/"/>
   <updated>2018-03-18T13:40:50.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://yoursite/</id>
   
   <author>
     <name>seanchrist</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>linux简单介绍</title>
-    <link href="http://yoursite.com/2018/03/18/linux%E7%AE%80%E4%BB%8B/"/>
-    <id>http://yoursite.com/2018/03/18/linux%E7%AE%80%E4%BB%8B/</id>
+    <link href="http://yoursite/2018/03/18/linux%E7%AE%80%E4%BB%8B/"/>
+    <id>http://yoursite/2018/03/18/linux%E7%AE%80%E4%BB%8B/</id>
     <published>2018-03-18T13:40:50.000Z</published>
     <updated>2018-03-18T13:40:50.000Z</updated>
     
@@ -33,17 +33,17 @@
     
     
     
-    <category term="linux" scheme="http://yoursite.com/categories/linux/"/>
+    <category term="linux" scheme="http://yoursite/categories/linux/"/>
     
     
-    <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    <category term="linux" scheme="http://yoursite/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>matlab函数类型</title>
-    <link href="http://yoursite.com/2018/02/25/matlab%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B/"/>
-    <id>http://yoursite.com/2018/02/25/matlab%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B/</id>
+    <link href="http://yoursite/2018/02/25/matlab%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B/"/>
+    <id>http://yoursite/2018/02/25/matlab%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B/</id>
     <published>2018-02-25T12:47:45.000Z</published>
     <updated>2018-02-25T12:47:45.000Z</updated>
     
@@ -57,17 +57,17 @@
     
     
     
-    <category term="matlab" scheme="http://yoursite.com/categories/matlab/"/>
+    <category term="matlab" scheme="http://yoursite/categories/matlab/"/>
     
     
-    <category term="function" scheme="http://yoursite.com/tags/function/"/>
+    <category term="function" scheme="http://yoursite/tags/function/"/>
     
   </entry>
   
   <entry>
     <title>通过vpn登录学校内网</title>
-    <link href="http://yoursite.com/2018/02/24/%E5%AD%A6%E6%A0%A1vpn/"/>
-    <id>http://yoursite.com/2018/02/24/%E5%AD%A6%E6%A0%A1vpn/</id>
+    <link href="http://yoursite/2018/02/24/%E5%AD%A6%E6%A0%A1vpn/"/>
+    <id>http://yoursite/2018/02/24/%E5%AD%A6%E6%A0%A1vpn/</id>
     <published>2018-02-24T12:46:45.000Z</published>
     <updated>2018-02-24T12:46:45.000Z</updated>
     
@@ -81,17 +81,17 @@
     
     
     
-    <category term="school" scheme="http://yoursite.com/categories/school/"/>
+    <category term="school" scheme="http://yoursite/categories/school/"/>
     
     
-    <category term="problem" scheme="http://yoursite.com/tags/problem/"/>
+    <category term="problem" scheme="http://yoursite/tags/problem/"/>
     
   </entry>
   
   <entry>
     <title>JSP自定义标签</title>
-    <link href="http://yoursite.com/2018/02/16/JSP%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%87%E7%AD%BE/"/>
-    <id>http://yoursite.com/2018/02/16/JSP%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%87%E7%AD%BE/</id>
+    <link href="http://yoursite/2018/02/16/JSP%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%87%E7%AD%BE/"/>
+    <id>http://yoursite/2018/02/16/JSP%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%87%E7%AD%BE/</id>
     <published>2018-02-16T12:43:51.000Z</published>
     <updated>2018-02-16T12:43:51.000Z</updated>
     
@@ -105,19 +105,19 @@
     
     
     
-    <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    <category term="Java" scheme="http://yoursite/categories/Java/"/>
     
-    <category term="JSP" scheme="http://yoursite.com/categories/Java/JSP/"/>
+    <category term="JSP" scheme="http://yoursite/categories/Java/JSP/"/>
     
     
-    <category term="tags" scheme="http://yoursite.com/tags/tags/"/>
+    <category term="tags" scheme="http://yoursite/tags/tags/"/>
     
   </entry>
   
   <entry>
     <title>《Spring boot in action》笔记</title>
-    <link href="http://yoursite.com/2018/02/16/springBootInActionNote/"/>
-    <id>http://yoursite.com/2018/02/16/springBootInActionNote/</id>
+    <link href="http://yoursite/2018/02/16/springBootInActionNote/"/>
+    <id>http://yoursite/2018/02/16/springBootInActionNote/</id>
     <published>2018-02-16T00:44:14.000Z</published>
     <updated>2018-02-16T00:44:14.000Z</updated>
     
@@ -131,17 +131,17 @@
     
     
     
-    <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    <category term="Java" scheme="http://yoursite/categories/Java/"/>
     
     
-    <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
+    <category term="Spring" scheme="http://yoursite/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>Iterator模式</title>
-    <link href="http://yoursite.com/2018/02/13/Iterator%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://yoursite.com/2018/02/13/Iterator%E6%A8%A1%E5%BC%8F/</id>
+    <link href="http://yoursite/2018/02/13/Iterator%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite/2018/02/13/Iterator%E6%A8%A1%E5%BC%8F/</id>
     <published>2018-02-13T14:42:01.000Z</published>
     <updated>2018-02-13T14:42:01.000Z</updated>
     
@@ -156,17 +156,17 @@
     
     
     
-    <category term="DesignPattern" scheme="http://yoursite.com/categories/DesignPattern/"/>
+    <category term="DesignPattern" scheme="http://yoursite/categories/DesignPattern/"/>
     
     
-    <category term="Iterator" scheme="http://yoursite.com/tags/Iterator/"/>
+    <category term="Iterator" scheme="http://yoursite/tags/Iterator/"/>
     
   </entry>
   
   <entry>
     <title>Proxy模式</title>
-    <link href="http://yoursite.com/2018/02/13/Proxy%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://yoursite.com/2018/02/13/Proxy%E6%A8%A1%E5%BC%8F/</id>
+    <link href="http://yoursite/2018/02/13/Proxy%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite/2018/02/13/Proxy%E6%A8%A1%E5%BC%8F/</id>
     <published>2018-02-13T12:39:35.000Z</published>
     <updated>2018-02-13T12:39:35.000Z</updated>
     
@@ -182,17 +182,17 @@
     
     
     
-    <category term="DesignPattern" scheme="http://yoursite.com/categories/DesignPattern/"/>
+    <category term="DesignPattern" scheme="http://yoursite/categories/DesignPattern/"/>
     
     
-    <category term="Proxy" scheme="http://yoursite.com/tags/Proxy/"/>
+    <category term="Proxy" scheme="http://yoursite/tags/Proxy/"/>
     
   </entry>
   
   <entry>
     <title>TemplateMethod模式</title>
-    <link href="http://yoursite.com/2018/02/13/TemplateMethod%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://yoursite.com/2018/02/13/TemplateMethod%E6%A8%A1%E5%BC%8F/</id>
+    <link href="http://yoursite/2018/02/13/TemplateMethod%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite/2018/02/13/TemplateMethod%E6%A8%A1%E5%BC%8F/</id>
     <published>2018-02-13T06:42:07.000Z</published>
     <updated>2018-02-13T06:42:07.000Z</updated>
     
@@ -206,17 +206,17 @@
     
     
     
-    <category term="DesignPattern" scheme="http://yoursite.com/categories/DesignPattern/"/>
+    <category term="DesignPattern" scheme="http://yoursite/categories/DesignPattern/"/>
     
     
-    <category term="TemplateMethod" scheme="http://yoursite.com/tags/TemplateMethod/"/>
+    <category term="TemplateMethod" scheme="http://yoursite/tags/TemplateMethod/"/>
     
   </entry>
   
   <entry>
     <title>FactoryMethod模式</title>
-    <link href="http://yoursite.com/2018/02/13/FactoryMethod%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://yoursite.com/2018/02/13/FactoryMethod%E6%A8%A1%E5%BC%8F/</id>
+    <link href="http://yoursite/2018/02/13/FactoryMethod%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite/2018/02/13/FactoryMethod%E6%A8%A1%E5%BC%8F/</id>
     <published>2018-02-13T04:41:10.000Z</published>
     <updated>2018-02-13T04:41:10.000Z</updated>
     
@@ -231,17 +231,17 @@
     
     
     
-    <category term="DesignPattern" scheme="http://yoursite.com/categories/DesignPattern/"/>
+    <category term="DesignPattern" scheme="http://yoursite/categories/DesignPattern/"/>
     
     
-    <category term="FactoryMethod" scheme="http://yoursite.com/tags/FactoryMethod/"/>
+    <category term="FactoryMethod" scheme="http://yoursite/tags/FactoryMethod/"/>
     
   </entry>
   
   <entry>
     <title>Adapter模式</title>
-    <link href="http://yoursite.com/2018/02/13/Adapter%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://yoursite.com/2018/02/13/Adapter%E6%A8%A1%E5%BC%8F/</id>
+    <link href="http://yoursite/2018/02/13/Adapter%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite/2018/02/13/Adapter%E6%A8%A1%E5%BC%8F/</id>
     <published>2018-02-13T02:40:32.000Z</published>
     <updated>2018-02-13T02:40:32.000Z</updated>
     
@@ -255,21 +255,21 @@
     
     
     
-    <category term="DesignPattern" scheme="http://yoursite.com/categories/DesignPattern/"/>
+    <category term="DesignPattern" scheme="http://yoursite/categories/DesignPattern/"/>
     
     
-    <category term="Adapter" scheme="http://yoursite.com/tags/Adapter/"/>
+    <category term="Adapter" scheme="http://yoursite/tags/Adapter/"/>
     
   </entry>
   
   <entry>
     <title>Flyweight模式</title>
-    <link href="http://yoursite.com/2018/02/12/Flyweight_Design_Pattern/"/>
-    <id>http://yoursite.com/2018/02/12/Flyweight_Design_Pattern/</id>
+    <link href="http://yoursite/2018/02/12/Flyweight_Design_Pattern/"/>
+    <id>http://yoursite/2018/02/12/Flyweight_Design_Pattern/</id>
     <published>2018-02-12T05:35:40.000Z</published>
     <updated>2018-02-12T05:35:40.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Flyweight-模式"><a href="#Flyweight-模式" class="headerlink" title="Flyweight 模式"></a>Flyweight 模式</h1><p><strong>共享</strong>对象，避免浪费。</p><hr><h2 id="类表"><a href="#类表" class="headerlink" title="类表"></a>类表</h2><table><thead><tr><th>名字</th><th>说明</th></tr></thead><tbody><tr><td>BigChar</td><td>表示”大型字符”类</td></tr><tr><td>BigCharFactory</td><td>表示生成和共用BigChar类的实例的类</td></tr><tr><td>BigString</td><td>表示多个BigChar组成的 “大型字符串” 的类</td></tr><tr><td>Main</td><td>测试程序行为的类</td></tr></tbody></table><h2 id="程序类图"><a href="#程序类图" class="headerlink" title="程序类图"></a>程序类图</h2><p><img src="/.com//flyweight_uml_fig.png" alt="Flyweight"></p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="BigChar类"><a href="#BigChar类" class="headerlink" title="BigChar类"></a>BigChar类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.BufferedReader;</span><br><span class="line"><span class="keyword">import</span> java.io.FileNotFoundException;</span><br><span class="line"><span class="keyword">import</span> java.io.FileReader;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BigChar</span> </span>&#123;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">char</span> charname;</span><br><span class="line"><span class="keyword">private</span> String fontdata;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">BigChar</span><span class="params">(<span class="keyword">char</span> charname)</span></span>&#123;</span><br><span class="line"><span class="keyword">this</span>.charname=charname;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">BufferedReader reader=<span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> FileReader(<span class="string">&quot;/home/sean/Documents/&quot;</span>+<span class="string">&quot;big&quot;</span>+charname+<span class="string">&quot;.txt&quot;</span>));</span><br><span class="line">String line;</span><br><span class="line">StringBuffer buf=<span class="keyword">new</span> StringBuffer();</span><br><span class="line"><span class="keyword">while</span>((line=reader.readLine())!=<span class="keyword">null</span>)&#123;</span><br><span class="line">buf.append(line);</span><br><span class="line">buf.append(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">reader.close();</span><br><span class="line"><span class="keyword">this</span>.fontdata=buf.toString();</span><br><span class="line">&#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">e.printStackTrace();</span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line"><span class="keyword">this</span>.fontdata=charname+<span class="string">&quot;?&quot;</span>;</span><br><span class="line">e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;</span><br><span class="line">System.out.print(fontdata);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="BigCharFactory类"><a href="#BigCharFactory类" class="headerlink" title="BigCharFactory类"></a>BigCharFactory类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.sean.Flyweight;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BigCharFactory</span> </span>&#123;</span><br><span class="line"><span class="keyword">private</span> HashMap pool=<span class="keyword">new</span> HashMap();</span><br><span class="line"><span class="comment">//Singleton模式</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> BigCharFactory singleton=<span class="keyword">new</span> BigCharFactory();</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">BigCharFactory</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//获取唯一实例</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> BigCharFactory <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line"><span class="keyword">return</span> singleton;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//生成（共享)BigChar类实例</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> BigChar <span class="title">getBigChar</span><span class="params">(<span class="keyword">char</span> charname)</span></span>&#123;</span><br><span class="line">BigChar bc=(BigChar) pool.get(<span class="string">&quot;&quot;</span>+charname);</span><br><span class="line"><span class="keyword">if</span>(bc==<span class="keyword">null</span>)&#123;</span><br><span class="line">bc=<span class="keyword">new</span> BigChar(charname);</span><br><span class="line">pool.put(<span class="string">&quot;&quot;</span>+charname, bc);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> bc;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="BigString类"><a href="#BigString类" class="headerlink" title="BigString类"></a>BigString类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.sean.Flyweight;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BigString</span> </span>&#123;</span><br><span class="line"><span class="keyword">private</span> BigChar[] bigChars;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">BigString</span><span class="params">(String string)</span></span>&#123;</span><br><span class="line">bigChars=<span class="keyword">new</span> BigChar[string.length()];</span><br><span class="line">BigCharFactory factory=BigCharFactory.getInstance();</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;bigChars.length;i++)&#123;</span><br><span class="line">bigChars[i]=factory.getBigChar(string.charAt(i));</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//显示</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;bigChars.length;i++)&#123;</span><br><span class="line">bigChars[i].print();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="Main类"><a href="#Main类" class="headerlink" title="Main类"></a>Main类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.sean.Flyweight;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> args</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">BigString bs=<span class="keyword">new</span> BigString(<span class="string">&quot;10101&quot;</span>);</span><br><span class="line">bs.print();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h2><p>Flyweight模式会对<strong>多个地方产生影响</strong>。</p><p><strong>Intrinsic:</strong>  应当被共享的信息<br><strong>Extrinsic:</strong> 不应当被共享的信息</p><table><thead><tr><th>名字</th><th>解释</th></tr></thead><tbody><tr><td>Instrinsic信息</td><td>不依赖位置状况，可以共享</td></tr><tr><td>Extrinsic信息</td><td>依赖位置与状况，不能共享</td></tr></tbody></table><p><strong>不要让被共享的实例被垃圾回收机器回收</strong><br>Flyweight优点：共享实例能减少对内存的使用，并且能提高运行的速度。</p><h2 id="参照"><a href="#参照" class="headerlink" title="参照"></a>参照</h2><blockquote><p>《图解设计模式》</p></blockquote><p>写这个只是为了加深自己对设计模式的理解，如不明白，可以看 《图解设计模式》。<br>程序类图使用idea 生成的</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Flyweight-模式"><a href="#Flyweight-模式" class="headerlink" title="Flyweight 模式"></a>Flyweight 模式</h1><p><strong>共享</strong>对象，避免浪费。</p><hr><h2 id="类表"><a href="#类表" class="headerlink" title="类表"></a>类表</h2><table><thead><tr><th>名字</th><th>说明</th></tr></thead><tbody><tr><td>BigChar</td><td>表示”大型字符”类</td></tr><tr><td>BigCharFactory</td><td>表示生成和共用BigChar类的实例的类</td></tr><tr><td>BigString</td><td>表示多个BigChar组成的 “大型字符串” 的类</td></tr><tr><td>Main</td><td>测试程序行为的类</td></tr></tbody></table><h2 id="程序类图"><a href="#程序类图" class="headerlink" title="程序类图"></a>程序类图</h2><p><img src="/2018/02/12/Flyweight_Design_Pattern/flyweight_uml_fig.png" alt="Flyweight"></p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="BigChar类"><a href="#BigChar类" class="headerlink" title="BigChar类"></a>BigChar类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.BufferedReader;</span><br><span class="line"><span class="keyword">import</span> java.io.FileNotFoundException;</span><br><span class="line"><span class="keyword">import</span> java.io.FileReader;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BigChar</span> </span>&#123;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">char</span> charname;</span><br><span class="line"><span class="keyword">private</span> String fontdata;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">BigChar</span><span class="params">(<span class="keyword">char</span> charname)</span></span>&#123;</span><br><span class="line"><span class="keyword">this</span>.charname=charname;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">BufferedReader reader=<span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> FileReader(<span class="string">&quot;/home/sean/Documents/&quot;</span>+<span class="string">&quot;big&quot;</span>+charname+<span class="string">&quot;.txt&quot;</span>));</span><br><span class="line">String line;</span><br><span class="line">StringBuffer buf=<span class="keyword">new</span> StringBuffer();</span><br><span class="line"><span class="keyword">while</span>((line=reader.readLine())!=<span class="keyword">null</span>)&#123;</span><br><span class="line">buf.append(line);</span><br><span class="line">buf.append(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">reader.close();</span><br><span class="line"><span class="keyword">this</span>.fontdata=buf.toString();</span><br><span class="line">&#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">e.printStackTrace();</span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line"><span class="keyword">this</span>.fontdata=charname+<span class="string">&quot;?&quot;</span>;</span><br><span class="line">e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;</span><br><span class="line">System.out.print(fontdata);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="BigCharFactory类"><a href="#BigCharFactory类" class="headerlink" title="BigCharFactory类"></a>BigCharFactory类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.sean.Flyweight;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BigCharFactory</span> </span>&#123;</span><br><span class="line"><span class="keyword">private</span> HashMap pool=<span class="keyword">new</span> HashMap();</span><br><span class="line"><span class="comment">//Singleton模式</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> BigCharFactory singleton=<span class="keyword">new</span> BigCharFactory();</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">BigCharFactory</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//获取唯一实例</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> BigCharFactory <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line"><span class="keyword">return</span> singleton;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//生成（共享)BigChar类实例</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> BigChar <span class="title">getBigChar</span><span class="params">(<span class="keyword">char</span> charname)</span></span>&#123;</span><br><span class="line">BigChar bc=(BigChar) pool.get(<span class="string">&quot;&quot;</span>+charname);</span><br><span class="line"><span class="keyword">if</span>(bc==<span class="keyword">null</span>)&#123;</span><br><span class="line">bc=<span class="keyword">new</span> BigChar(charname);</span><br><span class="line">pool.put(<span class="string">&quot;&quot;</span>+charname, bc);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> bc;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="BigString类"><a href="#BigString类" class="headerlink" title="BigString类"></a>BigString类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.sean.Flyweight;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BigString</span> </span>&#123;</span><br><span class="line"><span class="keyword">private</span> BigChar[] bigChars;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">BigString</span><span class="params">(String string)</span></span>&#123;</span><br><span class="line">bigChars=<span class="keyword">new</span> BigChar[string.length()];</span><br><span class="line">BigCharFactory factory=BigCharFactory.getInstance();</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;bigChars.length;i++)&#123;</span><br><span class="line">bigChars[i]=factory.getBigChar(string.charAt(i));</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//显示</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;bigChars.length;i++)&#123;</span><br><span class="line">bigChars[i].print();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="Main类"><a href="#Main类" class="headerlink" title="Main类"></a>Main类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.sean.Flyweight;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> args</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">BigString bs=<span class="keyword">new</span> BigString(<span class="string">&quot;10101&quot;</span>);</span><br><span class="line">bs.print();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h2><p>Flyweight模式会对<strong>多个地方产生影响</strong>。</p><p><strong>Intrinsic:</strong>  应当被共享的信息<br><strong>Extrinsic:</strong> 不应当被共享的信息</p><table><thead><tr><th>名字</th><th>解释</th></tr></thead><tbody><tr><td>Instrinsic信息</td><td>不依赖位置状况，可以共享</td></tr><tr><td>Extrinsic信息</td><td>依赖位置与状况，不能共享</td></tr></tbody></table><p><strong>不要让被共享的实例被垃圾回收机器回收</strong><br>Flyweight优点：共享实例能减少对内存的使用，并且能提高运行的速度。</p><h2 id="参照"><a href="#参照" class="headerlink" title="参照"></a>参照</h2><blockquote><p>《图解设计模式》</p></blockquote><p>写这个只是为了加深自己对设计模式的理解，如不明白，可以看 《图解设计模式》。<br>程序类图使用idea 生成的</p>]]></content>
     
     
       
@@ -279,17 +279,17 @@
     
     
     
-    <category term="DesignPattern" scheme="http://yoursite.com/categories/DesignPattern/"/>
+    <category term="DesignPattern" scheme="http://yoursite/categories/DesignPattern/"/>
     
     
-    <category term="Flyweight" scheme="http://yoursite.com/tags/Flyweight/"/>
+    <category term="Flyweight" scheme="http://yoursite/tags/Flyweight/"/>
     
   </entry>
   
   <entry>
     <title>Observe模式</title>
-    <link href="http://yoursite.com/2018/02/12/Observe%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://yoursite.com/2018/02/12/Observe%E6%A8%A1%E5%BC%8F/</id>
+    <link href="http://yoursite/2018/02/12/Observe%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite/2018/02/12/Observe%E6%A8%A1%E5%BC%8F/</id>
     <published>2018-02-12T04:38:23.000Z</published>
     <updated>2018-02-12T04:38:23.000Z</updated>
     
@@ -303,17 +303,17 @@
     
     
     
-    <category term="DesignPattern" scheme="http://yoursite.com/categories/DesignPattern/"/>
+    <category term="DesignPattern" scheme="http://yoursite/categories/DesignPattern/"/>
     
     
-    <category term="Observe" scheme="http://yoursite.com/tags/Observe/"/>
+    <category term="Observe" scheme="http://yoursite/tags/Observe/"/>
     
   </entry>
   
   <entry>
     <title>Memento模式</title>
-    <link href="http://yoursite.com/2018/02/12/Memento%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://yoursite.com/2018/02/12/Memento%E6%A8%A1%E5%BC%8F/</id>
+    <link href="http://yoursite/2018/02/12/Memento%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite/2018/02/12/Memento%E6%A8%A1%E5%BC%8F/</id>
     <published>2018-02-12T02:36:55.000Z</published>
     <updated>2018-02-12T02:36:55.000Z</updated>
     
@@ -328,17 +328,17 @@
     
     
     
-    <category term="DesignPattern" scheme="http://yoursite.com/categories/DesignPattern/"/>
+    <category term="DesignPattern" scheme="http://yoursite/categories/DesignPattern/"/>
     
     
-    <category term="Memento" scheme="http://yoursite.com/tags/Memento/"/>
+    <category term="Memento" scheme="http://yoursite/tags/Memento/"/>
     
   </entry>
   
   <entry>
     <title>state模式</title>
-    <link href="http://yoursite.com/2018/02/12/state%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://yoursite.com/2018/02/12/state%E6%A8%A1%E5%BC%8F/</id>
+    <link href="http://yoursite/2018/02/12/state%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite/2018/02/12/state%E6%A8%A1%E5%BC%8F/</id>
     <published>2018-02-12T00:40:55.000Z</published>
     <updated>2018-02-12T00:40:55.000Z</updated>
     
@@ -354,17 +354,17 @@
     
     
     
-    <category term="DesignPattern" scheme="http://yoursite.com/categories/DesignPattern/"/>
+    <category term="DesignPattern" scheme="http://yoursite/categories/DesignPattern/"/>
     
     
-    <category term="state" scheme="http://yoursite.com/tags/state/"/>
+    <category term="state" scheme="http://yoursite/tags/state/"/>
     
   </entry>
   
   <entry>
     <title>Command模式</title>
-    <link href="http://yoursite.com/2018/02/09/Command%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://yoursite.com/2018/02/09/Command%E6%A8%A1%E5%BC%8F/</id>
+    <link href="http://yoursite/2018/02/09/Command%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite/2018/02/09/Command%E6%A8%A1%E5%BC%8F/</id>
     <published>2018-02-09T12:52:51.000Z</published>
     <updated>2018-02-09T12:52:51.000Z</updated>
     
@@ -380,17 +380,17 @@
     
     
     
-    <category term="DesignPattern" scheme="http://yoursite.com/categories/DesignPattern/"/>
+    <category term="DesignPattern" scheme="http://yoursite/categories/DesignPattern/"/>
     
     
-    <category term="Command" scheme="http://yoursite.com/tags/Command/"/>
+    <category term="Command" scheme="http://yoursite/tags/Command/"/>
     
   </entry>
   
   <entry>
     <title>Mediator模式</title>
-    <link href="http://yoursite.com/2018/02/08/Mediator/"/>
-    <id>http://yoursite.com/2018/02/08/Mediator/</id>
+    <link href="http://yoursite/2018/02/08/Mediator/"/>
+    <id>http://yoursite/2018/02/08/Mediator/</id>
     <published>2018-02-08T12:35:10.000Z</published>
     <updated>2018-02-08T12:35:10.000Z</updated>
     
@@ -404,17 +404,17 @@
     
     
     
-    <category term="DesignPattern" scheme="http://yoursite.com/categories/DesignPattern/"/>
+    <category term="DesignPattern" scheme="http://yoursite/categories/DesignPattern/"/>
     
     
-    <category term="Mediator" scheme="http://yoursite.com/tags/Mediator/"/>
+    <category term="Mediator" scheme="http://yoursite/tags/Mediator/"/>
     
   </entry>
   
   <entry>
     <title>Facade模式</title>
-    <link href="http://yoursite.com/2018/02/08/Facade%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://yoursite.com/2018/02/08/Facade%E6%A8%A1%E5%BC%8F/</id>
+    <link href="http://yoursite/2018/02/08/Facade%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite/2018/02/08/Facade%E6%A8%A1%E5%BC%8F/</id>
     <published>2018-02-08T12:34:56.000Z</published>
     <updated>2018-02-08T12:34:56.000Z</updated>
     
@@ -430,17 +430,17 @@
     
     
     
-    <category term="DesignPattern" scheme="http://yoursite.com/categories/DesignPattern/"/>
+    <category term="DesignPattern" scheme="http://yoursite/categories/DesignPattern/"/>
     
     
-    <category term="Facade" scheme="http://yoursite.com/tags/Facade/"/>
+    <category term="Facade" scheme="http://yoursite/tags/Facade/"/>
     
   </entry>
   
   <entry>
     <title>Myeclipse2017-ci9破解</title>
-    <link href="http://yoursite.com/2018/02/06/Myeclipse2017ci9%E7%A0%B4%E8%A7%A3/"/>
-    <id>http://yoursite.com/2018/02/06/Myeclipse2017ci9%E7%A0%B4%E8%A7%A3/</id>
+    <link href="http://yoursite/2018/02/06/Myeclipse2017ci9%E7%A0%B4%E8%A7%A3/"/>
+    <id>http://yoursite/2018/02/06/Myeclipse2017ci9%E7%A0%B4%E8%A7%A3/</id>
     <published>2018-02-06T12:33:50.000Z</published>
     <updated>2018-02-06T12:33:50.000Z</updated>
     
@@ -454,19 +454,19 @@
     
     
     
-    <category term="soft" scheme="http://yoursite.com/categories/soft/"/>
+    <category term="soft" scheme="http://yoursite/categories/soft/"/>
     
     
-    <category term="crack" scheme="http://yoursite.com/tags/crack/"/>
+    <category term="crack" scheme="http://yoursite/tags/crack/"/>
     
-    <category term="Myeclipse" scheme="http://yoursite.com/tags/Myeclipse/"/>
+    <category term="Myeclipse" scheme="http://yoursite/tags/Myeclipse/"/>
     
   </entry>
   
   <entry>
     <title>搭建hexo和github遇到问题</title>
-    <link href="http://yoursite.com/2018/02/06/%E6%90%AD%E5%BB%BAhexo%E9%97%AE%E9%A2%98/"/>
-    <id>http://yoursite.com/2018/02/06/%E6%90%AD%E5%BB%BAhexo%E9%97%AE%E9%A2%98/</id>
+    <link href="http://yoursite/2018/02/06/%E6%90%AD%E5%BB%BAhexo%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite/2018/02/06/%E6%90%AD%E5%BB%BAhexo%E9%97%AE%E9%A2%98/</id>
     <published>2018-02-06T07:59:44.000Z</published>
     <updated>2018-02-06T07:59:44.000Z</updated>
     
@@ -480,17 +480,17 @@
     
     
     
-    <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    <category term="Hexo" scheme="http://yoursite/categories/Hexo/"/>
     
     
-    <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    <category term="Hexo" scheme="http://yoursite/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hello! Hexo</title>
-    <link href="http://yoursite.com/2018/02/05/hello-world/"/>
-    <id>http://yoursite.com/2018/02/05/hello-world/</id>
+    <link href="http://yoursite/2018/02/05/hello-world/"/>
+    <id>http://yoursite/2018/02/05/hello-world/</id>
     <published>2018-02-05T12:45:10.000Z</published>
     <updated>2018-02-05T12:45:10.000Z</updated>
     
@@ -504,10 +504,10 @@
     
     
     
-    <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    <category term="Hexo" scheme="http://yoursite/categories/Hexo/"/>
     
     
-    <category term="officeWord" scheme="http://yoursite.com/tags/officeWord/"/>
+    <category term="officeWord" scheme="http://yoursite/tags/officeWord/"/>
     
   </entry>
   
