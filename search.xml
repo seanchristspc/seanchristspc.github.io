@@ -819,7 +819,7 @@
 <p><img data-src="/2018/03/19/Linux_Introduction/top.gif" alt="top"></p>
 <p><code>ctr + z</code>停止这个命令</p>
 <h3 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h3><p>各个linux发行版本的安装软件的方法不一样。<br>ubuntu有一个安装软件的app.</p>
-<p>看图<br><img data-src="/2018/03/19/Linux_Introduction/softwareStore.png" alt="show"></p>
+<p>看图<br><img data-src="/2018/03/19/Linux_Introduction/softwareStore.png" alt="software Store"></p>
 <p>看见了<strong>VLC</strong>视屏播放软件了。这个也挺好用的。上学期我讲过。<br>用软件安装软件是挺方便的，但是这个软件库的版本就太老了。</p>
 <p>还有安装软件的方法，就是使用命令行。<br><code>sudo apt-get install softname</code></p>
 <p>例如安装 <code>vim </code> 文本编辑软件。挺好用的。</p>
