@@ -3,6 +3,7 @@ title: Matlab Live Editor 编辑器简单使用
 comment: true
 date: 2021-02-02 14:21:13
 description: 本文对matlab自带的Live Editor 编辑器使用做简单介绍！ 以及自己的一些使用习惯！
+mathjax: true
 tags:
   - matlab live editor 
 categories:
@@ -18,6 +19,8 @@ Matlab [Live Editor](https://www.mathworks.com/products/matlab/live-editor.html)
 > you can create live scripts that show output together with the code that produced it. Add formatted text, equations, images, and hyperlinks to enhance your narrative, and share the live script with others as an interactive document.
 
 ---
+
+$E=mc^2$
 
 # Matlab Live Editor 基本使用 #
 
