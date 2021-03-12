@@ -6,7 +6,7 @@
   <link href="https://seanchristspc.github.io/atom.xml" rel="self"/>
   
   <link href="https://seanchristspc.github.io/"/>
-  <updated>2021-02-02T14:21:13.000Z</updated>
+  <updated>2021-03-12T11:58:32.000Z</updated>
   <id>https://seanchristspc.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to write an Academic Research Paper</title>
+    <link href="https://seanchristspc.github.io/2021/03/12/How-to-write-an-Academic-Research-Paper/"/>
+    <id>https://seanchristspc.github.io/2021/03/12/How-to-write-an-Academic-Research-Paper/</id>
+    <published>2021-03-12T11:58:32.000Z</published>
+    <updated>2021-03-12T11:58:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="how-to-write-an-academic-research-paper">How to write an Academic Research Paper?</h1><h2 id="background">BackGround</h2><p>听该讲座大概已经有接近四个月了，由于本人比较懒，加上今天头脑发热想把罗教授分享的学术经验，写成博客的形式方便自己查阅，也方便其他人浏览。 罗教授求学于剑桥大学，详细介绍请点击 <a href="http://ggglxy.scu.edu.cn/index.php?c=article&amp;id=1269">罗嘉陵</a>。</p><p>讲座时间： 2020年11月27日 地点：四川大学公共管理学院306 主题：How to write an Academic Research Paper</p><hr><h2 id="main-notes">Main Notes</h2><h3 id="how-to-write-an-academic-research-papar">How to write an Academic Research Papar?</h3><ol type="1"><li><p>Raise a good question</p><p>argument, central question</p><p>these works provide us with the most basic questions that continue to guide our field. --Steven Smith</p></li><li><p>Critical thinking</p><p>writing is a way to think...</p><p>powerful thought allow one to write readably... (Charles Baudelaire)</p></li><li><p>Reading intensively and extensively</p><p>Most of the good writers are good readers</p><p>families yourself with your research area</p></li><li><p>Being interdisciplinary</p><p>high rate of HIV-AIDS in Sichuan</p></li><li><p>Languages</p><p>multilingual</p></li><li><p>Writing skills</p><p>《The Element of Style》Book</p></li><li><p>Practice, patient,stay motivated</p><p>Phd</p></li><li><p>Some tips</p><p>A. Procrastination and time management</p><pre><code> action emotional and psychological stop being a perfectionist(*)</code></pre><p>B. Creating a productive daily routine</p><pre><code> how many words a day ; reading in the morning &amp; writing in the afternoon; writing/reading no more than 6 hours per day take regular breaks</code></pre><p>C. peer support</p><p>D. change of scene</p><pre><code> writing process can be painful ... resistance, struggle..but rewarding</code></pre></li><li><p>Journal</p><p>Jstor; Wily</p></li></ol><hr><h2 id="final">Final</h2><p>听社会学教授的讲座还是挺不错的！！！</p>]]></content>
+    
+    
+    <summary type="html">记录2020年11月27日在公共管理学院306室，听罗嘉陵教授关于“如何写作学术研究论文”讲座的笔记。由于罗教授过去长期在国外做研究，故该写作方法更适用于英文论文写作。</summary>
+    
+    
+    
+    <category term="-lecture" scheme="https://seanchristspc.github.io/categories/lecture/"/>
+    
+    
+    <category term="-paper" scheme="https://seanchristspc.github.io/tags/paper/"/>
+    
+  </entry>
   
   <entry>
     <title>Matlab Live Editor 编辑器简单使用</title>
