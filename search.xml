@@ -1000,7 +1000,7 @@
 <ol type="1">
 <li><p>下载 ImageMagick 安装包，去官网下载吧！ <a href="https://imagemagick.org/script/download.php">ImageMagick Download</a></p></li>
 <li><p>直接点击安装即可！</p></li>
-<li><p>如果你想在 <strong>Powershell</strong> 命令行使用，需要李自己配置环境变量！</p></li>
+<li><p>如果你想在 <strong>Powershell</strong> 命令行使用，需要自己配置环境变量！</p></li>
 </ol>
 <h3 id="ghostscript">GhostScript</h3>
 <p>如果安装的TexLive,是自带有Ghostscript,无需额外安装！</p>
@@ -1081,6 +1081,8 @@
 <img data-src="/2021/03/30/Latex-Sublime-configure/SolutionErroFirstBuidPdf.jpg" alt="解决方法"><figcaption>解决方法</figcaption>
 </figure>
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">&quot;script_commands&quot;:[</span><br><span class="line">    &quot;pdflatex -synctex=1 -interaction=nonstopmode&quot;,</span><br><span class="line">    &quot;bibtex&quot;,</span><br><span class="line">    &quot;pdflatex -synctex=1 -interaction=nonstopmode&quot;,</span><br><span class="line">    <span class="string">&quot;pdflatex -synctex=1 -interaction=nonstopmode&quot;</span></span><br><span class="line">   ]</span><br></pre></td></tr></table></figure>
+<h1 id="更多技巧">更多技巧</h1>
+<p>更多技巧和定制化的设置，请参考官方教程。</p>
 <h1 id="主要参考网址">主要参考网址</h1>
 <p><a href="https://latextools.readthedocs.io/en/latest/install/">LatexTools</a></p>
 <p><a href="http://www.sublimetext.com/">Sublime</a></p>
