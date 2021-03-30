@@ -1081,6 +1081,13 @@
 <img data-src="/2021/03/30/Latex-Sublime-configure/SolutionErroFirstBuidPdf.jpg" alt="解决方法"><figcaption>解决方法</figcaption>
 </figure>
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">&quot;script_commands&quot;:[</span><br><span class="line">    &quot;pdflatex -synctex=1 -interaction=nonstopmode&quot;,</span><br><span class="line">    &quot;bibtex&quot;,</span><br><span class="line">    &quot;pdflatex -synctex=1 -interaction=nonstopmode&quot;,</span><br><span class="line">    <span class="string">&quot;pdflatex -synctex=1 -interaction=nonstopmode&quot;</span></span><br><span class="line">   ]</span><br></pre></td></tr></table></figure>
+<h1 id="配置后的效果演示">配置后的效果演示</h1>
+<h2 id="latex-简单文件模板">latex 简单文件模板</h2>
+<figure class="highlight tex"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">\documentclass[UTF-8]&#123;ctexart&#125;</span><br><span class="line"></span><br><span class="line">\usepackage&#123;metalogo,mflogo,amsmath,bm&#125;</span><br><span class="line">\usepackage&#123;array&#125;</span><br><span class="line">\usepackage&#123;graphicx&#125; </span><br><span class="line">\usepackage&#123;fancybox&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">\title&#123;模板文件&#125;</span><br><span class="line">\author&#123;author&#125;</span><br><span class="line">\date&#123;\today&#125;</span><br><span class="line">\maketitle</span><br><span class="line"></span><br><span class="line">Template Tex file</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="操作演示">操作演示</h2>
+<figure>
+<img data-src="/2021/03/30/Latex-Sublime-configure/Demo.gif" alt="Demo"><figcaption>Demo</figcaption>
+</figure>
 <h1 id="更多技巧">更多技巧</h1>
 <p>更多技巧和定制化的设置，请参考官方教程。</p>
 <h1 id="主要参考网址">主要参考网址</h1>
