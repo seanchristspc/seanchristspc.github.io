@@ -970,7 +970,7 @@
 <h2 id="安装-sublime-editor">安装 sublime editor</h2>
 <p>在讲述 sublime editor 配置之前，说一点无关紧要的话，缓解缓缓烦闷的气氛！ 想必大家都爱用巨硬的<a href="https://code.visualstudio.com/">VS Code</a>吧！不过， 目前我还没有去尝试！主要是没有时间和当前使用的代码编辑器足够我使用就没有 尝试VS code。据我了解，VS Code 的插件 <strong>异常丰富</strong>（插件更新快），开发者 <strong>特别活跃</strong>。如果有时间和精力，以后可能会去尝试吧！</p>
 <p>说了这么多题外话，开始步入正题，sublime editor 安装。安装sublime,对于windows 使用的朋友来说，相当简单，首先去官网 <a href="http://www.sublimetext.com/">Sublime Offical</a> 下载，然后只管点点点！哇晒！安装成功了！你开心就好！对于linux用户，官网上也有安装 <a href="http://www.sublimetext.com/docs/3/linux_repositories.html">教程</a>，对于mac用户， 去官网找找， <a href="https://baidu.com">百度百度</a> <a href="https:bing.com/">bing!bing!</a>或者 <a href="https://google.com">Goole!Google</a>当然可以<a href="https://duckduckgo.com/">DuckDuckGo</a>!</p>
-<p>对于注册码部分，可以去百度！不过好像 sublime 添加了联网检测机制。对于重复多人使用的 注册码会无效！魔高一尺到高一丈，当然是有方法的，可以通过修改 <code>host</code>文件解决问题。 不注册也能用，只是偶尔会提醒你注册，提醒频率极低！如果你有闲钱，欢迎你支持正版。 支持一下，软件开发者！哈哈！好像有打广告嫌疑！</p>
+<p>对于注册码部分，可以去百度！不过好像 sublime 添加了联网检测机制。对于重复多人使用的 注册码会无效！魔高一尺道高一丈，当然是有方法的，可以通过修改 <code>host</code>文件解决问题。 不注册也能用，只是偶尔会提醒你注册，提醒频率极低！如果你有闲钱，欢迎你支持正版。 支持一下，软件开发者！哈哈！好像有打广告嫌疑！</p>
 <h2 id="安装-package-control">安装 Package Control</h2>
 <p>使用 Sublime editor, 不安装 Package Control, 你将会失去Sublime的乐趣和方便性。 方便指的是 使用 <strong>Package Control</strong> 安装 Sublime 的插件十分方便！至于安装教程 可参考 <a href="https://packagecontrol.io/installation">Package Control</a>官方教程。怎么 老是给我推荐官方教程？主要是自己懒，其次官方教程比较可靠！推荐使用官方教程的 第二种方法 <strong>Menu</strong>，直接 <strong>点点点</strong>就OK啦！第一种方法也简单，使用命令板。调出 命令板的快捷键方法<code>ctrl+shit+p</code>，以后你会经常使用它。提前学习了！</p>
 <h2 id="使用-package-control-安装插件">使用 Package Control 安装插件</h2>
@@ -1104,6 +1104,102 @@
       </categories>
       <tags>
         <tag>-latex -tools -sublime</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>uBlock Origin Tutorial</title>
+    <url>/2021/04/20/uBlock-Orgin-Tutor/</url>
+    <content><![CDATA[<hr>
+<h1 id="ublock-origin-tutorial">uBlock Origin Tutorial</h1>
+<h2 id="不知为何接触到了-ublock-origin">不知为何接触到了 uBlock Origin</h2>
+<p>什么时候开始接触 <a href="https://ublockorigin.com/">uBlock Origin</a>？在浏览Firefox插件安装商店的排行榜时，发现<strong>uBlock Origin</strong> 插件使用人数挺多的，于是就安装了！当时看见 <strong>uBlock</strong>就默认为是拦截广告的插件，为了避免广告就安装了！实际最初使用拦截广 告的插件是<strong>AdBlocker Ultimate</strong>, AdBlocker也挺不错的，尝试一下新的广告拦截插件，况且uBlock的酒红色我更偏爱就试试它吧！ 以为 <strong>uBlock Origin</strong>和 <strong>AdBlocker Ultimate</strong>一样，安装完无需配置就可以使用！事实上这句话，算正确，也算不正确。如果两者 相同，为什么 <strong>uBlock Origin</strong>作为后来者，增长速度较快于 <strong>AbBlocker Ultimate</strong>? 说明 <strong>uBlock Origin</strong>有它的优势，故我们 要探索探索它的优点。</p>
+<p>喂！喂！喂！朋友该进入正题了，不要说这些废话！</p>
+<p>客官，好的！开胃菜马上呈上。抱歉！</p>
+<hr>
+<h2 id="ublock-origin-introduction">uBlock Origin Introduction</h2>
+<p>去官网<a href="https://ublockorigin.com/">uBlock Origin</a>，发现 uBlock Origin 简介。简单的说就是，免费 开源 的广告拦截器，且低CPU低 Memery 内存消耗,支持各种主流的浏览器。当然少不了去 <strong>Github</strong>查查，Github <a href="https://ublockorigin.com/">uBlock Origin</a>地址， 同样有介绍！uBlock Origin 哲学&quot;uBlock Origin (or uBlock₀) is not an ad blocker; it's a general-purpose blocker. &quot; 翻译成中文 就是 <strong>uBlock Origin 不只是一个广告拦截器，更是一个通用拦截器。</strong> 恰恰是这句话吸引我去研究它。感觉有一定道理。</p>
+<h2 id="ublock-origin-install">uBlock Origin Install</h2>
+<p>对于 <strong>uBlock Origin</strong> 安装，最简单的就是取个浏览器插件应用商店安装，这里给出 <a href="https://addons.mozilla.org/en-US/firefox/">Firefox插件应用商店</a> 地址。官网和Github上也有安装教程，就不做详细介绍了。</p>
+<hr>
+<h2 id="ublock-origin-tricks">uBlock Origin Tricks</h2>
+<p>有一天天气不错，是个好天气好日子。吃完晚饭，闲来无事，那就研究研究搁下已久的 <strong>uBlock Origin</strong>插件。</p>
+<blockquote>
+<p>uBlock Origin (or uBlock₀) is not an ad blocker; it's a general-purpose blocker.</p>
+</blockquote>
+<h3 id="ublock-origin-菜单快速浏览">uBlock Origin 菜单快速浏览</h3>
+<figure>
+<img data-src="/2021/04/20/uBlock-Orgin-Tutor/uBlockOriginMenuQuickLook.gif" alt="click uBlock Origin more and less"><figcaption>click uBlock Origin <em>more</em> and <em>less</em></figcaption>
+</figure>
+<h3 id="ublock-origin-菜单概要">uBlock Origin 菜单概要</h3>
+<figure>
+<img data-src="/2021/04/20/uBlock-Orgin-Tutor/uBlockOriginMenuInfo.png" alt="uBlock Origin 菜单概要"><figcaption>uBlock Origin 菜单概要</figcaption>
+</figure>
+<p>如图所示为 uBlock Origin 的菜单概要，并对各功能块编号。</p>
+<ol type="1">
+<li><p>访问该网站请求了网址。</p></li>
+<li><p>uBlock 高级使用菜单栏</p></li>
+<li><p>uBlock 快速功能使用菜单</p></li>
+<li><p>uBlock 开关机按钮</p></li>
+<li><p>uBlock 的信息概要</p></li>
+</ol>
+<h3 id="ublock-origin-zapper-mode">uBlock Origin zapper mode</h3>
+<figure>
+<img data-src="/2021/04/20/uBlock-Orgin-Tutor/uBlockOriginzapper.gif" alt="zapper mode"><figcaption>zapper mode</figcaption>
+</figure>
+<p>zapper mode 为快速Block当前网页的内容, 但只适用于当前时刻的网页，重新加载网页，阻塞的功能失效。 主要用于仅访问一次的网页，当前时刻不想看见网页的部分内容，可以使用该功能。</p>
+<h3 id="ublock-origin-picker-mode">uBlock Origin picker mode</h3>
+<figure>
+<img data-src="/2021/04/20/uBlock-Orgin-Tutor/uBlockOriginPicker.gif" alt="picker mode"><figcaption>picker mode</figcaption>
+</figure>
+<p>picker mode主要选取该网页想要永久Block的内容（不显示选取的内容），进行快速的选取。选取后，右下角 会弹出一个对话框，其中 <strong>preview</strong> 为预览概选取的内容，有点类似于 zapper mode。 <strong>quit</strong>放弃本次 选取内容， <strong>create</strong> 确认本次选取内容，相当于确认按钮， <strong>pick</strong>重新选取。该功能的选取还是挺方便 Block 自己不想看的内容。</p>
+<h3 id="ublock-origin-logger">uBlock Origin logger</h3>
+<figure>
+<img data-src="/2021/04/20/uBlock-Orgin-Tutor/uBlockOriginlogger.gif" alt="logger"><figcaption>logger</figcaption>
+</figure>
+<p>uBlock Origin 的日志功能主要查看该网页加载的资源，可以详细的查看，如上述演示，为查看该网站的图片。 更高级的使用技巧，请自己探索探索。</p>
+<h3 id="ublock-origin-dashboard">uBlock Origin dashboard</h3>
+<figure>
+<img data-src="/2021/04/20/uBlock-Orgin-Tutor/uBlockOriginDashboard.gif" alt="dashboard"><figcaption>dashboard</figcaption>
+</figure>
+<p>uBlock Origin dashboard 主要是一些uBlock的设置和自己的过滤规则。可以自己修改过滤的内容。上述演示 内容中，把uBlock网站的Block规则删除，在重新加载网页，恢复原来的面貌了。</p>
+<p>在 dashboard 中点击 <strong>Filter lists</strong>，然后把 <strong>Ad</strong> 中的 <strong>AdGuard Base</strong> 和 <strong>AdGuard Mobile Ads</strong> 勾选了，用于 Block 广告。主要该软件是外国人写的，对国外的网站的广告过滤比较友好，对于国内还是自己定制 自己的过滤规则。 也就是 <strong>My filters</strong>的内容，自己添加修改。如果你学过html和css，那么自己过滤内容就挺 方便，因为有些广告用picker无法准确的筛选内容，会存在过滤不准确。</p>
+<figure>
+<img data-src="/2021/04/20/uBlock-Orgin-Tutor/uBlockOriginFilterlist.png" alt="filter lists"><figcaption>filter lists</figcaption>
+</figure>
+<h3 id="ublock-origin-customs">uBlock Origin Customs</h3>
+<p>如下是我自己的过滤规则表，可以添加到 <strong>My filters</strong>中。只是我目前使用的，随着你使用的越久，定制的内容就 会越多。可供参考，但不完全正确。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">! 2021<span class="selector-tag">-03-15</span> <span class="selector-tag">https</span>://<span class="selector-tag">www</span><span class="selector-class">.zhihu</span><span class="selector-class">.com</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.zhihu</span><span class="selector-class">.com</span>##<span class="selector-class">.Question-sideColumn--sticky</span><span class="selector-class">.Question-sideColumn</span> &gt; <span class="selector-tag">div</span> &gt; <span class="selector-class">.Sticky</span></span><br><span class="line"></span><br><span class="line">! 2021<span class="selector-tag">-03-15</span> <span class="selector-tag">https</span>://<span class="selector-tag">www</span><span class="selector-class">.nfmovies</span><span class="selector-class">.com</span></span><br><span class="line">||www.nfmovies.com/static/*.jpg$image</span><br><span class="line"></span><br><span class="line">! 2021<span class="selector-tag">-03-15</span> <span class="selector-tag">http</span>://<span class="selector-tag">www</span><span class="selector-class">.bimiacg</span><span class="selector-class">.com</span></span><br><span class="line">||v.taiqingjiu.com/syjpc/*.gif$image</span><br><span class="line">||v2.taiqingjiu.com/syjpc/*.gif$image</span><br><span class="line">||v.taiqingjiu.com/syjpc/*.gif$image</span><br><span class="line">||ddcdn.jd.com/ddimg/*/*.png$image</span><br><span class="line">||cdn.u1.huluxia.com/g4/*/*.jpg$image</span><br><span class="line"></span><br><span class="line">! 2021<span class="selector-tag">-03-15</span> <span class="selector-tag">https</span>://<span class="selector-tag">blog</span><span class="selector-class">.csdn</span><span class="selector-class">.net</span></span><br><span class="line"><span class="selector-tag">blog</span><span class="selector-class">.csdn</span><span class="selector-class">.net</span>##<span class="selector-class">.recommend-box</span></span><br><span class="line"><span class="selector-tag">blog</span><span class="selector-class">.csdn</span><span class="selector-class">.net</span>##<span class="selector-class">.recommend-tit-mod</span></span><br><span class="line"><span class="selector-tag">blog</span><span class="selector-class">.csdn</span><span class="selector-class">.net</span>##<span class="selector-id">#asideNewComments</span> &gt; <span class="selector-class">.aside-content</span></span><br><span class="line"><span class="selector-tag">blog</span><span class="selector-class">.csdn</span><span class="selector-class">.net</span>##<span class="selector-id">#asideHotArticle</span> &gt; <span class="selector-class">.aside-content</span></span><br><span class="line"></span><br><span class="line">! 2021<span class="selector-tag">-03-15</span> <span class="selector-tag">https</span>://<span class="selector-tag">book</span><span class="selector-class">.douban</span><span class="selector-class">.com</span></span><br><span class="line"><span class="selector-tag">book</span><span class="selector-class">.douban</span><span class="selector-class">.com</span>##<span class="selector-class">.aside</span></span><br><span class="line"></span><br><span class="line">! 2021<span class="selector-tag">-03-15</span> <span class="selector-tag">https</span>://<span class="selector-tag">blog</span><span class="selector-class">.csdn</span><span class="selector-class">.net</span></span><br><span class="line"><span class="selector-tag">blog</span><span class="selector-class">.csdn</span><span class="selector-class">.net</span>##<span class="selector-id">#asideHotArticle</span> &gt; <span class="selector-class">.aside-content</span></span><br><span class="line"></span><br><span class="line">! 2021<span class="selector-tag">-03-15</span> <span class="selector-tag">https</span>://<span class="selector-tag">www</span><span class="selector-class">.zhihu</span><span class="selector-class">.com</span></span><br><span class="line">||pic*.zhimg.com/*.jpeg$image</span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.zhihu</span><span class="selector-class">.com</span>##<span class="selector-class">.Footer</span></span><br><span class="line"></span><br><span class="line">! 2021<span class="selector-tag">-03-16</span> <span class="selector-tag">https</span>://<span class="selector-tag">blog</span><span class="selector-class">.csdn</span><span class="selector-class">.net</span></span><br><span class="line"><span class="selector-tag">blog</span><span class="selector-class">.csdn</span><span class="selector-class">.net</span>##<span class="selector-class">.toolbox-list</span></span><br><span class="line"><span class="selector-tag">blog</span><span class="selector-class">.csdn</span><span class="selector-class">.net</span>##<span class="selector-id">#asideHotArticle</span> &gt; <span class="selector-class">.aside-title</span></span><br><span class="line"><span class="selector-tag">blog</span><span class="selector-class">.csdn</span><span class="selector-class">.net</span>##<span class="selector-id">#asideNewComments</span> &gt; <span class="selector-class">.aside-title</span></span><br><span class="line"></span><br><span class="line">! 2021<span class="selector-tag">-03-16</span> <span class="selector-tag">https</span>://<span class="selector-tag">mathworld</span><span class="selector-class">.wolfram</span><span class="selector-class">.com</span></span><br><span class="line">||www.wolframcdn.com/side-images/*$image</span><br><span class="line"></span><br><span class="line">! 2021<span class="selector-tag">-03-16</span> <span class="selector-tag">https</span>://<span class="selector-tag">www</span><span class="selector-class">.jianshu</span><span class="selector-class">.com</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.jianshu</span><span class="selector-class">.com</span>##._3<span class="selector-tag">Pnjry</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.jianshu</span><span class="selector-class">.com</span>#<span class="selector-id">#a</span>._1<span class="selector-tag">OhGeD</span><span class="selector-class">.hM7XFL</span><span class="selector-pseudo">:nth-of-type(2)</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.jianshu</span><span class="selector-class">.com</span>##._13<span class="selector-tag">lIbp</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.jianshu</span><span class="selector-class">.com</span>##<span class="selector-class">.d0hShY</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.jianshu</span><span class="selector-class">.com</span>#<span class="selector-id">#section</span><span class="selector-class">.ouvJEz</span><span class="selector-pseudo">:nth-of-type(2)</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.jianshu</span><span class="selector-class">.com</span>##._2<span class="selector-tag">xr8G8</span></span><br><span class="line"></span><br><span class="line">! 2021<span class="selector-tag">-03-17</span> <span class="selector-tag">https</span>://<span class="selector-tag">blog</span><span class="selector-class">.csdn</span><span class="selector-class">.net</span></span><br><span class="line"><span class="selector-tag">blog</span><span class="selector-class">.csdn</span><span class="selector-class">.net</span>##<span class="selector-id">#copyright-box</span></span><br><span class="line"><span class="selector-tag">blog</span><span class="selector-class">.csdn</span><span class="selector-class">.net</span>##<span class="selector-class">.template-box</span></span><br><span class="line">||kunpeng-sc.csdnimg.cn/?timestamp=*/$subdocument</span><br><span class="line"><span class="selector-tag">blog</span><span class="selector-class">.csdn</span><span class="selector-class">.net</span>##<span class="selector-class">.toolbar-container</span></span><br><span class="line"></span><br><span class="line">! 2021<span class="selector-tag">-03-17</span> <span class="selector-tag">https</span>://<span class="selector-tag">www</span><span class="selector-class">.jianshu</span><span class="selector-class">.com</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.jianshu</span><span class="selector-class">.com</span>##._1<span class="selector-tag">CSgtu</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.jianshu</span><span class="selector-class">.com</span>##<span class="selector-class">.VYwngI</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.jianshu</span><span class="selector-class">.com</span>#<span class="selector-id">#div</span> &gt; ._3<span class="selector-tag">Z3nHf</span></span><br><span class="line"></span><br><span class="line">! 2021<span class="selector-tag">-03-18</span> <span class="selector-tag">https</span>://<span class="selector-tag">www</span><span class="selector-class">.cnblogs</span><span class="selector-class">.com</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.cnblogs</span><span class="selector-class">.com</span>##<span class="selector-class">.RecentCommentBlock</span> &gt; <span class="selector-tag">ul</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.cnblogs</span><span class="selector-class">.com</span>##<span class="selector-id">#TopViewPostsBlock</span> &gt; <span class="selector-tag">ul</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.cnblogs</span><span class="selector-class">.com</span>##<span class="selector-id">#TopFeedbackPostsBlock</span> &gt; <span class="selector-tag">ul</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.cnblogs</span><span class="selector-class">.com</span>##<span class="selector-id">#TopDiggPostsBlock</span> &gt; <span class="selector-tag">ul</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.cnblogs</span><span class="selector-class">.com</span>##<span class="selector-class">.catList</span> &gt; <span class="selector-class">.catListTitle</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.cnblogs</span><span class="selector-class">.com</span>##<span class="selector-id">#recent_comments_wrap</span> &gt; <span class="selector-class">.catListTitle</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.cnblogs</span><span class="selector-class">.com</span>##<span class="selector-id">#topview_posts_wrap</span> &gt; <span class="selector-class">.catListTitle</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.cnblogs</span><span class="selector-class">.com</span>##<span class="selector-id">#topfeedback_posts_wrap</span> &gt; <span class="selector-class">.catListTitle</span></span><br><span class="line"><span class="selector-tag">www</span><span class="selector-class">.cnblogs</span><span class="selector-class">.com</span>##<span class="selector-class">.catListView</span> &gt; <span class="selector-class">.catListTitle</span></span><br><span class="line"></span><br><span class="line">! 2021<span class="selector-tag">-04-16</span> <span class="selector-tag">https</span>://<span class="selector-tag">mail</span>.163<span class="selector-class">.com</span></span><br><span class="line"><span class="selector-tag">mail</span>.163<span class="selector-class">.com</span>##<span class="selector-class">.nui-closeable</span></span><br><span class="line"><span class="selector-tag">mail</span>.163<span class="selector-class">.com</span>##<span class="selector-class">.js-component-link</span><span class="selector-class">.tL2</span></span><br><span class="line"><span class="selector-tag">mail</span>.163<span class="selector-class">.com</span>##<span class="selector-id">#_mail_component_106_106</span></span><br><span class="line"><span class="selector-tag">mail</span>.163<span class="selector-class">.com</span>##<span class="selector-id">#_mail_tabitem_3_121</span></span><br><span class="line"><span class="selector-tag">mail</span>.163<span class="selector-class">.com</span>##<span class="selector-class">.mailgg</span></span><br><span class="line"></span><br><span class="line">! 2021<span class="selector-tag">-04-16</span> <span class="selector-tag">https</span>://<span class="selector-tag">mail</span>.126<span class="selector-class">.com</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">mail</span>.126<span class="selector-class">.com</span>##<span class="selector-class">.mailgg</span></span><br><span class="line"><span class="selector-tag">mail</span>.126<span class="selector-class">.com</span>##<span class="selector-id">#_mail_tabitem_3_121</span></span><br><span class="line"><span class="selector-tag">mail</span>.126<span class="selector-class">.com</span>##<span class="selector-class">.gWel-bottom</span></span><br><span class="line"><span class="selector-tag">mail</span>.126<span class="selector-class">.com</span>##<span class="selector-id">#_mail_component_106_106</span></span><br><span class="line"><span class="selector-tag">mail</span>.126<span class="selector-class">.com</span>##<span class="selector-id">#_mail_component_113_113</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="ublock-origin-快速功能使用">uBlock Origin 快速功能使用</h3>
+<figure>
+<img data-src="/2021/04/20/uBlock-Orgin-Tutor/uBlockOriginMenuQuickuse.gif" alt="Quick function"><figcaption>Quick function</figcaption>
+</figure>
+<figure>
+<img data-src="/2021/04/20/uBlock-Orgin-Tutor/uBlockOriginQuickUse.png" alt="Quick use"><figcaption>Quick use</figcaption>
+</figure>
+<p>快速功能使用各模块解释</p>
+<ol type="1">
+<li>阻止所有该网站的弹出窗口</li>
+<li>阻止该网站的大的媒体文件元素</li>
+<li>关闭Cosmetic filters的过滤功能</li>
+<li>阻止网站使用远程字体（网页显示的字体可能是远程下载的，也可能是本地加载的）</li>
+<li>禁止网站javascript(对于有些网站，禁止js，会出现显示异常或无法加载网页)</li>
+</ol>
+<p>点击 <strong>锁</strong> 一样的图片，指永久改变该网站的阻塞内容。</p>
+<hr>
+<h2 id="备注">备注</h2>
+<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. You can give advice on the following comment area and email to me!. Have fun!</p>
+<h2 id="参考连接">参考连接</h2>
+<p><a href="https://ublockorigin.com/">uBlock Origini Official site</a></p>
+<p><a href="https://github.com/gorhill/uBlock">uBlock Origin Github</a></p>
+]]></content>
+      <categories>
+        <category>tools</category>
+      </categories>
+      <tags>
+        <tag>Add-ons</tag>
+        <tag>uBlock Origin</tag>
+        <tag>tools</tag>
+        <tag>browser</tag>
       </tags>
   </entry>
 </search>
