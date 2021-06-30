@@ -340,7 +340,7 @@
 <p><a href="http://futurist.se/gldt/wp-content/uploads/12.10/gldt1210.svg">linux发行图</a></p>
 <p>是不是太多了！看的都眼花了！自己选择一款喜欢的发行版本。</p>
 <p>友情链接</p>
-<p><a href="https://www.redhat.com/">Redhat</a>   <a href="https://www.centos.org/">Centos</a>      <a href="https://www.debian.org/">Debian</a>   <a href="https://www.ubuntu.com/">ubuntu</a>  <a href="https://download.suse.com/">SUSE</a>   <a href="https://www.opensuse.org/">openSUE</a> </p>
+<p><a href="https://www.redhat.com">Redhat</a>   <a href="https://www.centos.org/">Centos</a>      <a href="https://www.debian.org/">Debian</a>   <a href="https://www.ubuntu.com">ubuntu</a>  <a href="https://download.suse.com">SUSE</a>   <a href="https://www.opensuse.org/">openSUE</a> </p>
 <p>自己可以玩玩！当然还有很多其他版本！也有一些酷炫的版本！</p>
 <hr>
 <h2 id="linux安装"><a href="#linux安装" class="headerlink" title="linux安装"></a>linux安装</h2><p>我们安装Ubuntu版的linux系统。安装桌面版的。易于个人使用。</p>
@@ -382,7 +382,7 @@
 <p>看图<br><img data-src="/2018/03/19/Linux_Introduction/softwareStore.png" alt="software Store"></p>
 <p>还有其他安装软件的方法，就是使用命令行。</p>
 <p><code>sudo apt install softname</code></p>
-<p>例如安装 <code>vim </code> 文本编辑软件。挺好用的。</p>
+<p>例如安装 <code>vim</code> 文本编辑软件。挺好用的。</p>
 <p>Ubuntu不自带<code>vim</code>,需要额外安装。Centos自带vim</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install vim</span><br></pre></td></tr></table></figure>
 <p><img data-src="/2018/03/19/Linux_Introduction/apt_install_vim.gif" alt="sudo apt install"></p>
@@ -394,11 +394,19 @@
 <p>按 <code>a</code>,就可以写文本了。<br>输入 <code>:w</code> 保存<br>输入 <code>:q</code> 退出</p>
 <p><img data-src="/2018/03/19/Linux_Introduction/vim_txt.gif" alt="vim"></p>
 <p>vim 官方教程，可以在终端输入<code>vimtutor</code> 或者 在终端输入<code>vim</code>,然后输入<code>:h vimtutor</code>。</p>
-<p><img data-src="/2018/03/19/Linux_Introduction/vimtutor.gif" alt="vimtutor"></p>
 <p>vim 其他学习网站 <a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html">viemu</a></p>
+<p>再贴一点vim的使用表，没事可以看看。多用就会了。</p>
+<p><img data-src="/2018/03/19/Linux_Introduction/vimtutor.gif" alt="vimtutor"></p>
+<p><img data-src="/2018/03/19/Linux_Introduction/vi-vim-tutorial/vi-vim-tutorial-1.svg" alt="basic vim"></p>
+<p><img data-src="/2018/03/19/Linux_Introduction/vi-vim-tutorial/vi-vim-tutorial-2.svg" alt="operator and repetition"></p>
+<p><img data-src="/2018/03/19/Linux_Introduction/vi-vim-tutorial/vi-vim-tutorial-3.svg" alt="yank and past"></p>
+<p><img data-src="/2018/03/19/Linux_Introduction/vi-vim-tutorial/vi-vim-tutorial-4.svg" alt="searching"></p>
+<p><img data-src="/2018/03/19/Linux_Introduction/vi-vim-tutorial/vi-vim-tutorial-5.svg" alt="marks and macros"></p>
+<p><img data-src="/2018/03/19/Linux_Introduction/vi-vim-tutorial/vi-vim-tutorial-6.svg" alt="various motions"></p>
+<p><img data-src="/2018/03/19/Linux_Introduction/vi-vim-tutorial/vi-vim-tutorial-7.svg" alt="various commands"></p>
 <p><img data-src="/2018/03/19/Linux_Introduction/vi-vim-cheat-sheet.gif" alt="vim grahical cheat sheet"></p>
 <p>Ubuntu 是用<code>apt</code> 或 <code>apt-get</code> 命令安装软件，而Centos使用<code>yum</code>安装软件。</p>
-<p><strong>源代码安装</strong><br>还有一种安装软件的方法就是源代码编译安装。使用 <code>make</code>命令。这里我就不多说了。应为这涉及库的问题。该方法能安装新版的软件，但是也是最难使用的，不是因为命令复杂，而是因为不容易安装所需要的库！</p>
+<p><strong>源代码安装</strong><br>还有一种安装软件的方法就是源代码编译安装。使用 <code>make</code>命令。这里我就不多说了。因为这涉及库的问题。该方法能安装新版的软件，但是也是最难使用的，不是因为命令复杂，而是因为不容易安装所需要的库！可能各个软件版本所需要的库有所不同，同时库之间可能有冲突，一个库依赖另一个库，可能你需要的就不是单纯安装所提示的库，而是一系列库，简单的说就是 <strong>库之间存在依赖</strong>。哈哈！如果爱折腾，倒是可以折腾一下。当然也有一些软件源码安装比较容易，前提是你已具备所需要的库环境。对于需要使用最新版本的软件，尝试新鲜功能，还是需要使用源码安装。</p>
 ]]></content>
       <categories>
         <category>linux</category>
