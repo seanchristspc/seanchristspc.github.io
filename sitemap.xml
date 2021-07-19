@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://seanchristspc.github.io/2018/02/14/Design-Pattern-Java/</loc>
+    
+    <lastmod>2021-07-19</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://seanchristspc.github.io/2018/03/19/Linux_Introduction/</loc>
     
     <lastmod>2021-06-30</lastmod>
@@ -54,90 +61,6 @@
     <loc>https://seanchristspc.github.io/2018/02/17/JSP%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%87%E7%AD%BE/</loc>
     
     <lastmod>2018-02-16</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/2018/02/14/Iterator_Design_Pattern/</loc>
-    
-    <lastmod>2018-02-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/2018/02/14/Proxy_Design_Pattern/</loc>
-    
-    <lastmod>2018-02-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/2018/02/13/TemplateMethod_Design_Pattern/</loc>
-    
-    <lastmod>2018-02-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/2018/02/13/FactoryMethod_Design_Pattern/</loc>
-    
-    <lastmod>2018-02-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/2018/02/13/Adapter_Design_Pattern/</loc>
-    
-    <lastmod>2018-02-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/2018/02/12/Flyweight_Design_Pattern/</loc>
-    
-    <lastmod>2018-02-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/2018/02/12/Observe_Design_Pattern/</loc>
-    
-    <lastmod>2018-02-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/2018/02/12/Memento_Design_Pattern/</loc>
-    
-    <lastmod>2018-02-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/2018/02/12/State_Design_Pattern/</loc>
-    
-    <lastmod>2018-02-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/2018/02/10/Command_Design_Pattern/</loc>
-    
-    <lastmod>2018-02-09</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/2018/02/09/Mediator_Design_Pattern/</loc>
-    
-    <lastmod>2018-02-08</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/2018/02/09/Facade_Design_Pattern/</loc>
-    
-    <lastmod>2018-02-08</lastmod>
     
   </url>
   
@@ -200,48 +123,6 @@
 
   
   <url>
-    <loc>https://seanchristspc.github.io/tags/Adapter/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/tags/Command/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/tags/Facade/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/tags/FactoryMethod/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/tags/Flyweight/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/tags/Iterator/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seanchristspc.github.io/tags/tags/</loc>
     <lastmod>2021-07-19</lastmod>
     <changefreq>daily</changefreq>
@@ -256,20 +137,6 @@
   </url>
   
   <url>
-    <loc>https://seanchristspc.github.io/tags/Mediator/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/tags/Memento/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seanchristspc.github.io/tags/crack/</loc>
     <lastmod>2021-07-19</lastmod>
     <changefreq>daily</changefreq>
@@ -278,34 +145,6 @@
   
   <url>
     <loc>https://seanchristspc.github.io/tags/Myeclipse/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/tags/Observe/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/tags/Proxy/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/tags/state/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/tags/TemplateMethod/</loc>
     <lastmod>2021-07-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -404,6 +243,20 @@
   
   <url>
     <loc>https://seanchristspc.github.io/tags/digital-low-pass-filter/</loc>
+    <lastmod>2021-07-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seanchristspc.github.io/tags/Java/</loc>
+    <lastmod>2021-07-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seanchristspc.github.io/tags/DesignPattern/</loc>
     <lastmod>2021-07-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
