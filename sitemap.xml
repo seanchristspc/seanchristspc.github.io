@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://seanchristspc.github.io/2021/07/23/Recommend-Softwares/</loc>
+    
+    <lastmod>2021-07-23</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://seanchristspc.github.io/2018/02/14/Design-Pattern-Java/</loc>
     
     <lastmod>2021-07-19</lastmod>
@@ -116,7 +123,7 @@
 
   <url>
     <loc>https://seanchristspc.github.io/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -124,140 +131,147 @@
   
   <url>
     <loc>https://seanchristspc.github.io/tags/tags/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/linux/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/crack/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/Myeclipse/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/Hexo/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/officeWord/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/function/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/matlab-live-editor/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/paper/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/latex-tools-sublime/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/Add-ons/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/uBlock-Origin/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/tools/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/browser/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/matlab/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/tutorial/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/mex/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/digital-low-pass-filter/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/Java/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/tags/DesignPattern/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seanchristspc.github.io/tags/software/</loc>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -266,70 +280,77 @@
   
   <url>
     <loc>https://seanchristspc.github.io/categories/DesignPattern/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/categories/Java/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/categories/linux/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/categories/Java/JSP/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/categories/soft/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/categories/Hexo/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/categories/matlab/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/categories/lecture/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/categories/tools/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://seanchristspc.github.io/categories/tools/</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-07-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seanchristspc.github.io/categories/software/</loc>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
