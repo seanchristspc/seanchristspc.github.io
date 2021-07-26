@@ -1361,7 +1361,7 @@
 <p>为什么要写这篇博文？今天比较闲，闲来没事干，突发奇想，使用电脑也有一段时间了，要不写个blog记录一下自己喜欢 使用的软件。文章会持续更新。</p>
 <p>计算机行业经过这几十年的发展，已产出成千上万的软件，其中不乏一些优秀实用的软件。当前，软件还是要区分平台的， 有些软件依托于windows，有些软件依托于linux,有些软件依托于macOS。我会以平台来分类推荐不同的软件。由于，从未使用 过mac,故主要分为windows和linux两大板块来推荐软件，都是自己使用过的，感觉比较nice的。对于自己从未使用的，但是 比较优秀的软件并没有加入推荐列表。收录主要标准，其一自己使用过，其二优秀的软件。实际这两个标准是比较主观的。</p>
 <h3 id="视频播放软件">视频播放软件</h3>
-<p><a href="https://www.videolan.org/vlc/">VLC</a>: VLC还是一个不错的视频播放器，基本市面上的视频格式都支持，同时还可以视频格式转换， 更强大的是VLC还支持剪切视频。哈哈哈！完全不专注自己的播放器主业，搞一些视频处理的副业务。该视频播放器完全没有广告或弹窗。 如下图所示，为VLC网站的官网截图，也说了自己的优点。全平台视频播放器，无论是linux,windows,mac 还是ios,andriod他都有客户端。 良心的视频播放软件。 <img data-src="/2021/07/23/Recommend-Softwares/VLC.png" alt="VLC"></p>
+<p><a href="https://www.videolan.org/vlc/">VLC</a>: VLC还是一个不错的视频播放器，基本市面上的视频格式都支持，同时还可以视频格式转换， 更强大的是VLC还支持剪切视频。哈哈哈！完全不专注自己的播放器主业，搞一些视频处理的副业务。该视频播放器完全没有广告或弹窗。 如下图所示，为VLC网站的官网截图，也说了自己的优点。全平台视频播放器，无论是linux,windows,mac 还是ios,andriod他都有客户端。 良心的视频播放软件。有个缺点就是Windows和Linux平台界面有点平淡古老，但是andriod的VLC界面还是挺现代化的。 <img data-src="/2021/07/23/Recommend-Softwares/VLC.png" alt="VLC"></p>
 <p>至于下载开源软件，国内的同学可以去<a href="https://mirrors.tuna.tsinghua.edu.cn/">清华镜像</a>下载，速度还是比较快的。 <img data-src="/2021/07/23/Recommend-Softwares/tsinghuaMirror.png" alt="Tsinghua Mirror"></p>
 <p>linux平台上的视频播放软件太多了，也有比较纯粹简洁的视频播放软件。例如Gnome桌面的<strong>totem</strong>视频播放器。 <a href="https://mpv.io/"><strong>mpv</strong></a>播放器也是挺nice的，简洁的。</p>
 <h3 id="pdf软件">Pdf软件</h3>
@@ -1371,7 +1371,7 @@
 <figure>
 <img data-src="/2021/07/23/Recommend-Softwares/okular.png" alt="okluar"><figcaption>okluar</figcaption>
 </figure>
-<p>你可能会好奇，为啥不推荐Adobe Acrobat Reader。哈哈Adobe Acrobat Reader确实不错，不过我很少使用它，功能很强大，但是感觉操作不 是特别方便。</p>
+<p>你可能会好奇，为啥不推荐Adobe Acrobat DC。哈哈Adobe Acrobat DC 确实不错，功能很强大,不过我很少使用它。 我会在后续的Windows推荐，在Linux平台尽量推荐一些Linux的特色软件吧！当然，Adobe Acrobat DC 还是有许多优秀的 功能的，比如文件的合并，pdf文件OCR，缩小pdf文件大小等。依稀记得，有一次想看一本电子书，电子书内容在各个pdf软件 上都乱码，唯独Adobe Acrobat DC 不乱码。顿时对Adobe Acrobat DC产生好感。后来明白出现乱码的原因是自己系统中缺少 电子书使用的字体，在无法查到指定的字体时，会使用默认的字体，字体的不匹配，出现了乱码。最后，把字体嵌入pdf文件后， 所有pdf软件打开都不会乱码了。哈哈哈！嘴上说不要不要，实际特别想要。你看，我自己都说了这么多Adobe Acrobat DC的有点， 还嘴硬，还不喜欢用Adobe Acrobat DC。个人主观不喜欢用。我在没有办法的时候，才会使用Adobe Acrobat。</p>
 <h3 id="浏览器软件">浏览器软件</h3>
 <p><a href="https://www.mozilla.org/en-US/">Firefox</a>: linux平台基本都默认安装了<strong>Firefox</strong>,linux浏览器界的王者。尽管Firefox或多或少有些缺点， 但是不阻碍我使用它。Firefox的插件，值得推荐。最近Firefox的Andriod平台的浏览器，感觉使用不错，进化啦！至于Firefox 拦截广告的插件 使用，可以参考 <a href="https://seanchristspc.github.io/2021/04/20/uBlock-Orgin-Tutor/">ublock origin 教程</a>。 <img data-src="/2021/07/23/Recommend-Softwares/firefox.png" alt="Firefox Home"></p>
 <p>对于有些网站必须使用Chromium内核，可以使用 <a href="https://brave.com/">Brave</a>，简单一个字就是&quot;快&quot;。可能你无法访问brave官方网站，可能你需要VPN啦！</p>
