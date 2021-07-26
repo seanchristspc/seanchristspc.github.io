@@ -1371,6 +1371,7 @@
 <figure>
 <img data-src="/2021/07/23/Recommend-Softwares/okular.png" alt="okluar"><figcaption>okluar</figcaption>
 </figure>
+<p><a href="https://www.wps.cn/">WPS</a>: 如果你想使用像word一样的排版文档处理软件，金山的WPS是一款不错的文档处理套件。今天终于 解决Linux下WPS账户登录问题。该问题困扰了接近大概半年了吧！终于找到解决方法了。解决方法很简单，就是我下载WPS的网址 有问题。如果使用 <strong>https://www.wps.cn</strong> 下载的WPS deb安装包，是包含登录功能的，但是使用<strong>https://www.wps.com</strong>下载 的Linux安装包是没有登录功能。前者安装包大小在300M以上，后者200M以上。有了WPS登录功能,就具有WPS云盘功能，自动备份文 档，并且可以在手机和电脑无缝切换，当然多个电脑之间也可以无缝切换，这样一说还是挺方便的(前提是你有一个WPS会员)。 对了，你使用linux版WPS是没有广告的。</p>
 <p>你可能会好奇，为啥不推荐Adobe Acrobat DC。哈哈Adobe Acrobat DC 确实不错，功能很强大,不过我很少使用它。 我会在后续的Windows推荐，在Linux平台尽量推荐一些Linux的特色软件吧！当然，Adobe Acrobat DC 还是有许多优秀的 功能的，比如文件的合并，pdf文件OCR，缩小pdf文件大小等。依稀记得，有一次想看一本电子书，电子书内容在各个pdf软件 上都乱码，唯独Adobe Acrobat DC 不乱码。顿时对Adobe Acrobat DC产生好感。后来明白出现乱码的原因是自己系统中缺少 电子书使用的字体，在无法查到指定的字体时，会使用默认的字体，字体的不匹配，出现了乱码。最后，把字体嵌入pdf文件后， 所有pdf软件打开都不会乱码了。哈哈哈！嘴上说不要不要，实际特别想要。你看，我自己都说了这么多Adobe Acrobat DC的有点， 还嘴硬，还不喜欢用Adobe Acrobat DC。个人主观不喜欢用。我在没有办法的时候，才会使用Adobe Acrobat。</p>
 <h3 id="浏览器软件">浏览器软件</h3>
 <p><a href="https://www.mozilla.org/en-US/">Firefox</a>: linux平台基本都默认安装了<strong>Firefox</strong>,linux浏览器界的王者。尽管Firefox或多或少有些缺点， 但是不阻碍我使用它。Firefox的插件，值得推荐。最近Firefox的Andriod平台的浏览器，感觉使用不错，进化啦！至于Firefox 拦截广告的插件 使用，可以参考 <a href="https://seanchristspc.github.io/2021/04/20/uBlock-Orgin-Tutor/">ublock origin 教程</a>。 <img data-src="/2021/07/23/Recommend-Softwares/firefox.png" alt="Firefox Home"></p>
