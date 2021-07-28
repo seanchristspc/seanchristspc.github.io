@@ -2,6 +2,7 @@
 title: linux简单介绍
 comments: true
 date: 2018/03/18 21:40:50
+updated: 2021-06-30 10:27
 description: 本文对Linux操作系统进行了简单介绍。简要的讲述了Ubuntu的安装，以及一些常用的linux命令的使用，简述了如何在linux上安装软件，简单使用了vim编辑器。
 tags:
 	- linux
@@ -194,41 +195,56 @@ vim vim.txt
 
 vim 官方教程，可以在终端输入`vimtutor` 或者 在终端输入`vim`,然后输入`:h vimtutor`。
 
-![vimtutor](Linux_Introduction/vimtutor.gif)
 
 vim 其他学习网站 [viemu](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)
+
+再贴一点vim的使用表，没事可以看看。多用就会了。
+
+![vimtutor](Linux_Introduction/vimtutor.gif)
+
+![basic vim](Linux_Introduction/vi-vim-tutorial/vi-vim-tutorial-1.svg)
+
+![operator and repetition](Linux_Introduction/vi-vim-tutorial/vi-vim-tutorial-2.svg)
+
+![yank and past](Linux_Introduction/vi-vim-tutorial/vi-vim-tutorial-3.svg)
+
+![searching](Linux_Introduction/vi-vim-tutorial/vi-vim-tutorial-4.svg)
+
+![marks and macros](Linux_Introduction/vi-vim-tutorial/vi-vim-tutorial-5.svg)
+
+![various motions](Linux_Introduction/vi-vim-tutorial/vi-vim-tutorial-6.svg)
+
+![various commands](Linux_Introduction/vi-vim-tutorial/vi-vim-tutorial-7.svg)
 
 ![vim grahical cheat sheet](Linux_Introduction/vi-vim-cheat-sheet.gif)
 
 Ubuntu 是用`apt` 或 `apt-get` 命令安装软件，而Centos使用`yum`安装软件。
 
 **源代码安装**
-还有一种安装软件的方法就是源代码编译安装。使用 `make`命令。这里我就不多说了。应为这涉及库的问题。该方法能安装新版的软件，但是也是最难使用的，不是因为命令复杂，而是因为不容易安装所需要的库！
+还有一种安装软件的方法就是源代码编译安装。使用 `make`命令。这里我就不多说了。因为这涉及库的问题。该方法能安装新版的软件，但是也是最难使用的，不是因为命令复杂，而是因为不容易安装所需要的库！可能各个软件版本所需要的库有所不同，同时库之间可能有冲突，一个库依赖另一个库，可能你需要的就不是单纯安装所提示的库，而是一系列库，简单的说就是 **库之间存在依赖**。哈哈！如果爱折腾，倒是可以折腾一下。当然也有一些软件源码安装比较容易，前提是你已具备所需要的库环境。对于需要使用最新版本的软件，尝试新鲜功能，还是需要使用源码安装。
+
+
+### 一些trick命令
+
+#### 终端获取天气
+
+天气的获取当然可以用网页，或天气软件获得天气，在终端依旧可以获得天气。
+首先你需要`curl`命令。通过前面讲的命令`sudo apt install curl`安装。
+然后使用 `curl wttr.in/beijing`, 你也可以试试 `curl wttr.in/chengdu?format=2`。
+
+![命令行获取天气](Linux_Introduction/weather.gif)
+
+#### 获取系统信息
+当前我使用的已经不是ubuntu了，所以截取的gif图片显示信息不是ubuntu。
+但是ubuntu依旧适用。 安装软件命令 `sudo apt install screenfetch`,
+然后直接运行 `screenfetch`就可以得到如下信息。
+
+![screenfetch](Linux_Introduction/screenfetch.gif)
 
 
 
+# 备注
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+I would greatly appreciate hearing about any error in this article, even minor ones.
+I welcome your suggestions for improvements, even tiny one. You can give advice on
+the following comment area and email to me!. Have fun!

@@ -8,11 +8,17 @@ comments: false
 
 # Introduction #
 
-Hello !  I am seanchrist !  Now I major in electrical engineering.  I like swimming, reading and movies ! 
+Hello! I am seanchrist! Now I major in electrical engineering. I like swimming, reading and movies! 
+You can contact me with GPG encryption email! The followings is my GPG public key and Key fingerprint! 
+Please confirm the Key fingerprint!
 
-You can contact me with GPG encryption email !  The followings is my GPG public key and Key fingerprint! 
+---
 
-Please confirm the Key fingerprint !
+# Note #
+
+I would greatly appreciate hearing about any error in these articles, even minor ones. 
+I welcome your suggestions for improvements, even tiny one. You can give advice on 
+the following comment area and email to me!. Have fun!
 
 ---
 

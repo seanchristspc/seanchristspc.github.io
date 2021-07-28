@@ -16,6 +16,7 @@ categories:
 Matlab [Live Editor](https://www.mathworks.com/products/matlab/live-editor.html) 是 matlab R2016a 引入的新matlab实时编辑器，也就是说 **Matlab R2016a**的版本都可以使用live editor。官方给出你可以用 R2014b,R2015a和R2015b打开live script. 使用live editor最好使用高版本的Matlab。我用的R2017b是基本没有问题的。
 
 下面是matlab官方给的 live script 解释。翻译一下：live script可以把代码和代码运行的结果保存在一个文件，更强大的功能可以处理文本格式，可以插入公式、插入图片添加超链接等。简单的说更像一个笔记本，功能更强大，使用更方便，比以前的m文件方便多了。个人使用也感受到m文件在各个平台存在中文乱码问题，但是live script不存在中文乱码问题。更多live editor技巧和功能请继续阅读下文。
+
 > you can create live scripts that show output together with the code that produced it. Add formatted text, equations, images, and hyperlinks to enhance your narrative, and share the live script with others as an interactive document.
 
 ---
