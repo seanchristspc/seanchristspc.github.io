@@ -229,6 +229,16 @@ Andriod在国内的主流应用商店都没有对应的软件，可以访问 [F-
 
 ![GSConnect](Recommend-Softwares/GSConnect.png)
 
+我在使用GSConnect的时候，由于防火墙端口没有开放，导致无法发现其他设备。
+[参考教程](https://userbase.kde.org/KDEConnect#I_have_two_devices_running_KDE_Connect_on_the_same_network.2C_but_they_can.27t_see_each_other)
+
+```bash
+sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/tcp
+sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/udp
+sudo systemctl restart firewalld.service
+```
+
+[KDE 帮助文档](https://userbase.kde.org/KDEConnect)
 
 ---
 
