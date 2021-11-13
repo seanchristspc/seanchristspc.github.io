@@ -72,7 +72,7 @@ $E=mc^2$
    ![切换到code模式](Matlab-Live-Editor-Introduction/change_code_live_editor.gif)
 
 7. 文本格式化
-   live editor文泵格式化的功能是有限的，不像 MS word 功能强大，但是基本满足需求。还是值得使用的。可以用鼠标点点点实现格式化，我更偏爱用快捷键方式，速度更快。只要你把鼠标悬浮在每个功能上面，就会自动显示对应功能快捷键。下图演示基本的文本操作。
+   live editor文本格式化的功能是有限的，不像 MS word 功能强大，但是基本满足需求。还是值得使用的。可以用鼠标点点点实现格式化，我更偏爱用快捷键方式，速度更快。只要你把鼠标悬浮在每个功能上面，就会自动显示对应功能快捷键。下图演示基本的文本操作。
 
    ![文本格式化操作演示](Matlab-Live-Editor-Introduction/text_format_live_editor.gif)
 

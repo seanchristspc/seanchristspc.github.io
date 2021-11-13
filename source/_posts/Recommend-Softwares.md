@@ -58,6 +58,7 @@ linux平台上的视频播放软件太多了，也有比较纯粹简洁的视频
 ![zathura](Recommend-Softwares/zathura.png)
 
 [okluar](https://okular.kde.org/): okluar比前两者都要复杂，功能也更多。对于需要注解，各种标注的同学，可以使用okluar。
+Okluar也有黑夜模式，自己在设置里面找找会了。
 
 ![okluar](Recommend-Softwares/okular.png)
 
@@ -209,6 +210,26 @@ zsh速度变慢的问题，可以使用原生的zsh和 [zinit](https://github.co
 你可以去[清华镜像源](https://mirrors.tuna.tsinghua.edu.cn/)下载 **TexLive**安装文件。
 ![Tex](Recommend-Softwares/tex.png)
 
+
+## 终端互连软件
+
+[KDE Connect](https://kdeconnect.kde.org/): 各个终端(手机，电脑)互联的软件，对于文件的分享，剪贴板的共享是相当不错的。而且也支持
+电脑与电脑之间的互联，手机与手机之间的互联。KDE 桌面的用户直接使用 **KDE Connect**即可，对于Gnome桌面的用户，可以使用Gnome的扩展
+[GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)，**GSConnect**完全实现了 **KDE Connect**的功能，在Gnome桌面
+运行良好。macOS也有对应的应用程序[macOS Download](https://binary-factory.kde.org/view/MacOS/job/kdeconnect-kde_Nightly_macos/),
+对于iOS目前还在测试阶段，不是特别稳定，可以参考[iOS KDE Connect](https://kdeconnect.kde.org/download.html)。Windows平台可以通过
+**Microsoft Store** 安装，对于Win7用户没有 **Microsoft Store**,可以通过[离线安装](https://download.kde.org/unstable/kdeconnect/win64-pre-20.08/).
+Andriod在国内的主流应用商店都没有对应的软件，可以访问 [F-driod](https://f-droid.org/packages/org.kde.kdeconnect_tp/),直接下载对
+应的kde apk文件。
+
+用于多设备之间的文件分享还是挺不错的,文件传输速度取决于路由器和两个互联设备的网络性能，10M/s是可以达到的。该软件的使用有一个前提，
+就是所有设备处在同一个局域网下才能相互连接。简单的来说，需要你的设备连接同一个WIFI，或路由器。官方的对该软件的解释如下：
+
+> Enabling communication between all your devices. Made for people like you. 
+
+![GSConnect](Recommend-Softwares/GSConnect.png)
+
+
 ---
 
 
@@ -290,6 +311,10 @@ windows下载软件依旧推荐 **FreeDownloadManager**。
 ### 排版软件
 
 **Word 、TexLive、WPS**。
+
+## 终端互连软件
+
+[KDE Connect](https://kdeconnect.kde.org/)
 
 
 ---
