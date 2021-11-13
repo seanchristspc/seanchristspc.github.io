@@ -1419,6 +1419,9 @@
 <figure>
 <img data-src="/2021/07/23/Recommend-Softwares/GSConnect.png" alt><figcaption>GSConnect</figcaption>
 </figure>
+<p>我在使用GSConnect的时候，由于防火墙端口没有开放，导致无法发现其他设备。 <a href="https://userbase.kde.org/KDEConnect#I_have_two_devices_running_KDE_Connect_on_the_same_network.2C_but_they_can.27t_see_each_other">参考教程</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/tcp</span><br><span class="line">sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/udp</span><br><span class="line">sudo systemctl restart firewalld.service</span><br></pre></td></tr></table></figure>
+<p><a href="https://userbase.kde.org/KDEConnect">KDE 帮助文档</a></p>
 <hr>
 <h2 id="windows-平台">Windows 平台</h2>
 <p>Windows平台，目前PC生态系统最完善的平台，能使用的软件也颇多。基本软件厂商都会适配Windows系统，毕竟Windows在这个地球村上， 使用的人数的目前排第一(PC领域)。软件厂商不可能抛弃这么大的用户群体。由于我在windows上使用时间不多，所以没有Linux推荐的软件那么多， 基本会和Linux推荐的软件一样。</p>
