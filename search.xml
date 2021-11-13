@@ -1408,9 +1408,9 @@
 <p><a href="https://www.zsh.org/">Zsh</a>: zsh是一个shell。Linux常规默认的shell是Bash。为了更高效的使用的Terminal，可以使用zsh， 可以提高输入命令的速度。对于一个已经使用Linux多年的菜鸟，最近发现自己使用 <strong>Terminal</strong>的频率比较频繁。闲下来想想， 是时候提升自己使用Terminal的效率了。回想起以前听过的<code>zsh</code>，就试试它吧！至于安装 <code>sudo apt install zsh</code>,还是挺方便的。 如果不配置，直接这样使用zsh,是感觉不出差别的。和zsh配套的配置框架有许多。我使用了网上介绍最多的 <a href="https://ohmyz.sh/">Oh My zsh</a>, 这个折腾比较简单，方便。安装zsh并配置后，使用终端的效率大幅提升。</p>
 <p>但是，对于Oh My zsh配置框架,当使用的插件较多时，速度就会变慢许多，使用越多的zsh插件，速度越慢。为了解决插件多， zsh速度变慢的问题，可以使用原生的zsh和 <a href="https://github.com/zdharma/zinit">zinit</a>。zinit相当与zsh的插件管理软件。 这样速度提升了。使用大量zsh插件，也不会卡顿。</p>
 <p><strong>zsh</strong>也是最近才发现的，感觉相见恨晚。这么优秀的shell,真该早点使用。不过，在你使用一段时间的bash后，再使用zsh, 确实感觉舒服多了，好像任督二脉被打通了一样。</p>
-<h2 id="排版软件">排版软件</h2>
+<h3 id="排版软件">排版软件</h3>
 <p><a href="http://tug.org/texlive/">TexLive</a>: 排版软件是相当不错的，很好的支持数学公式。和word相比，word是所见即所得的排版软件， 但是Tex不是，需要先编写代码，再编译，然后生成Pdf文件。这样说起来，比Word复杂多了。你的直觉是对的。但是随着你文档的内容的不断增加， 使用word修改文章是很消耗时间，word排版的时间和你的内容量基本成超线性关系，但是使用Tex排版，内容量和排版时间基本线性关系。 如果你是一篇小文档，用word或WPS都挺OK的，但是如果文档内容过多，推荐使用Tex。对于交叉引用特别多的文档，使用Tex不失为一种较好的选择。 你可以去<a href="https://mirrors.tuna.tsinghua.edu.cn/">清华镜像源</a>下载 <strong>TexLive</strong>安装文件。 <img data-src="/2021/07/23/Recommend-Softwares/tex.png" alt="Tex"></p>
-<h2 id="终端互连软件">终端互连软件</h2>
+<h3 id="终端互连软件">终端互连软件</h3>
 <p><a href="https://kdeconnect.kde.org/">KDE Connect</a>: 各个终端(手机，电脑)互联的软件，对于文件的分享，剪贴板的共享是相当不错的。而且也支持 电脑与电脑之间的互联，手机与手机之间的互联。KDE 桌面的用户直接使用 <strong>KDE Connect</strong>即可，对于Gnome桌面的用户，可以使用Gnome的扩展 <a href="https://extensions.gnome.org/extension/1319/gsconnect/">GSConnect</a>，<strong>GSConnect</strong>完全实现了 <strong>KDE Connect</strong>的功能，在Gnome桌面 运行良好。macOS也有对应的应用程序<a href="https://binary-factory.kde.org/view/MacOS/job/kdeconnect-kde_Nightly_macos/">macOS Download</a>, 对于iOS目前还在测试阶段，不是特别稳定，可以参考<a href="https://kdeconnect.kde.org/download.html">iOS KDE Connect</a>。Windows平台可以通过 <strong>Microsoft Store</strong> 安装，对于Win7用户没有 <strong>Microsoft Store</strong>,可以通过<a href="https://download.kde.org/unstable/kdeconnect/win64-pre-20.08/">离线安装</a>. Andriod在国内的主流应用商店都没有对应的软件，可以访问 <a href="https://f-droid.org/packages/org.kde.kdeconnect_tp/">F-driod</a>,直接下载对 应的kde apk文件。</p>
 <p>用于多设备之间的文件分享还是挺不错的,文件传输速度取决于路由器和两个互联设备的网络性能，10M/s是可以达到的。该软件的使用有一个前提， 就是所有设备处在同一个局域网下才能相互连接。简单的来说，需要你的设备连接同一个WIFI，或路由器。官方的对该软件的解释如下：</p>
 <blockquote>
@@ -1456,7 +1456,7 @@
 <p>windows下载软件依旧推荐 <strong>FreeDownloadManager</strong>。</p>
 <h3 id="排版软件-1">排版软件</h3>
 <p><strong>Word 、TexLive、WPS</strong>。</p>
-<h2 id="终端互连软件-1">终端互连软件</h2>
+<h3 id="终端互连软件-1">终端互连软件</h3>
 <p><a href="https://kdeconnect.kde.org/">KDE Connect</a></p>
 <hr>
 <h2 id="备注">备注</h2>
