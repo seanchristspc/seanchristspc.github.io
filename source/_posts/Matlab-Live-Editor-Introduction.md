@@ -2,6 +2,7 @@
 title: Matlab Live Editor 编辑器简单使用
 comment: true
 date: 2021-02-02 14:21:13
+updated: 2021-11-19 19:56:41
 description: 本文对matlab自带的Live Editor 编辑器使用做简单介绍！ 以及自己的一些使用习惯！
 mathjax: true
 tags:
@@ -13,7 +14,7 @@ categories:
 
 # Matlab Live Editor 基本介绍 #
 
-Matlab [Live Editor](https://www.mathworks.com/products/matlab/live-editor.html) 是 matlab R2016a 引入的新matlab实时编辑器，也就是说 **Matlab R2016a**的版本都可以使用live editor。官方给出你可以用 R2014b,R2015a和R2015b打开live script. 使用live editor最好使用高版本的Matlab。我用的R2017b是基本没有问题的。
+Matlab [Live Editor](https://www.mathworks.com/products/matlab/live-editor.html) 是 matlab R2016a 引入的新matlab实时编辑器，也就是说 **Matlab R2016a**的版本都可以使用live editor。官方给出你可以用 R2014b,R2015a和R2015b打开live script. 使用live editor最好使用高版本的Matlab。我用的R2017b是基本没有问题的。实际在Linux下的MatlabR2017b在使用live editor还是有点问题的，具体在运行大量符号计算的时候，会出现卡机或一直运行，可能Linux(Debian)下的符号运算所使用的库有Bug吧！最近，Matlab更换到MATLAB2021b,运算速度就大幅度提高，对符号运算可以完全运行。上述符号运算问题在Windows不存在。 因此建议使用高版本的MATLAB，最好近一两年的。顺便提一句，MATLAB R2021b 完全安装大概需要30G磁盘空间。
 
 下面是matlab官方给的 live script 解释。翻译一下：live script可以把代码和代码运行的结果保存在一个文件，更强大的功能可以处理文本格式，可以插入公式、插入图片添加超链接等。简单的说更像一个笔记本，功能更强大，使用更方便，比以前的m文件方便多了。个人使用也感受到m文件在各个平台存在中文乱码问题，但是live script不存在中文乱码问题。更多live editor技巧和功能请继续阅读下文。
 

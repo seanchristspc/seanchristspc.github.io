@@ -3,7 +3,7 @@ title: Recommend Softwares
 comment: true
 mathjax: true
 date: 2021-07-23 09:08:25
-updated: 2021-07-27 10:33:47
+updated: 2021-11-13 11:57:41
 description: 本文主要记录自己爱使用的软件，会持续不断的更新。 
 tags:
    - software
@@ -22,7 +22,13 @@ categories:
 从未使用过mac,故主要分为windows和linux两大板块来推荐软件，都是自己使用过的，感觉比较nice的。对于自己从未使用的，
 但是比较优秀的软件并没有加入推荐列表。收录主要标准，其一自己使用过，其二优秀的软件。实际这两个标准是比较主观的。
 
+$$
+f(x)=e^{x}
+$$
+
 --- 
+
+
 ## Linux 平台
 
 linux平台是开源平台，基本上linux上的软件都是金钱免费的，但是时间不免费，学习成本比较大，有些bug不能及时修复，
@@ -201,7 +207,7 @@ zsh速度变慢的问题，可以使用原生的zsh和 [zinit](https://github.co
 确实感觉舒服多了，好像任督二脉被打通了一样。
 
 
-## 排版软件
+### 排版软件
 
 [TexLive](http://tug.org/texlive/): 排版软件是相当不错的，很好的支持数学公式。和word相比，word是所见即所得的排版软件，
 但是Tex不是，需要先编写代码，再编译，然后生成Pdf文件。这样说起来，比Word复杂多了。你的直觉是对的。但是随着你文档的内容的不断增加，
@@ -211,7 +217,7 @@ zsh速度变慢的问题，可以使用原生的zsh和 [zinit](https://github.co
 ![Tex](Recommend-Softwares/tex.png)
 
 
-## 终端互连软件
+### 终端互连软件
 
 [KDE Connect](https://kdeconnect.kde.org/): 各个终端(手机，电脑)互联的软件，对于文件的分享，剪贴板的共享是相当不错的。而且也支持
 电脑与电脑之间的互联，手机与手机之间的互联。KDE 桌面的用户直接使用 **KDE Connect**即可，对于Gnome桌面的用户，可以使用Gnome的扩展
@@ -322,7 +328,7 @@ windows下载软件依旧推荐 **FreeDownloadManager**。
 
 **Word 、TexLive、WPS**。
 
-## 终端互连软件
+### 终端互连软件
 
 [KDE Connect](https://kdeconnect.kde.org/)
 
