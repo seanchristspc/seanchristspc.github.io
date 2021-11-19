@@ -175,7 +175,8 @@ Vim中尤其爱使用**snippet**功能,可以试试。
 ### 磁盘分析软件
 
 [Disk Usage Analyzer](https://help.gnome.org/users/baobab/3.24/): 该磁盘分析软件是相当不错的。对于我这种希望手动删除不需要的文件，
-手动分析各文件在磁盘的占有率，使用该软件清理磁盘空间是一个不错的选择。
+手动分析各文件在磁盘的占有率，使用该软件清理磁盘空间是一个不错的选择。该软件还有一个名字： [**baobab**](https://gitlab.gnome.org/GNOME/baobab). 
+命令行使用`baobab`运行该软件。
 ![Disk Analyzer](Recommend-Softwares/diskAnalyzer.png)
 
 
