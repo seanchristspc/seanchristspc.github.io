@@ -804,7 +804,7 @@ f(x)=e^{x}
 <p><a href="https://www.sublimetext.com/">Sublime</a>: Sublime Text 也是不错的超级记事本。这个和Vim相比，学习成本较低，基本开箱即用。依旧是优秀 的文本编辑器。写一些脚本，或一些简单的程序，依旧可以使用它。这个是需要付费的，如果不购买，偶尔会提醒你需要订阅该软件，提醒频率 不高，有闲钱就买一个，没闲钱，提醒时，把提醒框关掉就行了。 <img data-src="/2021/07/23/Recommend-Softwares/sublime.png" alt="Sublime text 4"></p>
 <p><strong>两款文本编辑软件也是全平台软件。</strong> 至于VSCode,目前没使用过，不做评论。</p>
 <h3 id="磁盘分析软件">磁盘分析软件</h3>
-<p><a href="https://help.gnome.org/users/baobab/3.24/">Disk Usage Analyzer</a>: 该磁盘分析软件是相当不错的。对于我这种希望手动删除不需要的文件， 手动分析各文件在磁盘的占有率，使用该软件清理磁盘空间是一个不错的选择。 <img data-src="/2021/07/23/Recommend-Softwares/diskAnalyzer.png" alt="Disk Analyzer"></p>
+<p><a href="https://help.gnome.org/users/baobab/3.24/">Disk Usage Analyzer</a>: 该磁盘分析软件是相当不错的。对于我这种希望手动删除不需要的文件， 手动分析各文件在磁盘的占有率，使用该软件清理磁盘空间是一个不错的选择。该软件还有一个名字： <a href="https://gitlab.gnome.org/GNOME/baobab"><strong>baobab</strong></a>. 命令行使用<code>baobab</code>运行该软件。 <img data-src="/2021/07/23/Recommend-Softwares/diskAnalyzer.png" alt="Disk Analyzer"></p>
 <h3 id="下载文件软件">下载文件软件</h3>
 <p><a href="https://www.freedownloadmanager.org">FreeDownLoad</a>: 该软件作为自己的默认下载器，可以开启多线程下载，提升自己的下载速度。全平台软件。 <img data-src="/2021/07/23/Recommend-Softwares/freeDownload.png" alt="free Download manager"></p>
 <h3 id="字典软件">字典软件</h3>
