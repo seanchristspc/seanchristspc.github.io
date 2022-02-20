@@ -54,10 +54,10 @@
 <p>听社会学教授的讲座还是挺不错的！！！</p>
 ]]></content>
       <categories>
-        <category>-lecture</category>
+        <category>lecture</category>
       </categories>
       <tags>
-        <tag>-paper</tag>
+        <tag>paper</tag>
       </tags>
   </entry>
   <entry>
@@ -76,13 +76,13 @@
 <li>输入需要安装插件的名字，比如我门需要安装<strong>Latextools</strong>,来配置latex写作环 境。然后等待安装即可！</li>
 </ol>
 <figure>
-<img data-src="/2021/03/30/Latex-Sublime-configure/PackageControlInstallWidget.gif" alt><figcaption>Package Control 安装插件演示</figcaption>
+<img data-src="/.io//PackageControlInstallWidget.gif" alt><figcaption>Package Control 安装插件演示</figcaption>
 </figure>
 <ol start="3" type="1">
 <li>我常用的插件，请看下图！实际是你需要什么，就安装什么，按需使用！</li>
 </ol>
 <figure>
-<img data-src="/2021/03/30/Latex-Sublime-configure/ownWidgetsList.gif" alt><figcaption>常用 Sublime 插件</figcaption>
+<img data-src="/.io//ownWidgetsList.gif" alt><figcaption>常用 Sublime 插件</figcaption>
 </figure>
 <hr>
 <h1 id="latextools-配置">Latextools 配置</h1>
@@ -113,7 +113,7 @@
 <li><p>结果如下</p></li>
 </ol>
 <figure>
-<img data-src="/2021/03/30/Latex-Sublime-configure/SumatraInverseSearch.jpg" alt><figcaption>Sumatra 反向搜索配置</figcaption>
+<img data-src="/.io//SumatraInverseSearch.jpg" alt><figcaption>Sumatra 反向搜索配置</figcaption>
 </figure>
 <h2 id="latextools-配置开始">Latextools 配置开始</h2>
 <h3 id="打开latextools-配置文件">打开LatexTools 配置文件</h3>
@@ -125,29 +125,29 @@
 </ol>
 <p>实际看图片更简单明了！如下为操作的具体过程！如果打开文件为空白(null)，可以把默认 的配置文件复制过来！</p>
 <figure>
-<img data-src="/2021/03/30/Latex-Sublime-configure/openLatextoolsConfig.gif" alt><figcaption>打开Latextools配置文件</figcaption>
+<img data-src="/.io//openLatextoolsConfig.gif" alt><figcaption>打开Latextools配置文件</figcaption>
 </figure>
 <h3 id="windows-配置项">windows 配置项</h3>
 <p>大概在209行左右，也可以用 <code>Ctrl+F</code>搜索关键词 <strong>windows</strong>,我们以windows平台介绍！</p>
 <figure>
-<img data-src="/2021/03/30/Latex-Sublime-configure/latexToolsWindowsItem.png" alt><figcaption>windows 配置项预览</figcaption>
+<img data-src="/.io//latexToolsWindowsItem.png" alt><figcaption>windows 配置项预览</figcaption>
 </figure>
 <ol type="1">
 <li><strong>texpath</strong> 配置。需要添加安装<strong>texlive安装环境</strong>，例如我的是</li>
 </ol>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function">D:\\<span class="title">SoftInstallPlace</span>\\<span class="title">texlive</span>\\2019\\<span class="title">bin</span>\\<span class="title">win32</span>;</span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure>
-<p>根据你自己安装路径，修改一下，各环境变量用分号隔开！添加 <strong>ImageMagick安装环境</strong>，例如我的 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function">D:\\<span class="title">SoftInstallPlace</span>\\<span class="title">ImageMagick</span>-7\\;</span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure> 添加<strong>Ghostscript 安装环境</strong>,texlive 自带，因此为 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function">D:\\<span class="title">SoftInstallPlace</span>\\<span class="title">texlive</span>\\2019\\<span class="title">tlpkg</span>\\<span class="title">tlgs</span>\\<span class="title">bin</span></span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">D:\\<span class="title">SoftInstallPlace</span>\\<span class="title">texlive</span>\\2019\\<span class="title">bin</span>\\<span class="title">win32</span>;</span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure>
+<p>根据你自己安装路径，修改一下，各环境变量用分号隔开！添加 <strong>ImageMagick安装环境</strong>，例如我的 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">D:\\<span class="title">SoftInstallPlace</span>\\<span class="title">ImageMagick</span>-7\\;</span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure> 添加<strong>Ghostscript 安装环境</strong>,texlive 自带，因此为 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">D:\\<span class="title">SoftInstallPlace</span>\\<span class="title">texlive</span>\\2019\\<span class="title">tlpkg</span>\\<span class="title">tlgs</span>\\<span class="title">bin</span></span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure></p>
 <ol start="2" type="1">
 <li><strong>distro</strong>配置。因为前面我们安装的是texlive，因此要修改为<code>texlive</code>。</li>
 </ol>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="function">distro: &quot;<span class="title">texlive</span>&quot;</span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure>
 <ol start="3" type="1">
-<li><strong>sumatra</strong>配置。例如我配置项为 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function">D:\\<span class="title">SoftInstallPlace</span>\\<span class="title">SumatraPDF</span>\\<span class="title">SumatraPDF.exe</span></span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure></li>
+<li><strong>sumatra</strong>配置。例如我配置项为 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">D:\\<span class="title">SoftInstallPlace</span>\\<span class="title">SumatraPDF</span>\\<span class="title">SumatraPDF.exe</span></span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="preview-math-latex-compile-program-配置">preview math latex compile program 配置</h3>
 <p>公式预览编译器的设置，<code>xelatex</code>挺不错的，就改成这个Tex编译引擎。</p>
 <figure>
-<img data-src="/2021/03/30/Latex-Sublime-configure/PreviewMathLatexCompileProgram.png" alt><figcaption>preview math latex compile program配置</figcaption>
+<img data-src="/.io//PreviewMathLatexCompileProgram.png" alt><figcaption>preview math latex compile program配置</figcaption>
 </figure>
 <h1 id="其他问题说明">其他问题说明</h1>
 <h2 id="math-equation-预览功能无法使用">Math Equation 预览功能无法使用</h2>
@@ -155,40 +155,40 @@
 <li>使用 LatexTools:check system 查看 tex宏包是否安装完全，以及环境是否配置正确！</li>
 </ol>
 <figure>
-<img data-src="/2021/03/30/Latex-Sublime-configure/LatexToolsCheckSystem.gif" alt><figcaption>LatexTools: Check system</figcaption>
+<img data-src="/.io//LatexToolsCheckSystem.gif" alt><figcaption>LatexTools: Check system</figcaption>
 </figure>
 <p>像 <strong>biber</strong> 和 <strong>convert</strong> 或 <strong>magick</strong> 显示不可用可以忽略！使用check system 有一定的参考价值，实际它是有bug的，因为自己确实安装并配置了环境变量，而他显示未 检测到其他需要软件！具有一定的误导作用！记得以前为了解决未检测其他软件，自己反复 重新安装软件，并配置环境变量，它给我的反馈都一样！最后发现是插件作者写的该检测环 境脚本鲁棒性不够！</p>
 <ol start="2" type="1">
-<li>Windows 用户的朋友需要添加 环境变量 <code>GS_LIB</code>,环境变量的值为: <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function">D:\<span class="title">SoftInstallPlace</span>\<span class="title">texlive</span>\2019\<span class="title">tlpkg</span>\<span class="title">tlgs</span>\<span class="title">Resource</span>\<span class="title">Init</span>;<span class="title">D</span>:\<span class="title">SoftInstallPlace</span>\<span class="title">texlive</span>\2019\<span class="title">tlpkg</span>\<span class="title">tlgs</span>\<span class="title">kanji</span></span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure> 当时安装配置完环境，公式预览无法实现，也自己查了以下 sublime 在实现公式预览生成的临时文件， 发现并未有生成pdf文件，和生成pdf有关的软件为Ghostscript,定位到出问题的大致位置。你可能会问 Imagemagick软件是干嘛的呢？请看软件名，Image，处理图片的。<strong>实际预览的公式为图片文件</strong>。 对应修改自己的安装目录！ <a href="https://www.jianshu.com/p/fee3fa234626">参考网址</a></li>
+<li>Windows 用户的朋友需要添加 环境变量 <code>GS_LIB</code>,环境变量的值为: <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">D:\<span class="title">SoftInstallPlace</span>\<span class="title">texlive</span>\2019\<span class="title">tlpkg</span>\<span class="title">tlgs</span>\<span class="title">Resource</span>\<span class="title">Init</span>;<span class="title">D</span>:\<span class="title">SoftInstallPlace</span>\<span class="title">texlive</span>\2019\<span class="title">tlpkg</span>\<span class="title">tlgs</span>\<span class="title">kanji</span></span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure> 当时安装配置完环境，公式预览无法实现，也自己查了以下 sublime 在实现公式预览生成的临时文件， 发现并未有生成pdf文件，和生成pdf有关的软件为Ghostscript,定位到出问题的大致位置。你可能会问 Imagemagick软件是干嘛的呢？请看软件名，Image，处理图片的。<strong>实际预览的公式为图片文件</strong>。 对应修改自己的安装目录！ <a href="https://www.jianshu.com/p/fee3fa234626">参考网址</a></li>
 </ol>
 <figure>
-<img data-src="/2021/03/30/Latex-Sublime-configure/GS_LIB.jpg" alt><figcaption>GS LIB</figcaption>
+<img data-src="/.io//GS_LIB.jpg" alt><figcaption>GS LIB</figcaption>
 </figure>
 <h2 id="首次使用-tex-编译文件">首次使用 tex 编译文件</h2>
 <ol type="1">
 <li>使用 命令板方式</li>
 </ol>
 <figure>
-<img data-src="/2021/03/30/Latex-Sublime-configure/FirstBuidPdf.gif" alt><figcaption>第一次编译pdf</figcaption>
+<img data-src="/.io//FirstBuidPdf.gif" alt><figcaption>第一次编译pdf</figcaption>
 </figure>
 <ol start="3" type="1">
 <li><p>快捷键编译 <code>Ctrl+B</code></p></li>
 <li><p>使用<code>Ctrl+B</code>可能出现问题，如下</p></li>
 </ol>
 <figure>
-<img data-src="/2021/03/30/Latex-Sublime-configure/erroFirstBuidPdf.jpg" alt><figcaption>You MUST set command in your LaTexTools.sublime-settings file before lauching the script builder</figcaption>
+<img data-src="/.io//erroFirstBuidPdf.jpg" alt><figcaption>You MUST set command in your LaTexTools.sublime-settings file before lauching the script builder</figcaption>
 </figure>
 <p>解决方案,从提示的错误来解释，便是你使用的是 <strong>script builder</strong>脚本编译文件， 因此你需要添加在脚本编译设置处添加如下内容。</p>
 <figure>
-<img data-src="/2021/03/30/Latex-Sublime-configure/SolutionErroFirstBuidPdf.jpg" alt><figcaption>解决方法</figcaption>
+<img data-src="/.io//SolutionErroFirstBuidPdf.jpg" alt><figcaption>解决方法</figcaption>
 </figure>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&quot;script_commands&quot;:[</span><br><span class="line">    &quot;pdflatex -synctex=1 -interaction=nonstopmode&quot;,</span><br><span class="line">    &quot;bibtex&quot;,</span><br><span class="line">    &quot;pdflatex -synctex=1 -interaction=nonstopmode&quot;,</span><br><span class="line">    <span class="string">&quot;pdflatex -synctex=1 -interaction=nonstopmode&quot;</span></span><br><span class="line">   ]</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;script_commands&quot;</span>:[</span><br><span class="line">    <span class="string">&quot;pdflatex -synctex=1 -interaction=nonstopmode&quot;</span>,</span><br><span class="line">    <span class="string">&quot;bibtex&quot;</span>,</span><br><span class="line">    <span class="string">&quot;pdflatex -synctex=1 -interaction=nonstopmode&quot;</span>,</span><br><span class="line">    <span class="string">&quot;pdflatex -synctex=1 -interaction=nonstopmode&quot;</span></span><br><span class="line">   ]</span><br></pre></td></tr></table></figure>
 <h1 id="配置后的效果演示">配置后的效果演示</h1>
 <h2 id="latex-简单文件模板">latex 简单文件模板</h2>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">\documentclass[UTF-8]&#123;ctexart&#125;</span><br><span class="line"></span><br><span class="line">\usepackage&#123;metalogo,mflogo,amsmath,bm&#125;</span><br><span class="line">\usepackage&#123;array&#125;</span><br><span class="line">\usepackage&#123;graphicx&#125; </span><br><span class="line">\usepackage&#123;fancybox&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">\title&#123;模板文件&#125;</span><br><span class="line">\author&#123;author&#125;</span><br><span class="line">\date&#123;\today&#125;</span><br><span class="line">\maketitle</span><br><span class="line"></span><br><span class="line">Template Tex file</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">\documentclass[UTF<span class="number">-8</span>]&#123;ctexart&#125;</span><br><span class="line"></span><br><span class="line">\usepackage&#123;metalogo,mflogo,amsmath,bm&#125;</span><br><span class="line">\usepackage&#123;array&#125;</span><br><span class="line">\usepackage&#123;graphicx&#125; </span><br><span class="line">\usepackage&#123;fancybox&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">\title&#123;模板文件&#125;</span><br><span class="line">\author&#123;author&#125;</span><br><span class="line">\date&#123;\today&#125;</span><br><span class="line">\maketitle</span><br><span class="line"></span><br><span class="line">Template Tex file</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h2 id="操作演示">操作演示</h2>
 <figure>
-<img data-src="/2021/03/30/Latex-Sublime-configure/Demo.gif" alt><figcaption>Demo</figcaption>
+<img data-src="/.io//Demo.gif" alt><figcaption>Demo</figcaption>
 </figure>
 <h1 id="更多技巧">更多技巧</h1>
 <p>更多技巧和定制化的设置，请参考官方教程。</p>
@@ -200,10 +200,12 @@
 <p><a href="http://www.sublimetext.com/">Imagemagick</a></p>
 ]]></content>
       <categories>
-        <category>-tools</category>
+        <category>tools</category>
       </categories>
       <tags>
-        <tag>-latex -tools -sublime</tag>
+        <tag>tools</tag>
+        <tag>latex</tag>
+        <tag>sublime</tag>
       </tags>
   </entry>
   <entry>
@@ -1451,6 +1453,120 @@ f(x)=e^{x}
       </categories>
       <tags>
         <tag>tags</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Qutebrowser</title>
+    <url>/2022/02/20/Qutebrowser/</url>
+    <content><![CDATA[<hr>
+<h1 id="qutebrowser-tutorial">Qutebrowser Tutorial</h1>
+<h2 id="怎么接触到-qutebrowser">怎么接触到 Qutebrowser</h2>
+<p>写Qutebrower正文前先来聊聊题外话题。我为什么会发现Qutebrowser这 款小众化的浏览器。最初的动机是自己电脑太古老了，跑一些现在的应 用程序太卡顿了，为了提升PC的使用体验, 需要采用最小化的应用程序 来武装自己的电脑，对于不必要的系统组件尽量不要。毕竟我这台电脑 已经不足以带动这么多现代化的大型应用程序。自己的电脑桌面环境从 <a href="https://www.gnome.org/">Gnome</a> 换成一个激进的Dynamic Windows Manager <a href="https://suckless.org/">DWM</a>。用了一周左右，感觉使用比 Gnome的操作逻辑舒服，体验效果也不错。毕竟DWM程序使用纯C语言写的， 代码行数不到2000行。十分精简，所有配置都是直接修改源代码，刚开 始使用比较难受, 随后感觉越来越顺手。suckless 的四件套: <strong>dwm, st, dmenu, slock</strong>。以前一直使用Firefox，最近大量查阅 IEEE论文，同时开多个IEEE论文网页, 系统硬件资源就比较吃紧。开其 他网页没这么大影响，推测可能是IEEE这个网站对硬件消耗比较大， 需要加载的资源比较多。然后第一反映是使用suckless的 <a href="https://surf.suckless.org/">surf</a>浏览器。毕竟DWM在我电脑上运行 的还不错。然后花了时间编译运行surf浏览器。实际体验效果不是特别好， 硬件消耗还是特别严重。查阅资料解释说不是surf的问题，而是surf使用 的WebKit2/GTK+导致硬件消耗比较严重。但是由于使用了几天的surf, 被 它的快捷键操作逻辑吸引了，可以大部分时间放下鼠标，直接用键盘驱动 浏览器，可以带来快速沉浸式浏览网页的体验。然后查询了和surf类似的 浏览器一个是 <strong>qutebrowser</strong>, 另一个是 <a href="https://fanglingsu.github.io/vimb/">vimb</a>, 而自己使用的Debian 的最新稳定版本的软件仓库里没有vimb, 所以就选择qutebrowser使用了。</p>
+<p>然后就踏上了qutebrowser折腾之路。</p>
+<hr>
+<h2 id="qutebrowser-introduction">Qutebrowser Introduction</h2>
+<p>先去<a href="https://qutebrowser.org/index.html">Qutebrowser</a>官方网站浏览浏览， 下面是这样介绍qutebrowser。翻译过来就是 qutebrowser是一个键盘驱动的浏 览器。</p>
+<blockquote>
+<p>qutebrowser is a keyboard-focused browser with a minimal GUI. It’s based on Python and PyQt5 and free software, licensed under the GPL. It was inspired by other browsers/addons like dwb and Vimperator/Pentadactyl.</p>
+</blockquote>
+<p>而且qutebrowser的键盘配置符合vim快捷键，加上自己已经习惯vim快捷键。正 符合我的口味。值得一提的是Qutebrowser的作者Github名: <strong>The-Compiler</strong>, 个人网站 <a href="https://bruhin.software/">Florian Bruhin Blog</a>. 单独一个人就 开发一个浏览器GUI, 真厉害！不过由于是单个人开发的浏览器程序，所以没有 Firefox和Chrome功能强大。但是还是值得推荐使用的。值得遗憾的一点就是 Qutebrowser没有Firefox和Chrome的插件功能。算一个缺点吧！但是qutebrowser 支持greasemonkey油猴脚本，算弥补了一点缺陷吧。Qutebrowser是支持Windows,macOS 和Linux。</p>
+<p>在DWM中使用qutebrowser，体验效果不错。在Gnome中使用qutebrowser有空白的区域， 感觉没最大化利用屏幕空间，个人感觉有点别扭，所以不会觉得体验效果没有DWM舒服。 实际在DMW或Gnome功能使用上不存在差别。</p>
+<p>Debian系列安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install qutebrowser</span><br></pre></td></tr></table></figure>
+<p>至于其他平台安装教程请参考官方 <a href="https://qutebrowser.org/doc/install.html">Qutebrowser Install</a></p>
+<h2 id="qutebrowser-basic-use">Qutebrowser basic use</h2>
+<h3 id="qutebrowser-整体界面简单介绍">Qutebrowser 整体界面简单介绍</h3>
+<figure>
+<img data-src="/.io//Overview.png" alt><figcaption>Overview</figcaption>
+</figure>
+<p>界面具体解释：</p>
+<ol type="1">
+<li><p>黑色背景为当前所打开的网页标签，以及打开网页的名字</p></li>
+<li><p>和vim类似，为输入命令的区域。除了快捷键操作，大部分都在这里输入命令</p></li>
+<li><p>当前打开网页的URL</p></li>
+<li><p>qutebrowser打开的标签总数目以及当前所处的标签位置</p></li>
+</ol>
+<h3 id="打开帮助文档">打开帮助文档</h3>
+<p>因为qutebrowser的操作逻辑和vim编辑器类似。因此在qutebrowser中打开本地帮助 文档，直接使用输入 <code>:help</code>。 <img data-src="/.io//HelpCommand.gif" alt="help"></p>
+<p>除了打开本地的帮助文档，当然可以使用<a href="https://qutebrowser.org/doc/help/">Qutebrowser官方帮助文档</a>。</p>
+<p>打开帮助文档后，点击 <strong>Quick start guide</strong>链接，并阅读就可以快速上手Qutebrowser。</p>
+<h3 id="打开一个网页">打开一个网页</h3>
+<p>按快捷键 <code>o</code> 然后输入网络需要打开网页的url即可。然后回车。</p>
+<figure>
+<img data-src="/.io//OpenUrl.png" alt><figcaption>Open Url</figcaption>
+</figure>
+<p>使用快捷键 <code>O</code> 然后输入URL，会新打开一个网页标签。动画演示如下：</p>
+<figure>
+<img data-src="/.io//OpenUrl.gif" alt><figcaption>OpenUrl Demo</figcaption>
+</figure>
+<p>使用快捷键 <code>go</code> 编辑当前网页url。</p>
+<h3 id="快速点击当前网页链接">快速点击当前网页链接</h3>
+<p>先按快捷建 'f', 然后网页中的每个链接旁都出现一个字母，输入你想访问 链接的字母即可。</p>
+<figure>
+<img data-src="/.io//hintLink.gif" alt><figcaption>Hint Link</figcaption>
+</figure>
+<h3 id="当前网页浏览">当前网页浏览</h3>
+<p><code>jkhl</code> 分别对应vim的上下左右移动。</p>
+<p><code>gg</code> 到第一行。</p>
+<p><code>GG</code> 到最后一行。</p>
+<h3 id="标签切换">标签切换</h3>
+<p><code>J</code> <code>K</code> 分别是向前向后切换标签</p>
+<p><code>T</code> 和 <code>J</code> 的功能相同</p>
+<h3 id="前进或后退">前进或后退</h3>
+<p><code>H</code> 当前标签后退一步网页</p>
+<p><code>L</code> 当前标签前进一步网页</p>
+<h3 id="删除当前标签">删除当前标签</h3>
+<p><code>d</code> (delete)删除(关闭)当前标签</p>
+<h3 id="撤销刚删除标签">撤销刚删除标签</h3>
+<p><code>u</code> (undo) 撤销刚删除标签，可以连续使用， 多回复几个标签。</p>
+<h3 id="网页搜索">网页搜索</h3>
+<p><code>/</code> 和vim操作相同</p>
+<h3 id="查看历史记录">查看历史记录</h3>
+<p><code>:history</code> 或者 <code>Sh</code>(Show history)</p>
+<figure>
+<img data-src="/.io//ShowHistory.gif" alt><figcaption>Show History</figcaption>
+</figure>
+<h3 id="退出qutebrowser">退出qutebrowser</h3>
+<p><code>:wq</code> <code>:q</code> 关闭qutebrowser</p>
+<p><code>:q</code> 只是关闭当前qutebrowser,不保存当前浏览网页界面</p>
+<p><code>：wq</code> 保存当前网页浏览界面并退出。下次qutebrowser自动打开上次浏览界面。</p>
+<hr>
+<h2 id="config-qutebrowser">Config Qutebrowser</h2>
+<p>用户配置文件目录<code>~/.config/qutebrowser</code>，下面的文件有 autoconfig.yml <strong>bookmarks</strong> <strong>greasemonkey</strong> qsettings quickmarks <strong>userscripts</strong>。 没有的可以自己创建。</p>
+<h3 id="autoconfig.yml">autoconfig.yml</h3>
+<p><code>autoconfig.yml</code> 文件是在qutebrowser 命令行用 <code>:set xxxx</code> 设置然后自动生成到<code>autoconfig.yml</code>。</p>
+<p>个人配置文件如下： <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># If a config.py file exists, this file is ignored unless it&#x27;s explicitly loaded</span></span><br><span class="line"><span class="comment"># via config.load_autoconfig(). For more information, see:</span></span><br><span class="line"><span class="comment"># https://github.com/qutebrowser/qutebrowser/blob/master/doc/help/configuring.asciidoc#loading-autoconfigyml</span></span><br><span class="line"><span class="comment"># DO NOT edit this file by hand, qutebrowser will overwrite it.</span></span><br><span class="line"><span class="comment"># Instead, create a config.py - see :help for details.</span></span><br><span class="line"></span><br><span class="line">config_version: 2</span><br><span class="line">settings:</span><br><span class="line">  aliases:</span><br><span class="line">    global:</span><br><span class="line">      q: close</span><br><span class="line">      qa: quit</span><br><span class="line">      w: session-save</span><br><span class="line">      wq: quit --save</span><br><span class="line">      wqa: quit --save</span><br><span class="line">      zotero: spawn --userscript zotero</span><br><span class="line">  bindings.commands:</span><br><span class="line">    global:</span><br><span class="line">      normal:</span><br><span class="line">        &lt;Alt+1&gt;: null</span><br><span class="line">        g0: null</span><br><span class="line">        g1: tab-focus 1</span><br><span class="line">        g2: tab-focus 2</span><br><span class="line">        g3: tab-focus 3</span><br><span class="line">        g4: tab-focus 4</span><br><span class="line">        g5: tab-focus 5</span><br><span class="line">        g6: tab-focus 6</span><br><span class="line">        g7: tab-focus 7</span><br><span class="line">        g8: tab-focus 8</span><br><span class="line">        g9: tab-focus 9</span><br><span class="line">        xb: config-cycle statusbar.show always never</span><br><span class="line">        xt: config-cycle tabs.show always never</span><br><span class="line">        xx: config-cycle statusbar.show always never;;config-cycle tabs.show always</span><br><span class="line">          never</span><br><span class="line">  colors.tabs.bar.bg:</span><br><span class="line">    global: <span class="string">&#x27;#555555&#x27;</span></span><br><span class="line">  colors.tabs.even.bg:</span><br><span class="line">    global: darkgrey</span><br><span class="line">  colors.tabs.selected.even.bg:</span><br><span class="line">    global: black</span><br><span class="line">  colors.tabs.selected.even.fg:</span><br><span class="line">    global: white</span><br><span class="line">  content.blocking.adblock.lists:</span><br><span class="line">    global:</span><br><span class="line">    - https://easylist.to/easylist/easylist.txt</span><br><span class="line">    - https://easylist.to/easylist/easyprivacy.txt</span><br><span class="line">    - https://easylist-downloads.adblockplus.org/easylistdutch.txt</span><br><span class="line">    - https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt</span><br><span class="line">    - https://secure.fanboy.co.nz/fanboy-cookiemonster.txt</span><br><span class="line">  content.blocking.method:</span><br><span class="line">    global: both</span><br><span class="line">  content.headers.user_agent:</span><br><span class="line">    https://accounts.google.com/*: Mozilla/5.0 (&#123;os_info&#125;; rv:90.0) Gecko/20100101</span><br><span class="line">      Firefox/90.0</span><br><span class="line">  content.pdfjs:</span><br><span class="line">    global: <span class="literal">true</span></span><br><span class="line">  content.webgl:</span><br><span class="line">    global: <span class="literal">true</span></span><br><span class="line">  downloads.location.directory:</span><br><span class="line">    global: null</span><br><span class="line">  statusbar.show:</span><br><span class="line">    global: always</span><br><span class="line">  tabs.show:</span><br><span class="line">    global: always</span><br><span class="line">  url.searchengines:</span><br><span class="line">    global:</span><br><span class="line">      DEFAULT: https://cn.bing.com/search?q=&#123;&#125;</span><br><span class="line">      aw: https://wiki.archlinux.org/?search=&#123;&#125;</span><br><span class="line">      b: https://bing.com/search?q=&#123;&#125;</span><br><span class="line">      d: https://duckduckgo.com/?q=&#123;&#125;</span><br><span class="line">      du: https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=baidu&amp;wd=&#123;&#125;</span><br><span class="line">      g: https://www.google.com/search?hl=en&amp;q=&#123;&#125;</span><br><span class="line">      re: https://www.reddit.com/r/&#123;&#125;</span><br><span class="line">      w: http://en.wikipedia.org/w/index.php?search=&#123;&#125;</span><br><span class="line">      yt: https://www.youtube.com/results?search_query=&#123;&#125;</span><br><span class="line">  url.start_pages:</span><br><span class="line">    global: https://start.duckduckgo.com</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p><code>Alt+num</code> 在qutebrowser的含义是快速跳转到num标签，但是与我使用DWM的 快捷建冲突，故自己定义了快速跳转标签的快捷键为<code>g+num</code>,上面配置文件有。</p>
+<p>尽管<code>autoconfig.yml</code>是自动生成的，但是你也可以直接复制上面配置内容到你 的<code>autoconfig.yml</code>文件，然后就不需要自己单独设置了。</p>
+<p>个人配置文件可以使用 <code>config.py</code>. 如果配置文件夹存在 <code>config.py</code>,那么 <code>autoconfig.yml</code>会被覆盖。个人习惯使用<code>autoconfig.yml</code>, 感觉更方便。</p>
+<h3 id="quickmarks">Quickmarks</h3>
+<p>quickmarks 和 bookmarks没啥区别，但是在qutebrowser中建议使用qutemarks, 可以理解成你在其他浏览器中的书签。</p>
+<p>对于导入其他浏览器书签到qutebrowser请参考 Arch wiki qutebrowser中的 <a href="https://wiki.archlinux.org/title/Qutebrowser#Importing_quickmarks/bookmarks">Importing quickmarks bookmarks</a> 小节内容。</p>
+<p>下面以Firefox为例, 首先从Firefox导出书签bookmarks.html，然后运行如下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python /usr/share/qutebrowser/scripts/importer.py bookmarks.html &gt;&gt; ~/.config/qutebrowser/quickmarks</span><br></pre></td></tr></table></figure>
+<h3 id="greasemonkey">greasemonkey</h3>
+<p>直接在文件夹greasemonkey 中添加<code>xxx.js</code>脚本文件即可。 脚本寻找网站：<a href="https://greasyfork.org/zh-CN/scripts">Greasemonkey</a>。</p>
+<h4 id="移除youtube广告脚本">移除Youtube广告脚本</h4>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ==UserScript==</span></span><br><span class="line"><span class="comment">// @name         Auto Skip YouTube Ads</span></span><br><span class="line"><span class="comment">// @version      1.0.0</span></span><br><span class="line"><span class="comment">// @description  Speed up and skip YouTube ads automatically</span></span><br><span class="line"><span class="comment">// @author       jso8910</span></span><br><span class="line"><span class="comment">// @match        *://*.youtube.com/*</span></span><br><span class="line"><span class="comment">// @exclude      *://*.youtube.com/subscribe_embed?*</span></span><br><span class="line"><span class="comment">// ==/UserScript==</span></span><br><span class="line"><span class="built_in">setInterval</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> btn = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;.videoAdUiSkipButton,.ytp-ad-skip-button&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> (btn) &#123;</span><br><span class="line">        btn.click()</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">const</span> ad = [...document.querySelectorAll(<span class="string">&#x27;.ad-showing&#x27;</span>)][<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">if</span> (ad) &#123;</span><br><span class="line">        <span class="built_in">document</span>.querySelector(<span class="string">&#x27;video&#x27;</span>).playbackRate = <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;, <span class="number">50</span>)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="zotero">Zotero</h3>
+<p>主要自己长期使用Zotero管理自己的文献，但是qutebrowser没有zotero插件,但是又想使用 qutebrowser浏览器和zotero交互，在github上找到解决方案 使用qutebrowser的userscripts 功能，可以解决zotero交互问题。 具体参考<a href="https://github.com/parchd-1/qutebrowser-zotero">zotero userscript</a> 把上面脚本添加到 <code>~/.config/qutebrowser/userscripts</code>中，并命名为zotero, 同时添加执行权限。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">chmod +x zotero</span><br></pre></td></tr></table></figure>
+<h2 id="快捷键图表">快捷键图表</h2>
+<figure>
+<img data-src="/.io//cheatsheet.png" alt><figcaption>shotcuts</figcaption>
+</figure>
+<h2 id="备注">备注</h2>
+<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. You can give advice on the following comment area and email to me!. Have fun!</p>
+<h2 id="参考连接">参考连接</h2>
+<p><a href="https://www.qutebrowser.org/doc/quickstart.html">Qutebrowser Quick Start Guide</a> <a href="https://www.qutebrowser.org/doc/userscripts.html">Qutebrowser userscripts</a> <a href="https://www.qutebrowser.org/doc/help/">qutebrowser help</a></p>
+]]></content>
+      <categories>
+        <category>tools</category>
+      </categories>
+      <tags>
+        <tag>tools</tag>
+        <tag>browser</tag>
+        <tag>qutebrowser</tag>
       </tags>
   </entry>
 </search>
