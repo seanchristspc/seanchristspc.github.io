@@ -1,9 +1,9 @@
 ---
-title: Qutebrowser
+title: qutebrowser
 comment: true
 mathjax: true
 date: 2022-02-19 21:15:38
-description: Qutebrowser 用了大概有一两个月了，感觉可以写写关于Qutebrowser的Blog! 记录一下使用技巧！
+description: qutebrowser 用了大概有一两个月了，感觉可以写写关于 qutebrowser 的 Blog! 记录一下使用技巧！
 tags:	
    - qutebrowser
    - browser
@@ -11,63 +11,33 @@ tags:
 	
 categories:
    - tools
----
 
 ---
 
+---
 
-# Qutebrowser Tutorial
+
+# qutebrowser Tutorial
 
 
-## 怎么接触到 Qutebrowser
+## 怎么接触到 qutebrowser
 
-写Qutebrower正文前先来聊聊题外话题。我为什么会发现Qutebrowser这
-款小众化的浏览器。最初的动机是自己电脑太古老了，跑一些现在的应
-用程序太卡顿了，为了提升PC的使用体验, 需要采用最小化的应用程序
-来武装自己的电脑，对于不必要的系统组件尽量不要。毕竟我这台电脑
-已经不足以带动这么多现代化的大型应用程序。自己的电脑桌面环境从
-[Gnome](https://www.gnome.org/) 换成一个激进的Dynamic Windows 
-Manager [DWM](https://suckless.org/)。用了一周左右，感觉使用比
-Gnome的操作逻辑舒服，体验效果也不错。毕竟DWM程序使用纯C语言写的，
-代码行数不到2000行。十分精简，所有配置都是直接修改源代码，刚开
-始使用比较难受, 随后感觉越来越顺手。suckless 的四件套: 
-**dwm, st, dmenu, slock**。以前一直使用Firefox，最近大量查阅
-IEEE论文，同时开多个IEEE论文网页, 系统硬件资源就比较吃紧。开其
-他网页没这么大影响，推测可能是IEEE这个网站对硬件消耗比较大，
-需要加载的资源比较多。然后第一反映是使用suckless的
-[surf](https://surf.suckless.org/)浏览器。毕竟DWM在我电脑上运行
-的还不错。然后花了时间编译运行surf浏览器。实际体验效果不是特别好，
-硬件消耗还是特别严重。查阅资料解释说不是surf的问题，而是surf使用
-的WebKit2/GTK+导致硬件消耗比较严重。但是由于使用了几天的surf, 被
-它的快捷键操作逻辑吸引了，可以大部分时间放下鼠标，直接用键盘驱动
-浏览器，可以带来快速沉浸式浏览网页的体验。然后查询了和surf类似的
-浏览器一个是 **qutebrowser**, 另一个是
-[vimb](https://fanglingsu.github.io/vimb/), 而自己使用的Debian
-的最新稳定版本的软件仓库里没有vimb, 所以就选择qutebrowser使用了。
+写 qutebrowser 正文前先来聊聊题外话题。我为什么会发现 qutebrowser 这款小众化的浏览器。最初的动机是自己电脑太古老了，跑一些现在的应用程序太卡顿了，为了提升PC的使用体验, 需要采用最小化的应用程序来武装自己的电脑，对于不必要的系统组件尽量不要。毕竟我这台电脑已经不足以带动这么多现代化的大型应用程序。自己的电脑桌面环境从 [Gnome](https://www.gnome.org/) 换成一个激进的 Dynamic Windows Manager [DWM](https://suckless.org/)。用了一周左右，感觉使用比 Gnome 的操作逻辑舒服，体验效果也不错。毕竟 DWM 程序使用纯C写的，代码行数不到2000行。十分精简，所有配置都是直接修改源代码，刚开始使用比较难受, 随后感觉越来越顺手。suckless 的四件套: **dwm, st, dmenu, slock**。以前一直使用 Firefox，最近大量查阅IEEE论文，同时开多个IEEE论文网页, 系统硬件资源就比较吃紧。开其他网页没这么大影响，推测可能是IEEE这个网站对硬件消耗比较大，需要加载的资源比较多。然后第一反应是使用 suckless 的 [surf](https://surf.suckless.org/) 浏览器。毕竟 DWM 在我电脑上运行的还不错。然后花了时间编译运行 surf 浏览器。实际体验效果不是特别好，硬件消耗还是特别严重。查阅网上资料解释说不是 surf 的问题，而是 surf 使用的 **WebKit2/GTK+** 导致硬件消耗比较严重。简单的所就是 surf 不背这锅。 但是由于使用了几天的 surf, 被它的快捷键操作逻辑吸引了，可以大部分时间放下鼠标，直接用键盘驱动浏览器，可以带来快速沉浸式浏览网页的体验。然后查询了和 surf 类似的浏览器一个是 **qutebrowser**, 另一个是 [**vimb**](https://fanglingsu.github.io/vimb/), 而自己使用的 Debian 的最新稳定版本的软件仓库里没有vimb, 所以就选择 qutebrowser 了。
 
 然后就踏上了qutebrowser折腾之路。
 
 ---
 
-## Qutebrowser Introduction
+## qutebrowser introduction
 
 
-先去[Qutebrowser](https://qutebrowser.org/index.html)官方网站浏览浏览，
-下面是这样介绍qutebrowser。翻译过来就是 qutebrowser是一个键盘驱动的浏
-览器。
+先去 [qutebrowser](https://qutebrowser.org/index.html) 官方网站浏览浏览，下面是这样介绍 qutebrowser。翻译过来就是 qutebrowser 是一个键盘驱动的浏览器。
 
 > qutebrowser is a keyboard-focused browser with a minimal GUI. 
 > It’s based on Python and PyQt5 and free software, licensed under the GPL.
 > It was inspired by other browsers/addons like dwb and Vimperator/Pentadactyl.
 
-而且qutebrowser的键盘配置符合vim快捷键，加上自己已经习惯vim快捷键。正
-符合我的口味。值得一提的是Qutebrowser的作者Github名: **The-Compiler**, 
-个人网站 [Florian Bruhin Blog](https://bruhin.software/). 单独一个人就
-开发一个浏览器GUI, 真厉害！不过由于是单个人开发的浏览器程序，所以没有
-Firefox和Chrome功能强大。但是还是值得推荐使用的。值得遗憾的一点就是
-Qutebrowser没有Firefox和Chrome的插件功能。算一个缺点吧！但是qutebrowser
-支持greasemonkey油猴脚本，算弥补了一点缺陷吧。Qutebrowser是支持Windows,macOS
-和Linux。
+而且 qutebrowser 的键盘配置符合 vim 快捷键，加上自己已经习惯 vim 快捷键。正符合我的口味。值得一提的是 qutebrowser 的作者 Github 名: **The-Compiler**, 个人网站 [Florian Bruhin Blog](https://bruhin.software/). 单独一个人就开发一个浏览器GUI, 真厉害！不过由于是单个人开发的浏览器程序，所以没有 Firefox 和 Chrome 功能强大。但是还是值得推荐使用的。值得遗憾的一点就是 qutebrowser 没有 Firefox 和 Chrome 的插件功能。算一个缺点吧！但是 qutebrowser 支持 greasemonkey 油猴脚本和 [userscripts](https://www.qutebrowser.org/doc/userscripts.html)(用户自定义脚本)，算弥补了一点缺陷吧。qutebrowser 支持 Windows, macOS 和 Linux。PC三巨头都支持哈！
 
 ---
 操作环境：
@@ -80,9 +50,7 @@ Qutebrowser没有Firefox和Chrome的插件功能。算一个缺点吧！但是qu
 ---
 
 
-在DWM中使用qutebrowser，体验效果不错。在Gnome中使用qutebrowser有空白的区域，
-感觉没最大化利用屏幕空间，个人感觉有点别扭，所以不会觉得体验效果没有DWM舒服。
-实际在DMW或Gnome功能使用上不存在差别。
+在 DWM 中使用 qutebrowser，体验效果不错。在 Gnome 中使用 qutebrowser 有空白的区域，感觉没最大化利用屏幕空间，个人感觉有点别扭，有点罪过，所以不会觉得体验效果没有 DWM 舒服。实际在 DMW 或 Gnome 中使用不存在功能差别。
 
 
 Debian系列安装
@@ -90,12 +58,11 @@ Debian系列安装
 ```bash
 sudo apt install qutebrowser
 ```
-至于其他平台安装教程请参考官方
-[Qutebrowser Install](https://qutebrowser.org/doc/install.html)
+至于其他平台安装教程请参考官方 [Qutebrowser Install](https://qutebrowser.org/doc/install.html)
 
-## Qutebrowser basic use
+## qutebrowser basic use
 
-### Qutebrowser 整体界面简单介绍
+### qutebrowser 整体界面简单介绍
 
 ![Overview](Qutebrowser/Overview.png)
 
@@ -107,18 +74,18 @@ sudo apt install qutebrowser
 
 3. 当前打开网页的URL
 
-4. qutebrowser打开的标签总数目以及当前所处的标签位置
+4. qutebrowser 打开的标签总数目以及当前所处的标签位置
 
 
 ### 打开帮助文档
 
-因为qutebrowser的操作逻辑和vim编辑器类似。因此在qutebrowser中打开本地帮助
-文档，直接使用输入 `:help`。
+因为 qutebrowser 的操作逻辑和 vim 编辑器类似。因此在 qutebrowser 中打开本地帮助文档，直接使用输入 `:help`。
+
 ![help](Qutebrowser/HelpCommand.gif)
 
-除了打开本地的帮助文档，当然可以使用[Qutebrowser官方帮助文档](https://qutebrowser.org/doc/help/)。
+除了打开本地的帮助文档，当然可以使用 [Qutebrowser官方帮助文档](https://qutebrowser.org/doc/help/)。
 
-打开帮助文档后，点击 **Quick start guide**链接，并阅读就可以快速上手Qutebrowser。
+打开帮助文档后，点击 **Quick start guide**链接，并阅读就可以快速上手 qutebrowser。
 
 ### 打开一个网页
 
@@ -134,8 +101,7 @@ sudo apt install qutebrowser
 
 ### 快速点击当前网页链接
 
-先按快捷建 'f', 然后网页中的每个链接旁都出现一个字母，输入你想访问
-链接的字母即可。
+先按快捷建 `f`, 然后网页中的每个链接旁都出现一个字母，输入你想访问链接的字母即可。
 
 ![Hint Link](Qutebrowser/hintLink.gif)
 
@@ -179,33 +145,32 @@ sudo apt install qutebrowser
 
 ### 查看历史记录
 
-`:history` 或者 `Sh`(Show history)
+`:history` 或者 `Sh`(**S**how **h**istory)
 
 ![Show History](Qutebrowser/ShowHistory.gif)
 
 
 ### 退出qutebrowser
 
-`:wq` `:q` 关闭qutebrowser
+`:wq` `:q` 关闭 qutebrowser
 
-`:q` 只是关闭当前qutebrowser,不保存当前浏览网页界面
+`:q` 只是关闭当前 qutebrowser, 不保存当前浏览网页界面
 
-`：wq` 保存当前网页浏览界面并退出。下次qutebrowser自动打开上次浏览界面。
+`：wq` 保存当前网页浏览界面并退出。下次 qutebrowser 自动打开上次浏览界面。
 
 
 ---
 
 
-## Config Qutebrowser
+## config Qutebrowser
 
-用户配置文件目录`~/.config/qutebrowser`，下面的文件有
-autoconfig.yml  **bookmarks**   **greasemonkey**  qsettings  quickmarks  **userscripts**。
-没有的可以自己创建。
+用户配置文件目录`~/.config/qutebrowser`下面的文件有:autoconfig.yml  **bookmarks**   **greasemonkey**  qsettings  quickmarks  **userscripts**。没有的可以自己创建。
 
 ### autoconfig.yml
-`autoconfig.yml` 文件是在qutebrowser 命令行用 `:set xxxx` 设置然后自动生成到`autoconfig.yml`。
+`autoconfig.yml` 文件是在 qutebrowser 命令行用 `:set xxxx` 设置然后自动生成到 `autoconfig.yml`。
 
 个人配置文件如下：
+
 ```bash
 # If a config.py file exists, this file is ignored unless it's explicitly loaded
 # via config.load_autoconfig(). For more information, see:
@@ -287,25 +252,42 @@ settings:
 
 ```
 
-`Alt+num` 在qutebrowser的含义是快速跳转到num标签，但是与我使用DWM的
-快捷建冲突，故自己定义了快速跳转标签的快捷键为`g+num`,上面配置文件有。
+`Alt+num` 在 qutebrowser 的含义是快速跳转到 num 标签，但是与我使用 DWM 的快捷建冲突，故自己定义了快速跳转标签的快捷键为 `g+num`, 上面配置文件有。
 
-尽管`autoconfig.yml`是自动生成的，但是你也可以直接复制上面配置内容到你
-的`autoconfig.yml`文件，然后就不需要自己单独设置了。
+尽管 `autoconfig.yml` 是自动生成的，但是你也可以直接复制上面配置内容到你的 `autoconfig.yml` 文件，这样就不需要自己单独设置了。
 
-个人配置文件可以使用 `config.py`. 如果配置文件夹存在 `config.py`,那么
-`autoconfig.yml`会被覆盖。个人习惯使用`autoconfig.yml`, 感觉更方便。
+个人配置文件可以使用 `config.py`. 如果配置文件夹存在 `config.py`, 那么 `autoconfig.yml` 会被覆盖。个人习惯使用 `autoconfig.yml`, 感觉更方便。
+
+### 网络代理配置
+
+qutebrowser 设置网络代理命令 `:set content.proxy socks://127.0.0.1:1080`
+
+![Network Proxy](Qutebrowser/SetProxy.gif)
+
+你在 `autoconfig.yml` 文件中会发现添加如下内容。
+
+```bash
+content.proxy:
+  global: socks://127.0.0.1:1080
+
+```
+
+### 引擎搜索
+根据前面的 `autoconfig.yml` 文件配置，可快速使用指定引擎搜索。
+使用命令 `:open b keyword`
+
+![Quick Search](Qutebrowser/QuickSearch.gif)
+
+
 
 ### Quickmarks
 
-quickmarks 和 bookmarks没啥区别，但是在qutebrowser中建议使用qutemarks,
-可以理解成你在其他浏览器中的书签。
+quickmarks 和 bookmarks 没啥区别，但是在 qutebrowser 中建议使用 quickmarks, 你可以理解成其他浏览器中的书签。
 
-对于导入其他浏览器书签到qutebrowser请参考 Arch wiki qutebrowser中的 
-[Importing quickmarks bookmarks](https://wiki.archlinux.org/title/Qutebrowser#Importing_quickmarks/bookmarks) 
-小节内容。
 
-下面以Firefox为例, 首先从Firefox导出书签bookmarks.html，然后运行如下命令：
+对于导入其他浏览器书签到 qutebrowser 请参考 Arch wiki qutebrowser 中的 [Importing quickmarks bookmarks](https://wiki.archlinux.org/title/Qutebrowser#Importing_quickmarks/bookmarks) 小节内容。
+
+下面以 Firefox 为例, 首先从 Firefox 导出书签 bookmarks.html，然后运行如下命令：
 
 ``` bash
 python /usr/share/qutebrowser/scripts/importer.py bookmarks.html >> ~/.config/qutebrowser/quickmarks
@@ -314,7 +296,7 @@ python /usr/share/qutebrowser/scripts/importer.py bookmarks.html >> ~/.config/qu
 
 ### greasemonkey
 
-直接在文件夹greasemonkey 中添加`xxx.js`脚本文件即可。
+直接在文件夹 greasemonkey 中添加 `xxx.js` 脚本文件即可。
 脚本寻找网站：[Greasemonkey](https://greasyfork.org/zh-CN/scripts)。
 
 #### 移除Youtube广告脚本
@@ -342,23 +324,18 @@ setInterval(() => {
 
 ```
 
-### Zotero
+### zotero
 
-主要自己长期使用Zotero管理自己的文献，但是qutebrowser没有zotero插件,但是又想使用
-qutebrowser浏览器和zotero交互，在github上找到解决方案
-使用qutebrowser的userscripts 功能，可以解决zotero交互问题。
-具体参考[zotero userscript](https://github.com/parchd-1/qutebrowser-zotero)
-把上面脚本添加到 `~/.config/qutebrowser/userscripts`中，并命名为zotero,
-同时添加执行权限。
+主要自己长期使用 zotero 管理自己的文献，但是 qutebrowser 没有 zotero 插件,但是又想使用 qutebrowser 浏览器和 zotero 交互，在 github 上找到解决方案使用 qutebrowser 的 **userscripts** 功能，可以解决 zotero 交互问题。具体参考 [zotero userscript](https://github.com/parchd-1/qutebrowser-zotero) 把上面脚本添加到 `~/.config/qutebrowser/userscripts` 中，并命名为zotero, 同时添加执行权限。
 
 ```bash
 chmod +x zotero
 ```
 
 ## 快捷键图表
-
 ![shotcuts](Qutebrowser/cheatsheet.png)
 
+没事多看看这个快捷键图表，提高你使用 qutebrowser 效率。
 
 ## 备注
 
