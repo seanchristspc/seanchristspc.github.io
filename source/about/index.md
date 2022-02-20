@@ -18,7 +18,7 @@ Please confirm the Key fingerprint!
 
 I would greatly appreciate hearing about any error in these articles, even minor ones. 
 I welcome your suggestions for improvements, even tiny one. You can give advice on 
-the following comment area and email to me!. Have fun!
+the following comment area and email to me. Have fun!
 
 ---
 

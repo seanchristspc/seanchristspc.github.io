@@ -5,9 +5,11 @@ mathjax: true
 date: 2021-03-12 11:58:32
 description: 记录2020年11月27日在公共管理学院306室，听罗嘉陵教授关于“如何写作学术研究论文”讲座的笔记。由于罗教授过去长期在国外做研究，故该写作方法更适用于英文论文写作。
 tags:
-	-paper
+	- paper
+
 categories:
-	-lecture
+	- lecture
+
 ---
 
 # How to write an Academic Research Paper?
