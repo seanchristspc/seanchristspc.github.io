@@ -6,13 +6,12 @@ date: 2021-06-16 21:42:16
 updated: 2021-06-27 22:37
 description: 在自己使用C语言写的二阶低通滤波器，需要查看自己写的C语言代码是否正确，是否能正确实现数字低通滤波，故需要验证一下。要实现把C语言产生的数据分享给导入matlab中，可以方便使用matlab来分析数据，或者方便画图。同时在设计滤波器参数，使用到了matlab 的 filterDesigner工具。当然C语言也有画图的库，或者在github上能找到，但是不想学习C的库函数，想用熟悉的matlab画图工具！
 tags:
-  - matlab
-  - tutorial
-  - mex
-  - digital low pass filter 
+  - MATLAB
+  - MEX
+  - Filter
 
 categories:
-  - matlab
+  - MATLAB
 
 ---
 

@@ -3,7 +3,7 @@ title: Hello! Hexo
 date: 2018/02/05 20:45:10
 comments: true
 tags:
-	- officeWord
+	- Hexo
 categories:
 	- Hexo
 ---

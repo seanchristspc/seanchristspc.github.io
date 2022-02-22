@@ -6,10 +6,10 @@ date: 2021-07-23 09:08:25
 updated: 2021-11-13 11:57:41
 description: 本文主要记录自己爱使用的软件，会持续不断的更新。 
 tags:
-   - software
-   - tools
+   - Tools
 categories:
-   -software
+   - Tools
+
 ---
 
 

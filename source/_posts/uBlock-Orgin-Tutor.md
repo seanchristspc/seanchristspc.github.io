@@ -5,13 +5,12 @@ mathjax: true
 date: 2021-04-19 21:47:24
 description: 本文介绍了浏览器拦截广告插件uBlock Orgin的基础使用。Firefox,Chrome,MS Edge 和基于Chromium等浏览器都可以安装该插件！
 tags:
-  - Add-ons
   - uBlock Origin
-  - tools
-  - browser
+  - Tools
+  - Browser
 
 categories:
-  - tools
+  - Tools
 
 ---
 

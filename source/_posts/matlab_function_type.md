@@ -4,9 +4,9 @@ date: 2018/02/25 20:47:45
 comments: true
 description: 本文主要讲了matlab函数的类型，分别简要讲述了 主函数、子函数、嵌套函数、私有函数、重载函数、匿名函数、内联函数和函数句柄。
 tags:
-	- function
+	- MATLAB
 categories:
-	- matlab
+	- MATLAB
 ---
 
 # matlab 函数类型

@@ -4,10 +4,10 @@ date: 2018/02/06 20:33:50
 comments: true
 description: 简要描述了Myeclipse2017ci9 破解过程。
 tags:
-	- crack
 	- Myeclipse
+	- Tools
 categories:
-	- soft
+	- Tools
 ---
 
 

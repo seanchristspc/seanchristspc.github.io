@@ -6,12 +6,12 @@ date: 2022-02-19 21:15:38
 updated: 2022-02-22 13:07:30
 description: qutebrowser 用了大概有两个多月了，感觉可以写写关于 qutebrowser 的 Blog! 记录一下使用 qutebrowser 技巧！
 tags:	
-   - qutebrowser
-   - browser
-   - tools
+   - Qutebrowser
+   - Browser
+   - Tools
 	
 categories:
-   - tools
+   - Tools
 
 ---
 

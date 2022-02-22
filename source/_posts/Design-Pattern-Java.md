@@ -10,7 +10,8 @@ tags:
    - DesignPattern 
 
 categories:
-	- DesignPattern
+   - DesignPattern
+
 ---
 
 # 设计模式

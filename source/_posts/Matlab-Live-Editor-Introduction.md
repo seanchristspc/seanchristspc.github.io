@@ -6,9 +6,9 @@ updated: 2021-11-19 19:56:41
 description: 本文对matlab自带的Live Editor 编辑器使用做简单介绍！ 以及自己的一些使用习惯！
 mathjax: true
 tags:
-  - matlab live editor 
+  - MATLAB 
 categories:
-  - matlab
+  - MATLAB
 
 ---
 

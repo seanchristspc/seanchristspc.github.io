@@ -5,9 +5,9 @@ date: 2018/03/18 21:40:50
 updated: 2021-06-30 10:27
 description: 本文对Linux操作系统进行了简单介绍。简要的讲述了Ubuntu的安装，以及一些常用的linux命令的使用，简述了如何在linux上安装软件，简单使用了vim编辑器。
 tags:
-	- linux
+	- Linux
 categories:
-	- linux
+	- Linux
 ---
 
 # linux
