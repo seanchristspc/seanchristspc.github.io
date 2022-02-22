@@ -30,14 +30,14 @@
     
     
     
-    <category term="tools" scheme="https://seanchristspc.github.io/categories/tools/"/>
+    <category term="Tools" scheme="https://seanchristspc.github.io/categories/Tools/"/>
     
     
-    <category term="tools" scheme="https://seanchristspc.github.io/tags/tools/"/>
+    <category term="Tools" scheme="https://seanchristspc.github.io/tags/Tools/"/>
     
-    <category term="qutebrowser" scheme="https://seanchristspc.github.io/tags/qutebrowser/"/>
+    <category term="Qutebrowser" scheme="https://seanchristspc.github.io/tags/Qutebrowser/"/>
     
-    <category term="browser" scheme="https://seanchristspc.github.io/tags/browser/"/>
+    <category term="Browser" scheme="https://seanchristspc.github.io/tags/Browser/"/>
     
   </entry>
   
@@ -55,12 +55,10 @@
     
     
     
-    <category term="-software" scheme="https://seanchristspc.github.io/categories/software/"/>
+    <category term="Tools" scheme="https://seanchristspc.github.io/categories/Tools/"/>
     
     
-    <category term="tools" scheme="https://seanchristspc.github.io/tags/tools/"/>
-    
-    <category term="software" scheme="https://seanchristspc.github.io/tags/software/"/>
+    <category term="Tools" scheme="https://seanchristspc.github.io/tags/Tools/"/>
     
   </entry>
   
@@ -78,16 +76,14 @@
     
     
     
-    <category term="matlab" scheme="https://seanchristspc.github.io/categories/matlab/"/>
+    <category term="MATLAB" scheme="https://seanchristspc.github.io/categories/MATLAB/"/>
     
     
-    <category term="matlab" scheme="https://seanchristspc.github.io/tags/matlab/"/>
+    <category term="MATLAB" scheme="https://seanchristspc.github.io/tags/MATLAB/"/>
     
-    <category term="tutorial" scheme="https://seanchristspc.github.io/tags/tutorial/"/>
+    <category term="MEX" scheme="https://seanchristspc.github.io/tags/MEX/"/>
     
-    <category term="mex" scheme="https://seanchristspc.github.io/tags/mex/"/>
-    
-    <category term="digital low pass filter" scheme="https://seanchristspc.github.io/tags/digital-low-pass-filter/"/>
+    <category term="Filter" scheme="https://seanchristspc.github.io/tags/Filter/"/>
     
   </entry>
   
@@ -105,16 +101,14 @@
     
     
     
-    <category term="tools" scheme="https://seanchristspc.github.io/categories/tools/"/>
+    <category term="Tools" scheme="https://seanchristspc.github.io/categories/Tools/"/>
     
-    
-    <category term="tools" scheme="https://seanchristspc.github.io/tags/tools/"/>
-    
-    <category term="browser" scheme="https://seanchristspc.github.io/tags/browser/"/>
-    
-    <category term="Add-ons" scheme="https://seanchristspc.github.io/tags/Add-ons/"/>
     
     <category term="uBlock Origin" scheme="https://seanchristspc.github.io/tags/uBlock-Origin/"/>
+    
+    <category term="Tools" scheme="https://seanchristspc.github.io/tags/Tools/"/>
+    
+    <category term="Browser" scheme="https://seanchristspc.github.io/tags/Browser/"/>
     
   </entry>
   
@@ -132,14 +126,16 @@
     
     
     
-    <category term="tools" scheme="https://seanchristspc.github.io/categories/tools/"/>
+    <category term="Tools" scheme="https://seanchristspc.github.io/categories/Tools/"/>
     
     
-    <category term="latex" scheme="https://seanchristspc.github.io/tags/latex/"/>
+    <category term="Paper" scheme="https://seanchristspc.github.io/tags/Paper/"/>
     
-    <category term="tools" scheme="https://seanchristspc.github.io/tags/tools/"/>
+    <category term="Latex" scheme="https://seanchristspc.github.io/tags/Latex/"/>
     
-    <category term="sublime" scheme="https://seanchristspc.github.io/tags/sublime/"/>
+    <category term="Tools" scheme="https://seanchristspc.github.io/tags/Tools/"/>
+    
+    <category term="Sublime" scheme="https://seanchristspc.github.io/tags/Sublime/"/>
     
   </entry>
   
@@ -157,10 +153,10 @@
     
     
     
-    <category term="lecture" scheme="https://seanchristspc.github.io/categories/lecture/"/>
+    <category term="Paper" scheme="https://seanchristspc.github.io/categories/Paper/"/>
     
     
-    <category term="paper" scheme="https://seanchristspc.github.io/tags/paper/"/>
+    <category term="Paper" scheme="https://seanchristspc.github.io/tags/Paper/"/>
     
   </entry>
   
@@ -178,10 +174,10 @@
     
     
     
-    <category term="matlab" scheme="https://seanchristspc.github.io/categories/matlab/"/>
+    <category term="MATLAB" scheme="https://seanchristspc.github.io/categories/MATLAB/"/>
     
     
-    <category term="matlab live editor" scheme="https://seanchristspc.github.io/tags/matlab-live-editor/"/>
+    <category term="MATLAB" scheme="https://seanchristspc.github.io/tags/MATLAB/"/>
     
   </entry>
   
@@ -199,10 +195,10 @@
     
     
     
-    <category term="linux" scheme="https://seanchristspc.github.io/categories/linux/"/>
+    <category term="Linux" scheme="https://seanchristspc.github.io/categories/Linux/"/>
     
     
-    <category term="linux" scheme="https://seanchristspc.github.io/tags/linux/"/>
+    <category term="Linux" scheme="https://seanchristspc.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -220,10 +216,10 @@
     
     
     
-    <category term="matlab" scheme="https://seanchristspc.github.io/categories/matlab/"/>
+    <category term="MATLAB" scheme="https://seanchristspc.github.io/categories/MATLAB/"/>
     
     
-    <category term="function" scheme="https://seanchristspc.github.io/tags/function/"/>
+    <category term="MATLAB" scheme="https://seanchristspc.github.io/tags/MATLAB/"/>
     
   </entry>
   
@@ -243,10 +239,10 @@
     
     <category term="Java" scheme="https://seanchristspc.github.io/categories/Java/"/>
     
-    <category term="JSP" scheme="https://seanchristspc.github.io/categories/Java/JSP/"/>
     
+    <category term="Java" scheme="https://seanchristspc.github.io/tags/Java/"/>
     
-    <category term="tags" scheme="https://seanchristspc.github.io/tags/tags/"/>
+    <category term="JSP" scheme="https://seanchristspc.github.io/tags/JSP/"/>
     
   </entry>
   
@@ -287,12 +283,12 @@
     
     
     
-    <category term="soft" scheme="https://seanchristspc.github.io/categories/soft/"/>
+    <category term="Tools" scheme="https://seanchristspc.github.io/categories/Tools/"/>
     
-    
-    <category term="crack" scheme="https://seanchristspc.github.io/tags/crack/"/>
     
     <category term="Myeclipse" scheme="https://seanchristspc.github.io/tags/Myeclipse/"/>
+    
+    <category term="Tools" scheme="https://seanchristspc.github.io/tags/Tools/"/>
     
   </entry>
   
@@ -337,7 +333,7 @@
     <category term="Hexo" scheme="https://seanchristspc.github.io/categories/Hexo/"/>
     
     
-    <category term="officeWord" scheme="https://seanchristspc.github.io/tags/officeWord/"/>
+    <category term="Hexo" scheme="https://seanchristspc.github.io/tags/Hexo/"/>
     
   </entry>
   

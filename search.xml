@@ -54,10 +54,10 @@
 <p>听社会学教授的讲座还是挺不错的！！！</p>
 ]]></content>
       <categories>
-        <category>lecture</category>
+        <category>Paper</category>
       </categories>
       <tags>
-        <tag>paper</tag>
+        <tag>Paper</tag>
       </tags>
   </entry>
   <entry>
@@ -155,10 +155,10 @@
 ]]></content>
       <categories>
         <category>Java</category>
-        <category>JSP</category>
       </categories>
       <tags>
-        <tag>tags</tag>
+        <tag>Java</tag>
+        <tag>JSP</tag>
       </tags>
   </entry>
   <entry>
@@ -301,12 +301,13 @@
 <p><a href="http://www.sublimetext.com/">Imagemagick</a></p>
 ]]></content>
       <categories>
-        <category>tools</category>
+        <category>Tools</category>
       </categories>
       <tags>
-        <tag>latex</tag>
-        <tag>tools</tag>
-        <tag>sublime</tag>
+        <tag>Paper</tag>
+        <tag>Latex</tag>
+        <tag>Tools</tag>
+        <tag>Sublime</tag>
       </tags>
   </entry>
   <entry>
@@ -455,10 +456,10 @@
 <p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. You can give advice on the following comment area and email to me!. Have fun!</p>
 ]]></content>
       <categories>
-        <category>linux</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>linux</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -540,10 +541,10 @@
 </figure>
 ]]></content>
       <categories>
-        <category>matlab</category>
+        <category>MATLAB</category>
       </categories>
       <tags>
-        <tag>matlab live editor</tag>
+        <tag>MATLAB</tag>
       </tags>
   </entry>
   <entry>
@@ -565,11 +566,11 @@
 <h3 id="破解完成请勿用于商业用途喜欢请支持正版">破解完成，请勿用于商业用途。喜欢请支持正版！！！！！</h3>
 ]]></content>
       <categories>
-        <category>soft</category>
+        <category>Tools</category>
       </categories>
       <tags>
-        <tag>crack</tag>
         <tag>Myeclipse</tag>
+        <tag>Tools</tag>
       </tags>
   </entry>
   <entry>
@@ -713,12 +714,12 @@
 <p><a href="https://www.qutebrowser.org/doc/quickstart.html">qutebrowser quick start guide</a> <a href="https://www.qutebrowser.org/doc/userscripts.html">qutebrowser userscripts</a> <a href="https://www.qutebrowser.org/doc/help/">qutebrowser help</a></p>
 ]]></content>
       <categories>
-        <category>tools</category>
+        <category>Tools</category>
       </categories>
       <tags>
-        <tag>tools</tag>
-        <tag>qutebrowser</tag>
-        <tag>browser</tag>
+        <tag>Tools</tag>
+        <tag>Qutebrowser</tag>
+        <tag>Browser</tag>
       </tags>
   </entry>
   <entry>
@@ -785,7 +786,7 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>officeWord</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -884,13 +885,12 @@
 <p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. You can give advice on the following comment area and email to me!. Have fun!</p>
 ]]></content>
       <categories>
-        <category>matlab</category>
+        <category>MATLAB</category>
       </categories>
       <tags>
-        <tag>matlab</tag>
-        <tag>tutorial</tag>
-        <tag>mex</tag>
-        <tag>digital low pass filter</tag>
+        <tag>MATLAB</tag>
+        <tag>MEX</tag>
+        <tag>Filter</tag>
       </tags>
   </entry>
   <entry>
@@ -920,10 +920,10 @@
 <p>函数句柄是一种特殊的函数类型，它提供了间接调用函数的方法，类似于C语言中的指针，只是这里只指向函数。函数句柄包含了该函数的函数名和类型等信息，可以通过函数 <strong>functions()</strong>来获取信息。 创建函数句柄使用 <code>@</code> ，可以使用函数句柄调用其他函数，也可以将函数句柄存储在数据结构中，方便以后使用。当使用函数句柄调用函数时，MATLAB会立即执行，不会进行文件收缩。当多次调用一个函数文件时，可以节约大量的搜索时间，从而提高函数的执行效率。</p>
 ]]></content>
       <categories>
-        <category>matlab</category>
+        <category>MATLAB</category>
       </categories>
       <tags>
-        <tag>function</tag>
+        <tag>MATLAB</tag>
       </tags>
   </entry>
   <entry>
@@ -1013,13 +1013,12 @@
 <p><a href="https://github.com/gorhill/uBlock">uBlock Origin Github</a></p>
 ]]></content>
       <categories>
-        <category>tools</category>
+        <category>Tools</category>
       </categories>
       <tags>
-        <tag>tools</tag>
-        <tag>browser</tag>
-        <tag>Add-ons</tag>
         <tag>uBlock Origin</tag>
+        <tag>Tools</tag>
+        <tag>Browser</tag>
       </tags>
   </entry>
   <entry>
@@ -1138,11 +1137,10 @@ f(x)=e^{x}
 <p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. You can give advice on the following comment area and email to me!. Have fun!</p>
 ]]></content>
       <categories>
-        <category>-software</category>
+        <category>Tools</category>
       </categories>
       <tags>
-        <tag>tools</tag>
-        <tag>software</tag>
+        <tag>Tools</tag>
       </tags>
   </entry>
   <entry>
