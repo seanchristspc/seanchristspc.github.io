@@ -17,8 +17,7 @@ Please confirm the Key fingerprint!
 # Note #
 
 I would greatly appreciate hearing about any error in these articles, even minor ones. 
-I welcome your suggestions for improvements, even tiny one. You can give advice on 
-the following comment area and email to me. Have fun!
+I welcome your suggestions for improvements, even tiny one. Please email to me. 😋 
 
 ---
 
@@ -32,6 +31,7 @@ Expires Time: 2023-08-08
 
 ---
 
+```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBF8uSnMBEADfWTkaYo/DNkc7hodBaEtTgoooTZaC3YON8WEBm0lehUIa/qN0
@@ -77,6 +77,8 @@ ScS38RNTxpvCxlzb7PmyLi1w/2sqiY+oFcyaRpUE1g+2kVtLJ/QmhNOidmfDL6OW
 UgttcnY84eSH08zMoxTJS28bvjkTNeFBmnckEsFg3H702c0KVFGkguvE5v+wCwqM
 SnC/KP6mAbhsVrevuaOGRsWnVABY9HItieToVYhL9bfkGMWUEyNgFvAllj5IdabA
 DpVNvXKvwStkCjBIR0b4AI+64T/MqVWy8vKu0Fig0LqCPBWoeRT+N8cVDLApoYUx
+```
+
 ---
 
 
