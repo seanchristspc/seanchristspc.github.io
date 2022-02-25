@@ -7,8 +7,8 @@ Allow: /about/
 Allow: /posts/
 
 Disallow: /assets/
-Disallow: /js/
 Disallow: /css/
 Disallow: /lib/
+Disallow: /vendors/
 
-
+Sitemap: https://seanchristspc.github.io/sitemap.xml

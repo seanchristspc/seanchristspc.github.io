@@ -294,7 +294,7 @@
 <h1 id="更多技巧">更多技巧</h1>
 <p>更多技巧和定制化的设置，请参考官方教程。</p>
 <h1 id="备注">备注</h1>
-<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. You can give advice on the following comment area and email to me!. Have fun!</p>
+<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please email to me!😝</p>
 <h1 id="主要参考网址">主要参考网址</h1>
 <p><a href="https://latextools.readthedocs.io/en/latest/install/">LatexTools</a></p>
 <p><a href="http://www.sublimetext.com/">Sublime</a></p>
@@ -453,7 +453,7 @@
 <img data-src="/2018/03/19/Linux_Introduction/screenfetch.gif" alt><figcaption>screenfetch</figcaption>
 </figure>
 <h1 id="备注">备注</h1>
-<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. You can give advice on the following comment area and email to me!. Have fun!</p>
+<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please email to me! 😝</p>
 ]]></content>
       <categories>
         <category>Linux</category>
@@ -588,6 +588,9 @@
 <p>qutebrowser is a <em>keyboard-focused</em> browser with a minimal GUI. It’s based on <em>Python</em> and <em>PyQt5</em> and free software, licensed under the GPL. It was inspired by other browsers/addons like <em>dwb</em> and <em>Vimperator/Pentadactyl</em>.</p>
 </blockquote>
 <p>而且 qutebrowser 的键盘配置符合 vim 快捷键，加上自己已习惯 vim 快捷键操作逻辑。因此 qutebrowser 正符合我的口味。值得一提的是 qutebrowser 的作者 Github 名: <a href="https://github.com/The-Compiler"><strong>The-Compiler</strong></a>，个人网站 <a href="https://bruhin.software/">Florian Bruhin Blog</a>。 单独一个人就开发一个浏览器GUI，真厉害！不过由于是单个人开发的浏览器程序，所以没有 Firefox 和 Chrome 功能强大。但是还是值得推荐使用的。值得遗憾的一点就是 qutebrowser 没有 Firefox 和 Chrome 的插件功能。算一个缺点吧！但是 qutebrowser 支持 greasemonkey 油猴脚本和 <a href="https://www.qutebrowser.org/doc/userscripts.html">userscripts</a> (用户自定义脚本)，算弥补了这一缺陷吧。qutebrowser 支持 Windows，macOS 和 Linux平台。PC三巨头都支持哈！</p>
+<p><span class="math display">\[
+e^{i\theta}=\cos(\theta)+i \sin(\theta)
+\]</span></p>
 <p>qutebrowser version <code>:version</code></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Version info</span><br><span class="line">         ______     ,,</span><br><span class="line">    ,.-&quot;`      | ,-` |</span><br><span class="line">  .^           ||    |</span><br><span class="line"> /    ,-*^|    ||    |</span><br><span class="line">;    /    |    ||    ;-*```^*.</span><br><span class="line">;   ;     |    |;,-*`         \</span><br><span class="line">|   |     |  ,-*`    ,-&quot;&quot;&quot;\    \</span><br><span class="line">|    \   ,-&quot;`    ,-^`|     \    |</span><br><span class="line"> \    `^^    ,-;|    |     ;    |</span><br><span class="line">  *;     ,-*`  ||    |     /   ;;</span><br><span class="line">    `^^`` |    ||    |   ,^    /</span><br><span class="line">          |    ||    `^^`    ,^</span><br><span class="line">          |  _,&quot;|        _,-&quot;</span><br><span class="line">          -*`   ****&quot;&quot;&quot;``</span><br><span class="line"></span><br><span class="line">qutebrowser v2.0.2</span><br><span class="line">Git commit: </span><br><span class="line">Backend: QtWebEngine (Chromium 83.0.4103.122)</span><br><span class="line">Qt: 5.15.2</span><br><span class="line"></span><br><span class="line">CPython: 3.9.2</span><br><span class="line">PyQt: 5.15.2</span><br><span class="line"></span><br><span class="line">sip: 5.4.0</span><br><span class="line">colorama: no</span><br><span class="line">jinja2: 2.11.3</span><br><span class="line">pygments: 2.7.1</span><br><span class="line">yaml: 5.3.1</span><br><span class="line">adblock: 0.5.1</span><br><span class="line">PyQt5.QtWebEngineWidgets: yes</span><br><span class="line">PyQt5.QtWebEngine: 5.15.2</span><br><span class="line">PyQt5.QtWebKitWidgets: no</span><br><span class="line">pdf.js: 2.6.0 (/usr/share/javascript/pdf/build/pdf.js)</span><br><span class="line">sqlite: 3.34.1</span><br><span class="line">QtNetwork SSL: OpenSSL 1.1.1k  25 Mar 2021</span><br><span class="line"></span><br><span class="line">Style: QFusionStyle</span><br><span class="line">Platform plugin: xcb</span><br><span class="line">OpenGL: Intel Open Source Technology Center, 3.0 Mesa 20.3.5</span><br><span class="line">Platform: Linux-5.10.0-11-amd64-x86_64-with-glibc2.31, 64bit</span><br><span class="line">Linux distribution: Debian GNU/Linux 11 (bullseye) (debian)</span><br><span class="line">Frozen: False</span><br><span class="line">Imported from /usr/lib/python3/dist-packages/qutebrowser</span><br><span class="line">Using Python from /usr/bin/python3</span><br><span class="line">Qt library executable path: /usr/lib/x86_64-linux-gnu/qt5/libexec, data path: /usr/share/qt5</span><br><span class="line"></span><br><span class="line">Paths:</span><br><span class="line">cache: /home/sean/.cache/qutebrowser</span><br><span class="line">config: /home/sean/.config/qutebrowser</span><br><span class="line">data: /home/sean/.local/share/qutebrowser</span><br><span class="line">runtime: /run/user/1000/qutebrowser</span><br><span class="line">system data: /usr/share/qutebrowser</span><br><span class="line"></span><br><span class="line">Autoconfig loaded: yes</span><br><span class="line">Config.py: no config.py was loaded</span><br><span class="line">Uptime: 0:47:58</span><br></pre></td></tr></table></figure>
 <p>在 dwm 中使用 qutebrowser，体验效果不错。在 Gnome 中使用 qutebrowser 有空白的区域，感觉没最大化利用屏幕空间，个人感觉有点别扭，有点罪过，所以觉得体验效果没有 dwm 舒服。实际在 dwm 和 Gnome 中，不存在使用差别，只是在 dwm 中 qutebrowser 更简洁。</p>
@@ -638,6 +641,10 @@
 </figure>
 <p>除了打开本地的帮助文档，当然可以使用 <a href="https://qutebrowser.org/doc/help/">qutebrowser 官方帮助文档</a>。</p>
 <p>打开帮助文档后，点击 <strong>quick start guide</strong>链接，并阅读就可以快速上手 qutebrowser。</p>
+<p>当然你可以通过在终端输入 <code>man qutebrowser</code> 了解一些 qutebrowser 的基本信息，文档有用且不长，但没有 <code>:help</code> 文档全面。</p>
+<figure>
+<img data-src="/2022/02/20/Qutebrowser/ManQutebrowser.gif" alt><figcaption>man qutebrowser</figcaption>
+</figure>
 <h3 id="查看-qutebrowser-版本">查看 qutebrowser 版本</h3>
 <p>命令：<code>:version</code></p>
 <figure>
@@ -660,6 +667,7 @@
 <figure>
 <img data-src="/2022/02/20/Qutebrowser/hintLink.gif" alt><figcaption>Hint link</figcaption>
 </figure>
+<p>按键 <code>f</code> 是在当前网页打开点击的链接，而 <code>F</code> 是在新的标签打开链接。在回忆一下 <code>o</code> 和 <code>O</code>，似乎你可以发现一些规律。<em>小写的按键是在当前标签操作内容，大写字母的按键是在新标签操作内容</em>。</p>
 <h3 id="命令撤销">命令撤销</h3>
 <p>当输入一个命令，发现好像输出错误或者不想运行该命令，请按 <code>Esc</code> 键退出命令。这个 <code>Esc</code> 和 vim 的 <code>Esc</code> 类似。当你是 vim 玩家，你会很快上手 qutebrowser 。</p>
 <h3 id="当前网页浏览">当前网页浏览</h3>
@@ -688,7 +696,7 @@
 <p><code>u</code> (undo) 撤销刚删除标签，可以连续使用，多恢复几个标签。</p>
 <h3 id="网页搜索">网页搜索</h3>
 <p><code>/</code> 和 vim 操作相同，用于在当前页面搜索内容。</p>
-<p>qutebrowser 命令行输入 <code>/keyword</code>。网页就会高亮你输入的 <code>keyword</code>，然后按 <code>n</code>，跳转到下一个高亮结果。如果你会 vim 你就会联想到按 <code>shift+n</code> 是跳转下一个高亮结果方向和 <code>n</code> 相反。 进一步思考，vim 不是有 <code>？keyword</code> 搜索命令吗？你可以在自己 qutebrowser 上试试，看看会出现什么效果。</p>
+<p>qutebrowser 命令行输入 <code>/keyword</code>。网页就会高亮和你输入匹配的 <code>keyword</code>，然后按 <code>n</code>，跳转到下一个高亮结果。如果你会 vim 你就会联想到按 <code>shift+n</code> 是跳转下一个高亮结果方向和 <code>n</code> 相反。 进一步思考，vim 不是有 <code>？keyword</code> 搜索命令吗？你可以在自己 qutebrowser 上试试，看看会出现什么效果。</p>
 <h3 id="查看历史记录">查看历史记录</h3>
 <p><code>:history</code> 或者 <code>Sh</code>(<strong>S</strong>how <strong>h</strong>istory)</p>
 <figure>
@@ -721,10 +729,17 @@
 <p>运行网络代理配置命令后，在 <code>autoconfig.yml</code> 文件中会发现自动添加如下内容。</p>
 <figure class="highlight python"><figcaption><span>autoconfig.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">content.proxy:</span><br><span class="line">  <span class="keyword">global</span>: socks://<span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">1080</span></span><br></pre></td></tr></table></figure>
 <h3 id="搜索引擎">搜索引擎</h3>
-<p>根据前面的 <code>autoconfig.yml</code> 文件配置，可快速使用指定引擎搜索。使用命令 <code>:open b keyword</code>，其中<code>b</code>是我设置的Bing搜索引擎的缩写单词。详细设置参考上述 <code>autoconfig.yml</code> 的 <strong>url.searchengines</strong> 部分内容。<code>DEFAULT</code> 是在不加指定搜索引擎时，默认使用的收缩引擎。例如：<code>:open keyword</code> 就直接使用 <code>DEFAULT</code> 设置的默认搜索引擎搜索内容。</p>
+<p>根据前面的 <code>autoconfig.yml</code> 文件配置，可快速使用指定引擎搜索。使用命令 <code>:open b keyword</code>，其中<code>b</code>是我设置的Bing搜索引擎的缩写单词。详细设置参考上述 <code>autoconfig.yml</code> 的 <strong>url.searchengines</strong> 部分内容。<code>DEFAULT</code> 是在不加指定搜索引擎时，默认使用的搜索引擎。例如：<code>:open keyword</code> 就直接使用 <code>DEFAULT</code> 设置的默认搜索引擎搜索内容。</p>
 <figure>
 <img data-src="/2022/02/20/Qutebrowser/QuickSearch.gif" alt><figcaption>Quick search demo</figcaption>
 </figure>
+<p>在来一个应用场景，演示一下如何快速搜索内容。由于经常使用 IEEE 搜索论文，一般操作流程是先打开 IEEE 官网，然后输入关键字，在点击搜索图标，等待网页显示搜索结果。那么用快速搜索引擎的方案，你会发现好像要快一点点。</p>
+<p>首先在 qutebrowser 搜索引擎设置添加如下内容：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">:<span class="built_in">set</span> url.searchengines <span class="string">&#x27;&#123;&quot;ee&quot;: &quot;https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&amp;queryText=&#123;&#125;&quot;&#125;&#x27;</span></span><br></pre></td></tr></table></figure>
+<figure>
+<img data-src="/2022/02/20/Qutebrowser/IEEEQuickSearch.gif" alt><figcaption>quick search ieee document</figcaption>
+</figure>
+<p>其他常用网站搜索也可以自己添加，提高你浏览网页速度。</p>
 <h3 id="pdf.js">pdf.js</h3>
 <p>pdf.js 是 Mozilla 开发的一款网络标准的 pdf 阅读器。Firefox 内置的 pdf 阅读器就是使用的 pdf.js。qutebrowser 也是使用 pdf.js 来渲染 pdf 文件。</p>
 <p>qutebrowser 使用 pdf.js 需要进行如下设置：</p>
@@ -746,7 +761,7 @@
 <figure>
 <img data-src="/2022/02/20/Qutebrowser/AddCurrentPageToQuickmarks.gif" alt><figcaption>Add current page to quickmarks Demo</figcaption>
 </figure>
-<p>对于导入其他浏览器书签到 qutebrowser 请参考 Arch wiki qutebrowser 中的 <a href="https://wiki.archlinux.org/title/Qutebrowser#Importing_quickmarks/bookmarks">Importing quickmarks bookmarks</a> 小节内容。</p>
+<p>对于导入其他浏览器书签到 qutebrowser 请参考 arch wiki qutebrowser 中的 <a href="https://wiki.archlinux.org/title/Qutebrowser#Importing_quickmarks/bookmarks">Importing quickmarks bookmarks</a> 小节内容。</p>
 <p>下面以 Firefox 为例，首先从 Firefox 导出书签 bookmarks.html，然后运行如下命令：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python /usr/share/qutebrowser/scripts/importer.py bookmarks.html &gt;&gt; ~/.config/qutebrowser/quickmarks</span><br></pre></td></tr></table></figure>
 <h3 id="greasemonkey">greasemonkey</h3>
@@ -785,7 +800,7 @@
 <p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please contact me by email 😏! Have fun!</p>
 <hr>
 <h2 id="参考">参考</h2>
-<p><a href="https://www.qutebrowser.org/doc/quickstart.html">qutebrowser quick start guide</a> <a href="https://www.qutebrowser.org/doc/userscripts.html">qutebrowser userscripts</a> <a href="https://www.qutebrowser.org/doc/help/">qutebrowser help</a> <a href="https://www.qutebrowser.org/doc/faq.html">qutebrowser faq</a></p>
+<p><a href="https://www.qutebrowser.org/doc/quickstart.html">qutebrowser quick start guide</a> <a href="https://www.qutebrowser.org/doc/userscripts.html">qutebrowser userscripts</a> <a href="https://www.qutebrowser.org/doc/help/">qutebrowser help</a> <a href="https://www.qutebrowser.org/doc/faq.html">qutebrowser faq</a> <a href="https://wiki.archlinux.org/title/Qutebrowser">arch linux qutebrowser wiki</a></p>
 ]]></content>
       <categories>
         <category>Tools</category>
@@ -803,30 +818,62 @@
 <p>学习一样新事物，总是要经历磕磕碰碰，才能有所成长！脚踏实地，一步一个脚印，走好每一步，不要给自己留遗憾！</p>
 <hr>
 <h2 id="安装hexo问题">安装hexo问题</h2>
-<p>安装hexo我是在网上找教程安装的： 1.安装node.js(去官网下载windows版的安装包) <a href="https://nodejs.org">node.js官网</a> 2.安装git <a href="https://git-scm.com/downloads/">git下载地址</a> 3.申请github账号 <a href="https://github.com/">github</a> 这里自己注册 设置user.name user.email</p>
+<p>安装hexo我是在网上找教程安装的： 1. 安装node.js(去官网下载windows版的安装包) <a href="https://nodejs.org">node.js官网</a> 2. 安装git <a href="https://git-scm.com/downloads/">git下载地址</a> 3. 申请github账号 <a href="https://github.com/">github</a> 这里自己注册</p>
+<p>设置user.name user.email:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;你的GitHub用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;你的GitHub注册邮箱&quot;</span></span><br></pre></td></tr></table></figure>
-<p>4.生成ssh密匙</p>
+<ol start="4" type="1">
+<li>生成ssh密匙</li>
+</ol>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;你的GitHub注册邮箱&quot;</span></span><br></pre></td></tr></table></figure>
-<p>一路回车就OK了！ 此时，在用户文件夹下就会有一个新的文件夹.ssh，里面有刚刚创建的ssh密钥文件id_rsa和id_rsa.pub。 上传公匙添加到github上 <strong><em>记住是id_rsa.pub内容复制到github上</em></strong></p>
-<p>5.安装hexo</p>
+<p>一路回车就OK了！此时，在用户文件夹下就会有一个新的文件夹 <code>.ssh</code>，里面有刚刚创建的ssh密钥文件 <code>id_rsa</code> 和 <code>id_rsa.pub</code>。上传公匙添加到github上。<strong><em>记住是id_rsa.pub内容复制到github上</em></strong>。</p>
+<ol start="5" type="1">
+<li>安装 hexo</li>
+</ol>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli g</span><br></pre></td></tr></table></figure>
-<p>建立一个文件夹hexo</p>
+<p>创建一个文件夹 <code>hexo</code>。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir hexo </span><br></pre></td></tr></table></figure>
-<p>初始化hexo文件夹</p>
+<p>初始化 <code>hexo</code> 文件夹。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init hexo</span><br></pre></td></tr></table></figure>
-<p>安装hexo插件(都安装吧!)</p>
+<p>安装hexo插件，都安装了吧!</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-server --save</span><br><span class="line">npm install hexo-admin --save</span><br><span class="line">npm install hexo-generator-archive --save</span><br><span class="line">npm install hexo-generator-feed --save</span><br><span class="line">npm install hexo-generator-search --save</span><br><span class="line">npm install hexo-generator-tag --save</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-category --save</span><br></pre></td></tr></table></figure>
-<p>6.本地使用hexo</p>
+<ol start="6" type="1">
+<li>本地使用hexo</li>
+</ol>
 <p>生成静态页面 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></p>
 <p>开启本地服务器(可以使用全名 hexo server) <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s </span><br></pre></td></tr></table></figure></p>
-<p>在浏览器输入 <strong><a href="http://localhost:4000/">http://localhost:4000/</a></strong> 就可以在本地访问blog</p>
-<p>7.hexo部署到github上</p>
-<p>先在github上创建一个仓库 名字： github用户名.github.io 这个创库的命名规则不能弄错了！！！！！！</p>
-<p>修改博客配置文件(hexo/_config.yml)，在文件里找到下面内容并修改 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment 注释</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  # 类型</span><br><span class="line">  type: git</span><br><span class="line">  # 仓库</span><br><span class="line">  repo: git@github.com:用户名/用户名.github.io.git</span><br><span class="line">  # 分支</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure> 记得一定要修改成自己的用户名！！！！ 这种方式使用ssh链接(前提是你添加了公钥到github) 还有一种方式是把repo 修改为下面 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">repo: https://github.com/用户名/用户名.github.io</span><br></pre></td></tr></table></figure> 由于我用得两个github账号，建立hexo博客是换了一个新的账号 使用这种方式总是报 403 错误 我是改用ssh链接github</p>
-<p>输入下面的命令将hexo博客部署到github中： <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清空静态页面</span></span><br><span class="line">hexo clean</span><br><span class="line"><span class="comment"># 生成静态页面</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 部署 </span></span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure> 这里有一点建议：发布时最好连续执行这三个命令，以免部署到github的hexo为以前的，就相当于刷新一下缓存。</p>
+<p>在浏览器输入 <strong><a href="http://localhost:4000/">http://localhost:4000/</a></strong> 就可以在本地访问 blog。</p>
+<ol start="7" type="1">
+<li>hexo 部署到 github 上</li>
+</ol>
+<p>先在github上创建一个仓库名字：<em>github用户名.github.io</em>。这个创库的命名规则不能弄错了！！！！！！</p>
+<p>修改博客配置文件(<code>hexo/_config.yml</code>)，在文件里找到下面内容并修改。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment 注释</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  # 类型</span><br><span class="line">  type: git</span><br><span class="line">  # 仓库</span><br><span class="line">  repo: git@github.com:用户名/用户名.github.io.git</span><br><span class="line">  # 分支</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>记得一定要修改成自己的用户名！！！！ 这种方式使用ssh链接（前提是你添加了公钥到 github）。</p>
+<p>还有一种方式是把repo 修改为下面 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">repo: https://github.com/用户名/用户名.github.io</span><br></pre></td></tr></table></figure> 由于我用了两个 github 账号，建立 hexo 博客是换了一个新的账号，使用这种方式总是报 403 错误，我是改用 ssh 连接 github。</p>
+<p>输入下面的命令将 hexo 博客部署到 github 中： <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清空静态页面</span></span><br><span class="line">hexo clean</span><br><span class="line"><span class="comment"># 生成静态页面</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 部署 </span></span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure> 这里有一点建议：发布时最好连续执行这三个命令，以免部署到 github 的 hexo 为以前的，就相当于刷新一下缓存。</p>
 <hr>
 <h2 id="hexo替换主题">hexo替换主题</h2>
-<p>我使用的next主题 1.打开git bash 并切换到你的博客目录下 比如我的博客目录是 /hexo <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#自己切换自己的博客目录</span></span><br><span class="line">$ <span class="built_in">cd</span> hexo</span><br><span class="line"><span class="comment"># 执行下面命令</span></span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure> 2.修改博客配置文件 /hexo/_config.yml 如下： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: http://hexo.io/plugins/</span><br><span class="line">## Themes: http://hexo.io/themes/</span><br><span class="line">#以前的选项为     theme: landscape</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure> 3.修改主题配置文件 /hexo/themes/next/_config.yml ## menu修改 找到下面内容 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Menu Settings</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  #about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  #categories: /categories/ || th</span><br><span class="line">  #archives: /archives/ || archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure> 去掉 # 就可以多一个菜单栏 比如去掉 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  #about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  #archives: /archives/ || archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure> 虽然在首页能看见这个菜单，但是是不能使用 点击菜单 categories 会返回 can't get /categories/ 错误信息 首先要安装categories对应插件 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-category --save</span><br></pre></td></tr></table></figure> 再在gitbash输入（hexo目录下） <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure> 在/hexo/source 目录下发现多的一个categories文件夹 进入 编辑 index.md <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2018-1-22 12:39:04</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure> 在/hexo/source/_post 目录建立 test.md 内容如下 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: test</span><br><span class="line">categories:</span><br><span class="line">  - Testing</span><br><span class="line">---</span><br></pre></td></tr></table></figure> 注意空格！！！！注意空格！！！！注意空格！！！！注意空格！！！！ <strong><em> ## 赞赏功能问题 在添加赞赏功能是替换了图片不能出现赞赏功能 next赞赏功能启用 在主题配置文件 找到如下内容 并修改如下： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Reward</span><br><span class="line">reward_comment: Donate</span><br><span class="line">wechatpay: /images/wechatpay.png</span><br><span class="line">alipay: /images/alipay.jpg</span><br><span class="line">#bitcoin: /images/bitcoin.png</span><br><span class="line">```  </span><br><span class="line">自己图片位置在 Hexo/themes/next/source image文件内</span><br><span class="line">修改成这样过后但是还是不能显示赞赏功能。至少我是这样，经过百度终于解决了。在主题配置文件查找</span><br><span class="line"></span><br><span class="line"># Automatically Excerpt. Not recommend.</span><br><span class="line"># Please use &lt;!-- more --&gt; in the post to control excerpt accurately.</span><br><span class="line">auto_excerpt:</span><br><span class="line">  enable: false</span><br><span class="line">  length: 150</span><br></pre></td></tr></table></figure> 修改如下: <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Automatically Excerpt. Not recommend.</span><br><span class="line"># Please use &lt;!-- more --&gt; in the post to control excerpt accurately.</span><br><span class="line">auto_excerpt:</span><br><span class="line">  enable: true</span><br><span class="line">  length: 150</span><br></pre></td></tr></table></figure> 在执行 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo generate &amp;&amp;  hexo s </span><br></pre></td></tr></table></figure> 这下应该可以！ </em></strong> ## 本地搜索配置 1.hexo配置文件(/hexo/_config.yml)添加 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#search</span><br><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure> 2.安装插件 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-search --save</span><br><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure> 3.修改 主题配置文件(/hexo/themes/next/_config.yml) <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Local search</span><br><span class="line"># Dependencies: https://github.com/flashlab/hexo-generator-search</span><br><span class="line">local_search:</span><br><span class="line">  enable: false</span><br><span class="line">  # if auto, trigger search by changing input</span><br><span class="line">  # if manual, trigger search by pressing enter key or search button</span><br><span class="line">  trigger: auto</span><br><span class="line">  # show top n results per article, show all results by setting to -1</span><br><span class="line">  top_n_per_article: 1</span><br></pre></td></tr></table></figure> 修改为 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Local search</span><br><span class="line"># Dependencies: https://github.com/flashlab/hexo-generator-search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  # if auto, trigger search by changing input</span><br><span class="line">  # if manual, trigger search by pressing enter key or search button</span><br><span class="line">  trigger: auto</span><br><span class="line">  # show top n results per article, show all results by setting to -1</span><br><span class="line">  top_n_per_article: 1</span><br></pre></td></tr></table></figure></p>
+<p>我使用的next主题</p>
+<ol type="1">
+<li>打开 git bash 并切换到你的博客目录下 比如我的博客目录是 <code>/hexo</code> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#自己切换自己的博客目录</span></span><br><span class="line">$ <span class="built_in">cd</span> hexo</span><br><span class="line"><span class="comment"># 执行下面命令</span></span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></li>
+<li>修改博客配置文件 <code>/hexo/_config.yml</code> 如下： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: http://hexo.io/plugins/</span><br><span class="line">## Themes: http://hexo.io/themes/</span><br><span class="line">#以前的选项为     theme: landscape</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure></li>
+<li>修改主题配置文件 <code>/hexo/themes/next/_config.yml</code> ## menu 修改 找到下面内容 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Menu Settings</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  #about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  #categories: /categories/ || th</span><br><span class="line">  #archives: /archives/ || archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure> 去掉 # 就可以多一个菜单栏 比如去掉 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  #about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  #archives: /archives/ || archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure> 虽然在首页能看见这个菜单，但是是不能使用。点击菜单 categories 会返回 <code>can't get /categories/</code> 错误信息。</li>
+</ol>
+<p>首先要安装categories对应插件 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-category --save</span><br></pre></td></tr></table></figure> 再在gitbash输入（hexo目录下） <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure> 在 <code>/hexo/source</code> 目录下发现多的一个categories文件夹 进入并编辑 <code>index.md</code>。 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2018-1-22 12:39:04</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure> 在 <code>/hexo/source/_post</code> 目录建立 <code>test.md</code> 内容如下： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: test</span><br><span class="line">categories:</span><br><span class="line">  - Testing</span><br><span class="line">---</span><br></pre></td></tr></table></figure> 注意空格！！！！注意空格！！！！注意空格！！！！注意空格！！！！</p>
+<hr>
+<h2 id="赞赏功能问题">赞赏功能问题</h2>
+<p>在主题配置文件找到如下内容，并修改如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Reward</span><br><span class="line">reward_comment: Donate</span><br><span class="line">wechatpay: /images/wechatpay.png</span><br><span class="line">alipay: /images/alipay.jpg</span><br><span class="line">#bitcoin: /images/bitcoin.png</span><br><span class="line">```  </span><br><span class="line">自己图片位置在 `Hexo/themes/next/source` `image`文件内。修改成这样过后但是还是不能显示赞赏功能。至少我是这样，经过百度终于解决了。</span><br><span class="line"></span><br><span class="line">在主题配置文件查找</span><br></pre></td></tr></table></figure>
+<h1 id="automatically-excerpt.-not-recommend.">Automatically Excerpt. Not recommend.</h1>
+<h1 id="please-use-in-the-post-to-control-excerpt-accurately.">Please use <span id="more"></span> in the post to control excerpt accurately.</h1>
+<p>auto_excerpt: enable: false length: 150 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">修改为如下:</span><br></pre></td></tr></table></figure> # Automatically Excerpt. Not recommend. # Please use <!-- more --> in the post to control excerpt accurately. auto_excerpt: enable: true length: 150 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">再执行</span><br><span class="line">``` bash</span><br><span class="line">$ hexo clean &amp;&amp; hexo generate &amp;&amp;  hexo s </span><br></pre></td></tr></table></figure> 这下应该可以！</p>
+<hr>
+<h2 id="本地搜索配置">本地搜索配置</h2>
+<ol type="1">
+<li>hexo配置文件 <code>/hexo/_config.yml</code> 添加 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#search</span><br><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure></li>
+<li>安装插件 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-search --save</span><br><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure></li>
+<li>修改主题配置文件 <code>/hexo/themes/next/_config.yml</code> <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Local search</span><br><span class="line"># Dependencies: https://github.com/flashlab/hexo-generator-search</span><br><span class="line">local_search:</span><br><span class="line">  enable: false</span><br><span class="line">  # if auto, trigger search by changing input</span><br><span class="line">  # if manual, trigger search by pressing enter key or search button</span><br><span class="line">  trigger: auto</span><br><span class="line">  # show top n results per article, show all results by setting to -1</span><br><span class="line">  top_n_per_article: 1</span><br></pre></td></tr></table></figure> 修改为 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Local search</span><br><span class="line"># Dependencies: https://github.com/flashlab/hexo-generator-search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  # if auto, trigger search by changing input</span><br><span class="line">  # if manual, trigger search by pressing enter key or search button</span><br><span class="line">  trigger: auto</span><br><span class="line">  # show top n results per article, show all results by setting to -1</span><br><span class="line">  top_n_per_article: 1</span><br></pre></td></tr></table></figure> ---</li>
+</ol>
 <h2 id="参考文档">参考文档</h2>
 <p><a href="http://theme-next.iissnan.com/">next参考文档</a> <a href="https://hexo.io/zh-cn/docs/">hexo参考文档</a></p>
 <p>没事就多看看官方文档，应该能解决问题的！加油！</p>
@@ -855,6 +902,19 @@
 <h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>
+<h2 id="hexo-draft-process">Hexo draft process</h2>
+<h3 id="create-a-draft-post">Create a draft post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new draft <span class="string">&quot;My Draft Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="preview-a-draft">Preview a draft</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server --draft</span><br></pre></td></tr></table></figure>
+<h3 id="publish-a-draft">Publish a draft</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo publish <span class="string">&quot;My Draft Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>The principle of publishing draft: Just move the document from <code>source/_draft</code> to <code>source/_posts</code>.</p>
+<h3 id="display-drafts">Display drafts</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo --draft</span><br></pre></td></tr></table></figure>
+<p>Displays draft posts (stored in the <code>source/_drafts</code> folder).</p>
+<h2 id="reference">Reference</h2>
+<p><a href="https://hexo.io/docs/commands">Hexo command</a></p>
 ]]></content>
       <categories>
         <category>Hexo</category>
@@ -956,7 +1016,7 @@
 <h1 id="reference">Reference</h1>
 <p><a href="https://ww2.mathworks.cn/help/">Matlab 帮助文档</a></p>
 <h1 id="备注">备注</h1>
-<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. You can give advice on the following comment area and email to me!. Have fun!</p>
+<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please email to me! 😝</p>
 ]]></content>
       <categories>
         <category>MATLAB</category>
@@ -1081,7 +1141,7 @@
 <p>点击 <strong>锁</strong> 一样的图片，指永久改变该网站的阻塞内容。</p>
 <hr>
 <h2 id="备注">备注</h2>
-<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. You can give advice on the following comment area and email to me!. Have fun!</p>
+<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please email to me! 😝</p>
 <h2 id="参考连接">参考连接</h2>
 <p><a href="https://ublockorigin.com/">uBlock Origini Official site</a></p>
 <p><a href="https://github.com/gorhill/uBlock">uBlock Origin Github</a></p>
@@ -1124,6 +1184,7 @@ f(x)=e^{x}
 <h3 id="浏览器软件">浏览器软件</h3>
 <p><a href="https://www.mozilla.org/en-US/">Firefox</a>: linux平台基本都默认安装了<strong>Firefox</strong>,linux浏览器界的王者。尽管Firefox或多或少有些缺点， 但是不阻碍我使用它。Firefox的插件，值得推荐。最近Firefox的Andriod平台的浏览器，感觉使用不错，进化啦！至于Firefox 拦截广告的插件 使用，可以参考 <a href="https://seanchristspc.github.io/2021/04/20/uBlock-Orgin-Tutor/">ublock origin 教程</a>。 <img data-src="/2021/07/23/Recommend-Softwares/firefox.png" alt="Firefox Home"></p>
 <p>对于有些网站必须使用Chromium内核，可以使用 <a href="https://brave.com/">Brave</a>，简单一个字就是"快"。可能你无法访问brave官方网站， 那么你需要VPN啦！</p>
+<p>推荐一款比较小众的浏览器是 <a href="https://qutebrowser.org/">qutebrowser</a>，基本可以实现全程快捷键操作。教程请参考自己写的 <a href="https://seanchristspc.github.io/2022/02/20/Qutebrowser/">qutebrowser blog</a>。是基于 QtWebEngine，而 QtWebEngine 是基于 Chromium的，所以 qutebrowser 支持 Chromium 内核。 另外一款和 qutebrowser 类似的是 <a href="https://fanglingsu.github.io/vimb/">vimb</a>。</p>
 <h3 id="截图软件">截图软件</h3>
 <p><a href="https://flameshot.org/">Flameshot</a>: 除了系统自带的截图快捷键，最值得推荐的linux截图软件就是<strong>Flameshot</strong>。 看了一下官网，现在已经支持windows，Linux，MacOS啦！ <img data-src="/2021/07/23/Recommend-Softwares/Flameshot.gif" alt="Flamshot Usage"></p>
 <h3 id="画图软件">画图软件</h3>
@@ -1181,7 +1242,7 @@ f(x)=e^{x}
 <p>也推荐 <a href="https://www.tracker-software.com/"><strong>PDF—XChange Views</strong></a>也是一款不错的pdf软件。可以自己定义自己界面的配色，同时标注类型特别丰富。 使用顺滑，使用配合自定义快捷键，可以快速的使用该PDF阅读器。 <img data-src="/2021/07/23/Recommend-Softwares/PdfXChange.png" alt="PDF-XChange Views"></p>
 <p><a href="https://www.sumatrapdfreader.org/free-pdf-reader">Sumatra PDF</a>:如果你追求像Linux pdf的的zathura一样简洁， windows平台的<strong>Sumatra</strong>可能是你喜欢的菜。 <img data-src="/2021/07/23/Recommend-Softwares/sumatra.png" alt="Sumatra PDF"></p>
 <h3 id="浏览器软件-1">浏览器软件</h3>
-<p>浏览器软件和Linux推荐的浏览器软件相同 <strong>Firefox或Brave</strong>，请参考前面Linux浏览器软件部分。</p>
+<p>浏览器软件和Linux推荐的浏览器软件相同 <strong>Firefox或Brave</strong>，请参考前面Linux浏览器软件部分。但对于 qutebrowser 可以在 windows 上使用，但是好像安装要复杂一点。</p>
 <h3 id="截图软件-1">截图软件</h3>
 <p>除了Linux推荐的 <strong>Flameshot</strong>，也可以使用 <strong>Snipaste</strong>。可以去微软应用商店搜索 <strong>snipaste</strong>,并安装截图软件。</p>
 <h3 id="画图软件-1">画图软件</h3>
@@ -1208,7 +1269,7 @@ f(x)=e^{x}
 <p><a href="https://kdeconnect.kde.org/">KDE Connect</a></p>
 <hr>
 <h2 id="备注">备注</h2>
-<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. You can give advice on the following comment area and email to me!. Have fun!</p>
+<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please email to me!😜</p>
 ]]></content>
       <categories>
         <category>Tools</category>
@@ -1684,7 +1745,7 @@ f(x)=e^{x}
 </blockquote>
 <p>写这个只是为了加深自己对设计模式的理解，如不明白，可以看 《图解设计模式》。 程序类图使用idea 生成的</p>
 <h2 id="备注">备注</h2>
-<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. You can give advice on the following comment area and email to me!. Have fun!</p>
+<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please email to me! 😤</p>
 ]]></content>
       <categories>
         <category>DesignPattern</category>
