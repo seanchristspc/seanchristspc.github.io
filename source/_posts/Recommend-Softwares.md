@@ -95,7 +95,7 @@ Okluar也有黑夜模式，自己在设置里面找找会了。
 对于有些网站必须使用Chromium内核，可以使用 [Brave](https://brave.com/)，简单一个字就是"快"。可能你无法访问brave官方网站，
 那么你需要VPN啦！
 
-
+推荐一款比较小众的浏览器是 [qutebrowser](https://qutebrowser.org/)，基本可以实现全程快捷键操作。教程请参考自己写的 [qutebrowser blog](https://seanchristspc.github.io/2022/02/20/Qutebrowser/)。是基于 QtWebEngine，而 QtWebEngine 是基于 Chromium的，所以 qutebrowser 支持 Chromium 内核。 另外一款和 qutebrowser 类似的是 [vimb](https://fanglingsu.github.io/vimb/)。
 
 ### 截图软件
 
@@ -276,7 +276,7 @@ windows平台的**Sumatra**可能是你喜欢的菜。
 
 ### 浏览器软件
 
-浏览器软件和Linux推荐的浏览器软件相同 **Firefox或Brave**，请参考前面Linux浏览器软件部分。
+浏览器软件和Linux推荐的浏览器软件相同 **Firefox或Brave**，请参考前面Linux浏览器软件部分。但对于 qutebrowser 可以在 windows 上使用，但是好像安装要复杂一点。
 
 ### 截图软件 
 
@@ -341,5 +341,4 @@ windows下载软件依旧推荐 **FreeDownloadManager**。
 ## 备注
 
 I would greatly appreciate hearing about any error in this article, even minor ones.
-I welcome your suggestions for improvements, even tiny one. You can give advice on
-the following comment area and email to me!. Have fun!
+I welcome your suggestions for improvements, even tiny one. Please email to me!😜 
