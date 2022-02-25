@@ -2,6 +2,8 @@
 title: Hello! Hexo
 date: 2018/02/05 20:45:10
 comments: true
+updated: 2022-02-25 18:53:48
+description: Hexo Quick Start! This blog records the basic use of hexo.
 tags:
 	- Hexo
 categories:
@@ -42,3 +44,37 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/deployment.html)
+
+## Hexo draft process
+
+### Create a draft post
+
+```bash
+$ hexo new draft "My Draft Post"
+```
+
+### Preview a draft
+
+```bash
+$ hexo server --draft
+```
+
+### Publish a draft
+
+```bash
+$ hexo publish "My Draft Post"
+```
+The principle of publishing draft: Just move the document from `source/_draft` to `source/_posts`.
+
+### Display drafts
+
+```bash
+$ hexo --draft
+```
+Displays draft posts (stored in the `source/_drafts` folder).
+
+
+
+## Reference
+[Hexo command](https://hexo.io/docs/commands)
+
