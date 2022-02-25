@@ -362,7 +362,6 @@ for (i = 0; i < N*n*f; ++i) {
 # 备注
 
 I would greatly appreciate hearing about any error in this article, even minor ones.
-I welcome your suggestions for improvements, even tiny one. You can give advice on
-the following comment area and email to me!. Have fun!
+I welcome your suggestions for improvements, even tiny one. Please email to me! 😝
 
  
