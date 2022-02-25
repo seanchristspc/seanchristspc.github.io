@@ -246,5 +246,4 @@ Ubuntu 是用`apt` 或 `apt-get` 命令安装软件，而Centos使用`yum`安装
 # 备注
 
 I would greatly appreciate hearing about any error in this article, even minor ones.
-I welcome your suggestions for improvements, even tiny one. You can give advice on
-the following comment area and email to me!. Have fun!
+I welcome your suggestions for improvements, even tiny one. Please email to me! 😝
