@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://seanchristspc.github.io/2021/07/23/Recommend-Softwares/</loc>
+    
+    <lastmod>2022-02-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seanchristspc.github.io/2021/03/30/Latex-Sublime-configure/</loc>
+    
+    <lastmod>2022-02-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seanchristspc.github.io/2022/02/20/Qutebrowser/</loc>
     
     <lastmod>2022-02-25</lastmod>
@@ -23,15 +41,6 @@
     <loc>https://seanchristspc.github.io/2021/02/02/Matlab-Live-Editor-Introduction/</loc>
     
     <lastmod>2021-11-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/2021/07/23/Recommend-Softwares/</loc>
-    
-    <lastmod>2021-11-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -68,15 +77,6 @@
     <loc>https://seanchristspc.github.io/2021/04/20/uBlock-Orgin-Tutor/</loc>
     
     <lastmod>2021-04-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/2021/03/30/Latex-Sublime-configure/</loc>
-    
-    <lastmod>2021-03-29</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
