@@ -3,7 +3,7 @@ title: Sublime Latex configure and preview math equation
 comment: true
 mathjax: true
 date: 2021-03-29 20:11:13
-update: 2022-02-26 13:27:50
+updated: 2022-02-26 13:27:50
 description: 文章主要内容 Sublime editor 配置 latex工作环境搭建，具有公式预览功能。事实上实现公式预览功能是多个软件配合使用的结果(注意新版本的 Sublime 才有该功能)！同时记录自己所遇见的一些坑和解决方法！主要针对windows用户，当然linux也行！
 tags:  
    - Latex
