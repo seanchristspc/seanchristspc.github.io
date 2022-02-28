@@ -1,7 +1,8 @@
 ---
 title: 搭建hexo和github遇到问题
 comments: false
-date: 2018/02/06 15:59:44
+date: 2018-02-06 15:59:44
+updated: 2022-02-28 09:19:40
 description: 本文描述了自己搭建hexo所遇到的问题。
 
 tags:
@@ -141,8 +142,13 @@ $ git clone https://github.com/iissnan/hexo-theme-next themes/next
 theme: next
 ```
 3. 修改主题配置文件 `/hexo/themes/next/_config.yml`
+
+---
+
 ## menu 修改
+
 找到下面内容
+
 ```
 # ---------------------------------------------------------------
 # Menu Settings
@@ -157,7 +163,9 @@ menu:
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
 ```
+
 去掉 # 就可以多一个菜单栏 比如去掉 
+
 ``` 
 menu:
   home: / || home
@@ -169,17 +177,21 @@ menu:
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
 ```
+
 虽然在首页能看见这个菜单，但是是不能使用。点击菜单 categories 会返回 `can't get /categories/` 错误信息。
 
 首先要安装categories对应插件
+
 ``` bash
 $ npm install hexo-generator-category --save
 ```
-再在gitbash输入（hexo目录下）
+再在gitbash输入（切换到 `hexo` 目录下）
+
 ``` bash
 $ hexo new page categories
 ```
 在 `/hexo/source` 目录下发现多的一个categories文件夹 进入并编辑 `index.md`。
+
 ``` 
 ---
 title: categories
@@ -188,7 +200,9 @@ type: "categories"
 comments: false
 ---
 ```
+
 在 `/hexo/source/_post` 目录建立 `test.md` 内容如下：
+
 ``` 
 ---
 title: test
@@ -204,25 +218,31 @@ categories:
 
 在主题配置文件找到如下内容，并修改如下：
 
-```
+```bash
 # Reward
 reward_comment: Donate
 wechatpay: /images/wechatpay.png
 alipay: /images/alipay.jpg
 #bitcoin: /images/bitcoin.png
-```  
-自己图片位置在 `Hexo/themes/next/source` `image`文件内。修改成这样过后但是还是不能显示赞赏功能。至少我是这样，经过百度终于解决了。
+```
+
+自己图片位置在 `Hexo/themes/next/source` 目录下的 `image`文件内。修改成这样过后但是还是不能显示赞赏功能。至少我是这样，经过百度终于解决了。
+
+---
 
 在主题配置文件查找
-```
+
+```bash
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
   enable: false
   length: 150
 ```
+
 修改为如下:
-```
+
+```bash
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
