@@ -253,12 +253,11 @@
 <h1 id="其他问题说明">其他问题说明</h1>
 <h2 id="math-equation-预览功能无法使用">Math Equation 预览功能无法使用</h2>
 <ol type="1">
-<li>使用 <code>LatexTools:check system</code> 查看 tex 宏包是否安装完全，以及环境是否配置正确！</li>
+<li>使用 <code>LatexTools:check system</code> 查看 tex 宏包是否安装完全，以及环境是否配置正确！像 <strong>biber</strong> 和 <strong>convert</strong> 或 <strong>magick</strong> 显示不可用是可以忽略！使用 check system 有一定的参考价值，实际它是有 bug 的，因为自己确实安装并配置了环境变量，而他显示未检测到其他需要软件！具有一定的误导作用！记得以前为了解决未检测其他软件，自己反复重新安装软件，并配置环境变量，它给我的反馈都一样！最后发现是插件作者写的该检测环境脚本鲁棒性不够，至少对于我使用是有问题的！</li>
 </ol>
 <figure>
 <img data-src="/2021/03/30/Latex-Sublime-configure/LatexToolsCheckSystem.gif" alt><figcaption>LatexTools: Check system</figcaption>
 </figure>
-<p>像 <strong>biber</strong> 和 <strong>convert</strong> 或 <strong>magick</strong> 显示不可用是可以忽略！使用 check system 有一定的参考价值，实际它是有 bug 的，因为自己确实安装并配置了环境变量，而他显示未检测到其他需要软件！具有一定的误导作用！记得以前为了解决未检测其他软件，自己反复重新安装软件，并配置环境变量，它给我的反馈都一样！最后发现是插件作者写的该检测环境脚本鲁棒性不够，至少对于我使用是有问题的！</p>
 <ol start="2" type="1">
 <li>Windows 用户的朋友需要添加 环境变量 <code>GS_LIB</code>，环境变量的值为: <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="function">D:\<span class="title">SoftInstallPlace</span>\<span class="title">texlive</span>\2019\<span class="title">tlpkg</span>\<span class="title">tlgs</span>\<span class="title">Resource</span>\<span class="title">Init</span>;<span class="title">D</span>:\<span class="title">SoftInstallPlace</span>\<span class="title">texlive</span>\2019\<span class="title">tlpkg</span>\<span class="title">tlgs</span>\<span class="title">kanji</span></span></span><br></pre></td></tr></table></figure> 当时安装配置完环境，公式预览无法实现，也自己查了以下 sublime 在实现公式预览生成的临时文件，发现并未有生成 pdf 文件，和生成pdf有关的软件为 Ghostscript，定位到出问题的大致位置。你可能会问Imagemagick软件是干嘛的呢？请看软件名中的Image-&gt;处理图片的。<strong>实际预览的公式为图片文件</strong>。对应修改自己的安装目录！ <a href="https://www.jianshu.com/p/fee3fa234626">参考网址</a></li>
 </ol>
@@ -277,7 +276,7 @@
 <li><p>使用<code>Ctrl+B</code>可能出现问题，如下</p></li>
 </ol>
 <figure>
-<img data-src="/2021/03/30/Latex-Sublime-configure/erroFirstBuidPdf.jpg" alt><figcaption>You MUST set command in your LaTexTools.sublime-settings file before lauching the script builder</figcaption>
+<img data-src="/2021/03/30/Latex-Sublime-configure/errofirstbuidpdf.jpg" alt><figcaption>You must set command in your latextools.sublime-settings file before lauching the script builder</figcaption>
 </figure>
 <p>解决方案，从提示的错误来解释，便是你使用的是 <strong>script builder</strong>脚本编译文件，因此你需要添加在脚本编译设置处添加如下内容。</p>
 <figure>
@@ -656,7 +655,7 @@ e^{i\theta}=\cos(\theta)+i \sin(\theta)
 <figure>
 <img data-src="/2022/02/20/Qutebrowser/OpenUrl.png" alt><figcaption>Open url in current tab</figcaption>
 </figure>
-<p>使用快捷键 <code>O</code> 然后输入URL，会新打开一个网页标签。动画演示如下：</p>
+<p>使用快捷键 <code>O</code> 然后输入URL，会在新标签 <code>tab</code> 打开一个网页。动画演示如下：</p>
 <figure>
 <img data-src="/2022/02/20/Qutebrowser/OpenUrl.gif" alt><figcaption>Open url in new tab Demo</figcaption>
 </figure>
@@ -757,7 +756,7 @@ e^{i\theta}=\cos(\theta)+i \sin(\theta)
 <p>qutebrowser 阅读 pdf 中文乱码问题</p>
 <p>解决方案：把 <a href="https://github.com/mozilla/pdf.js/tree/master/external/bcmaps">bcmaps</a> 中内容复制到 <code>/usr/share/pdf.js/web/cmaps</code> 中。</p>
 <h3 id="quickmarks">quickmarks</h3>
-<p>quickmarks 和 bookmarks 没啥区别，但是在 qutebrowser 中建议使用 quickmarks，你可以理解成其他浏览器中的书签。</p>
+<p>quickmarks 和 bookmarks 没啥区别，但是在 qutebrowser 中建议使用 quickmarks，毕竟 quickmarks 中含有 <em>quick</em>（代表快速的含义）。你可以把 quickmarks 理解成 Firefox 等浏览器中的书签。</p>
 <p>添加当前网页地址到 quickmarks 按键：<code>m</code>。</p>
 <figure>
 <img data-src="/2022/02/20/Qutebrowser/AddCurrentPageToQuickmarks.gif" alt><figcaption>Add current page to quickmarks Demo</figcaption>
@@ -858,16 +857,35 @@ e^{i\theta}=\cos(\theta)+i \sin(\theta)
 <ol type="1">
 <li>打开 git bash 并切换到你的博客目录下 比如我的博客目录是 <code>/hexo</code> <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#自己切换自己的博客目录</span></span><br><span class="line">$ <span class="built_in">cd</span> hexo</span><br><span class="line"><span class="comment"># 执行下面命令</span></span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></li>
 <li>修改博客配置文件 <code>/hexo/_config.yml</code> 如下： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: http://hexo.io/plugins/</span><br><span class="line">## Themes: http://hexo.io/themes/</span><br><span class="line">#以前的选项为     theme: landscape</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure></li>
-<li>修改主题配置文件 <code>/hexo/themes/next/_config.yml</code> ## menu 修改 找到下面内容 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Menu Settings</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  #about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  #categories: /categories/ || th</span><br><span class="line">  #archives: /archives/ || archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure> 去掉 # 就可以多一个菜单栏 比如去掉 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  #about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  #archives: /archives/ || archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure> 虽然在首页能看见这个菜单，但是是不能使用。点击菜单 categories 会返回 <code>can't get /categories/</code> 错误信息。</li>
+<li>修改主题配置文件 <code>/hexo/themes/next/_config.yml</code></li>
 </ol>
-<p>首先要安装categories对应插件 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-category --save</span><br></pre></td></tr></table></figure> 再在gitbash输入（hexo目录下） <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure> 在 <code>/hexo/source</code> 目录下发现多的一个categories文件夹 进入并编辑 <code>index.md</code>。 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2018-1-22 12:39:04</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure> 在 <code>/hexo/source/_post</code> 目录建立 <code>test.md</code> 内容如下： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: test</span><br><span class="line">categories:</span><br><span class="line">  - Testing</span><br><span class="line">---</span><br></pre></td></tr></table></figure> 注意空格！！！！注意空格！！！！注意空格！！！！注意空格！！！！</p>
+<hr>
+<h2 id="menu-修改">menu 修改</h2>
+<p>找到下面内容</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Menu Settings</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  #about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  #categories: /categories/ || th</span><br><span class="line">  #archives: /archives/ || archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure>
+<p>去掉 # 就可以多一个菜单栏 比如去掉</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  #about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  #archives: /archives/ || archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure>
+<p>虽然在首页能看见这个菜单，但是是不能使用。点击菜单 categories 会返回 <code>can't get /categories/</code> 错误信息。</p>
+<p>首先要安装categories对应插件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-category --save</span><br></pre></td></tr></table></figure>
+<p>再在gitbash输入（切换到 <code>hexo</code> 目录下）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure>
+<p>在 <code>/hexo/source</code> 目录下发现多的一个categories文件夹 进入并编辑 <code>index.md</code>。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2018-1-22 12:39:04</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>在 <code>/hexo/source/_post</code> 目录建立 <code>test.md</code> 内容如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: test</span><br><span class="line">categories:</span><br><span class="line">  - Testing</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>注意空格！！！！注意空格！！！！注意空格！！！！注意空格！！！！</p>
 <hr>
 <h2 id="赞赏功能问题">赞赏功能问题</h2>
 <p>在主题配置文件找到如下内容，并修改如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Reward</span><br><span class="line">reward_comment: Donate</span><br><span class="line">wechatpay: /images/wechatpay.png</span><br><span class="line">alipay: /images/alipay.jpg</span><br><span class="line">#bitcoin: /images/bitcoin.png</span><br><span class="line">```  </span><br><span class="line">自己图片位置在 `Hexo/themes/next/source` `image`文件内。修改成这样过后但是还是不能显示赞赏功能。至少我是这样，经过百度终于解决了。</span><br><span class="line"></span><br><span class="line">在主题配置文件查找</span><br></pre></td></tr></table></figure>
-<h1 id="automatically-excerpt.-not-recommend.">Automatically Excerpt. Not recommend.</h1>
-<h1 id="please-use-in-the-post-to-control-excerpt-accurately.">Please use <span id="more"></span> in the post to control excerpt accurately.</h1>
-<p>auto_excerpt: enable: false length: 150 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">修改为如下:</span><br></pre></td></tr></table></figure> # Automatically Excerpt. Not recommend. # Please use <!-- more --> in the post to control excerpt accurately. auto_excerpt: enable: true length: 150 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">再执行</span><br><span class="line">``` bash</span><br><span class="line">$ hexo clean &amp;&amp; hexo generate &amp;&amp;  hexo s </span><br></pre></td></tr></table></figure> 这下应该可以！</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Reward</span></span><br><span class="line">reward_comment: Donate</span><br><span class="line">wechatpay: /images/wechatpay.png</span><br><span class="line">alipay: /images/alipay.jpg</span><br><span class="line"><span class="comment">#bitcoin: /images/bitcoin.png</span></span><br></pre></td></tr></table></figure>
+<p>自己图片位置在 <code>Hexo/themes/next/source</code> 目录下的 <code>image</code>文件内。修改成这样过后但是还是不能显示赞赏功能。至少我是这样，经过百度终于解决了。</p>
+<hr>
+<p>在主题配置文件查找</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Automatically Excerpt. Not recommend.</span></span><br><span class="line"><span class="comment"># Please use &lt;!-- more --&gt; in the post to control excerpt accurately.</span></span><br><span class="line">auto_excerpt:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">false</span></span><br><span class="line">  length: 150</span><br></pre></td></tr></table></figure>
+<p>修改为如下:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Automatically Excerpt. Not recommend.</span></span><br><span class="line"><span class="comment"># Please use &lt;!-- more --&gt; in the post to control excerpt accurately.</span></span><br><span class="line">auto_excerpt:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  length: 150</span><br></pre></td></tr></table></figure>
+<p>再执行 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo generate &amp;&amp;  hexo s </span><br></pre></td></tr></table></figure> 这下应该可以！</p>
 <hr>
 <h2 id="本地搜索配置">本地搜索配置</h2>
 <ol type="1">
