@@ -296,7 +296,19 @@ local_search:
   # show top n results per article, show all results by setting to -1
   top_n_per_article: 1
 ```
+
+
 ---
+
+
+## 备注
+
+I would greatly appreciate hearing about any error in this article, even minor ones.
+I welcome your suggestions for improvements, even tiny one. Please email to me!😜 
+
+
+---
+
 
 ## 参考文档
 [next参考文档](http://theme-next.iissnan.com/)
