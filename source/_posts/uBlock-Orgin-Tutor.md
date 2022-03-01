@@ -112,12 +112,16 @@ uBlock Origin dashboard 主要是一些uBlock的设置和自己的过滤规则�
 内容中，把uBlock网站的Block规则删除，在重新加载网页，恢复原来的面貌了。
 
 
-在 dashboard 中点击 **Filter lists**，然后把 **Ad** 中的 **AdGuard Base** 和 **AdGuard Mobile Ads**
-勾选了，用于 Block 广告。主要该软件是外国人写的，对国外的网站的广告过滤比较友好，对于国内还是自己定制
-自己的过滤规则。 也就是 **My filters**的内容，自己添加修改。如果你学过html和css，那么自己过滤内容就挺
-方便，因为有些广告用picker无法准确的筛选内容，会存在过滤不准确。
+在 dashboard 中点击 **Filter lists**，然后把 **Ad** 中的 **AdGuard Base** 和 **AdGuard Mobile Ads** 勾选了，用于 Block 广告。主要该软件是外国人写的，对国外的网站的广告过滤比较友好，对于国内可以使用大佬们定义好的过滤规则，或者自己定制自己的过滤规则。也就是 **My filters** 的内容，自己添加修改。如果你学过 html 和 css，那么自己过滤内容就挺方便，因为有些广告用 picker 无法准确的筛选内容，会存在过滤不准确。
+
+
+勾选 uBlock orgin 自带的 filter list。
 
 ![filter lists](uBlock-Orgin-Tutor/uBlockOriginFilterlist.png)
+
+添加其他大佬定义的过滤规则，可以参考我 Blog [qutebrowser](https://seanchristspc.github.io/2022/02/20/Qutebrowser/) 中的**广告 block** 部分内容，有介绍大佬定义的过滤规则。
+
+![add others filter list](uBlock-Orgin-Tutor/uBlockOriginAddMyFilterlist.png)
 
 
 ### uBlock Origin Customs
