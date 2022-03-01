@@ -1139,9 +1139,14 @@ e^{i\theta}=\cos(\theta)+i \sin(\theta)
 <img data-src="/2021/04/20/uBlock-Orgin-Tutor/uBlockOriginDashboard.gif" alt><figcaption>dashboard</figcaption>
 </figure>
 <p>uBlock Origin dashboard 主要是一些uBlock的设置和自己的过滤规则。可以自己修改过滤的内容。上述演示 内容中，把uBlock网站的Block规则删除，在重新加载网页，恢复原来的面貌了。</p>
-<p>在 dashboard 中点击 <strong>Filter lists</strong>，然后把 <strong>Ad</strong> 中的 <strong>AdGuard Base</strong> 和 <strong>AdGuard Mobile Ads</strong> 勾选了，用于 Block 广告。主要该软件是外国人写的，对国外的网站的广告过滤比较友好，对于国内还是自己定制 自己的过滤规则。 也就是 <strong>My filters</strong>的内容，自己添加修改。如果你学过html和css，那么自己过滤内容就挺 方便，因为有些广告用picker无法准确的筛选内容，会存在过滤不准确。</p>
+<p>在 dashboard 中点击 <strong>Filter lists</strong>，然后把 <strong>Ad</strong> 中的 <strong>AdGuard Base</strong> 和 <strong>AdGuard Mobile Ads</strong> 勾选了，用于 Block 广告。主要该软件是外国人写的，对国外的网站的广告过滤比较友好，对于国内可以使用大佬们定义好的过滤规则，或者自己定制自己的过滤规则。也就是 <strong>My filters</strong> 的内容，自己添加修改。如果你学过 html 和 css，那么自己过滤内容就挺方便，因为有些广告用 picker 无法准确的筛选内容，会存在过滤不准确。</p>
+<p>勾选 uBlock orgin 自带的 filter list。</p>
 <figure>
 <img data-src="/2021/04/20/uBlock-Orgin-Tutor/uBlockOriginFilterlist.png" alt><figcaption>filter lists</figcaption>
+</figure>
+<p>添加其他大佬定义的过滤规则，可以参考我 Blog <a href="https://seanchristspc.github.io/2022/02/20/Qutebrowser/">qutebrowser</a> 中的<strong>广告 block</strong> 部分内容，有介绍大佬定义的过滤规则。</p>
+<figure>
+<img data-src="/2021/04/20/uBlock-Orgin-Tutor/uBlockOriginAddMyFilterlist.png" alt><figcaption>add others filter list</figcaption>
 </figure>
 <h3 id="ublock-origin-customs">uBlock Origin Customs</h3>
 <p>如下是我自己的过滤规则表，可以添加到 <strong>My filters</strong>中。只是我目前使用的，随着你使用的越久，定制的内容就 会越多。可供参考，但不完全正确。</p>
