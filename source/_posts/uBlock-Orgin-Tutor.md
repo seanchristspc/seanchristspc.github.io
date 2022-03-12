@@ -3,6 +3,7 @@ title: uBlock Origin Tutorial
 comment: true
 mathjax: true
 date: 2021-04-19 21:47:24
+updated: 2022-03-01 21:56:41
 description: 本文介绍了浏览器拦截广告插件uBlock Orgin的基础使用。Firefox,Chrome,MS Edge 和基于Chromium等浏览器都可以安装该插件！
 tags:
   - uBlock Origin

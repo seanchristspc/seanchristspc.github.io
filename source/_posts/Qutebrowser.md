@@ -137,7 +137,7 @@ qutebrowser modes:
 
 * Normal Mode：你大部分时间浏览网页都处在 Normal Mode，和 vim 的 Normal Mode 相同。
 
-* Insert Mode：现在你有个需要向网页中的搜索框输入。例如使用百度翻译或搜素引擎的搜索框。你需要先进入 Insert Mode 才能输入内容。Insert Mode 快捷键 `i`。退出模式到 Normal Mode 快捷键 `Esc`。
+* Insert Mode：现在你有个需要向网页中的搜索框输入。例如使用百度翻译或搜素引擎的搜索框。你需要先进入 Insert Mode 才能输入内容。Insert Mode 快捷键 `i`。退出模式到 Normal Mode 快捷键 `Esc`。对于有些网页搜索框，进入 Insert Mode 还是无法输入搜素内容，可以试试 `gi`，或者像平常使用浏览器一样，鼠标点击搜索框，出现闪烁光标，代表可以输入文字。
 
 ![Insert mode Demo](Qutebrowser/InsertMode.gif)
 
@@ -199,7 +199,7 @@ qutebrowser 界面具体解释：
 
 ![Open url in current tab](Qutebrowser/OpenUrl.png)
 
-使用快捷键 `O` 然后输入URL，会新打开一个网页标签。动画演示如下：
+使用快捷键 `O` 然后输入URL，会在新标签 `tab` 打开一个网页。动画演示如下：
 
 ![Open url in new tab Demo](Qutebrowser/OpenUrl.gif)
 
@@ -473,7 +473,7 @@ qutebrowser 阅读 pdf 中文乱码问题
 
 ### quickmarks
 
-quickmarks 和 bookmarks 没啥区别，但是在 qutebrowser 中建议使用 quickmarks，你可以理解成其他浏览器中的书签。
+quickmarks 和 bookmarks 没啥区别，但是在 qutebrowser 中建议使用 quickmarks，毕竟 quickmarks 中含有 *quick*（代表快速的含义）。你可以把 quickmarks 理解成 Firefox 等浏览器中的书签。
 
 添加当前网页地址到 quickmarks 按键：`m`。
 

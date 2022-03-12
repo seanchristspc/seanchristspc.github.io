@@ -56,7 +56,7 @@ Latextools 的配置，需要安装其他软件，比如 Tex，ImageMagick，Gho
 
 ### Tex 安装
 
-1. 下载 Tex 安装包！国内用户，建议使用[清华 mirror 源](https://mirrors.tuna.tsinghua.edu.cn/)下载 TexLive。下载提示：`获取下载链接` -> `应用软件` -> `Tex 排版系统` -> `Tex Live`。建议安装 TexLive 安装最新版本。其中的 MikTex 是针对 MacOSd 的。
+1. 下载 Tex 安装包！国内用户，建议使用[清华 mirror 源](https://mirrors.tuna.tsinghua.edu.cn/)下载 TexLive。下载提示：`获取下载链接` -> `应用软件` -> `Tex 排版系统` -> `Tex Live`。建议安装 TexLive 安装最新版本。其中的 TexLive支持 Windows 和 Linux；MikTex 适合 Windows，MacOS，Linux，而 MacTex 是只适合 MacOS的。
 
 2. 安装 TexLive。因为是 ISO 文件，可能需要**挂载**，然后去找其中含有 **install** 的安装程序。点击安装即可。同样的操作，点点点，注意记住自己的安装路径！
 
@@ -160,11 +160,10 @@ D:\\SoftInstallPlace\\SumatraPDF\\SumatraPDF.exe
 
 ## Math Equation 预览功能无法使用
 
-1. 使用 `LatexTools:check system` 查看 tex 宏包是否安装完全，以及环境是否配置正确！
+1. 使用 `LatexTools:check system` 查看 tex 宏包是否安装完全，以及环境是否配置正确！像 **biber** 和 **convert** 或 **magick** 显示不可用是可以忽略！使用 check system 有一定的参考价值，实际它是有 bug 的，因为自己确实安装并配置了环境变量，而他显示未检测到其他需要软件！具有一定的误导作用！记得以前为了解决未检测其他软件，自己反复重新安装软件，并配置环境变量，它给我的反馈都一样！最后发现是插件作者写的该检测环境脚本鲁棒性不够，至少对于我使用是有问题的！
 
 ![LatexTools: Check system](Latex-Sublime-configure/LatexToolsCheckSystem.gif)
 
-像 **biber** 和 **convert** 或 **magick** 显示不可用是可以忽略！使用 check system 有一定的参考价值，实际它是有 bug 的，因为自己确实安装并配置了环境变量，而他显示未检测到其他需要软件！具有一定的误导作用！记得以前为了解决未检测其他软件，自己反复重新安装软件，并配置环境变量，它给我的反馈都一样！最后发现是插件作者写的该检测环境脚本鲁棒性不够，至少对于我使用是有问题的！
 
 2. Windows 用户的朋友需要添加 环境变量 `GS_LIB`，环境变量的值为:
 ```cmd
@@ -186,7 +185,7 @@ D:\SoftInstallPlace\texlive\2019\tlpkg\tlgs\Resource\Init;D:\SoftInstallPlace\te
  
 2. 使用`Ctrl+B`可能出现问题，如下
 
-![You MUST set command in your LaTexTools.sublime-settings file before  lauching the script builder](Latex-Sublime-configure/erroFirstBuidPdf.jpg)
+![You must set command in your latextools.sublime-settings file before  lauching the script builder](latex-sublime-configure/errofirstbuidpdf.jpg)
 
 解决方案，从提示的错误来解释，便是你使用的是 **script builder**脚本编译文件，因此你需要添加在脚本编译设置处添加如下内容。
 
