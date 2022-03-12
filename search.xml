@@ -191,7 +191,7 @@
 <h2 id="latextools-软件依赖">Latextools 软件依赖</h2>
 <h3 id="tex-安装">Tex 安装</h3>
 <ol type="1">
-<li><p>下载 Tex 安装包！国内用户，建议使用<a href="https://mirrors.tuna.tsinghua.edu.cn/">清华 mirror 源</a>下载 TexLive。下载提示：<code>获取下载链接</code> -&gt; <code>应用软件</code> -&gt; <code>Tex 排版系统</code> -&gt; <code>Tex Live</code>。建议安装 TexLive 安装最新版本。其中的 MikTex 是针对 MacOSd 的。</p></li>
+<li><p>下载 Tex 安装包！国内用户，建议使用<a href="https://mirrors.tuna.tsinghua.edu.cn/">清华 mirror 源</a>下载 TexLive。下载提示：<code>获取下载链接</code> -&gt; <code>应用软件</code> -&gt; <code>Tex 排版系统</code> -&gt; <code>Tex Live</code>。建议安装 TexLive 安装最新版本。其中的 TexLive支持 Windows 和 Linux；MikTex 适合 Windows，MacOS，Linux，而 MacTex 是只适合 MacOS的。</p></li>
 <li><p>安装 TexLive。因为是 ISO 文件，可能需要<strong>挂载</strong>，然后去找其中含有 <strong>install</strong> 的安装程序。点击安装即可。同样的操作，点点点，注意记住自己的安装路径！</p></li>
 </ol>
 <h3 id="imagemagick-安装">ImageMagick 安装</h3>
@@ -548,32 +548,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Myeclipse2017-ci9破解</title>
-    <url>/2018/02/07/Myeclipse2017ci9Crack/</url>
-    <content><![CDATA[<h1 id="myeclipse2017-ci9破解-windows版">Myeclipse2017-ci9破解 windows版</h1>
-<h2 id="安装jdk">安装jdk</h2>
-<p>安装jdk时注意安装jdk8及以下版本，避免破解文件无法使用 ## 下载myeclipse2017ci9及破解文件 <a href="https://pan.baidu.com/s/17KQFLTirCf1GggMz92Qlug">下载地址</a> 密码: 3wsu 下载完成，进行安装步骤 ## 安装myeclipse 1.点击安装文件出现下图 点击next <img data-src="/2018/02/07/Myeclipse2017ci9Crack/MyeclipseCrackStep1.PNG" alt="Step 1"> 2. 接受协议 点击next <img data-src="/2018/02/07/Myeclipse2017ci9Crack/MyeclipseCrackStep2.PNG" alt="Step 2"> 3.自己选择安装目录，一定要是空文件夹 <img data-src="/2018/02/07/Myeclipse2017ci9Crack/MyeclipseCrackStep3.PNG" alt="Step 3"> 4.根据自己电脑位数选择（目前大多数电脑都是64bit）点击next <img data-src="/2018/02/07/Myeclipse2017ci9Crack/MyeclipseCrackStep4.PNG" alt="Step 4"> 5.静静的等待安装 <img data-src="/2018/02/07/Myeclipse2017ci9Crack/MyeclipseCrackStep5.PNG" alt="Step 5"> 6.这一步非常重要 取消启动myeclipse 点击finish <img data-src="/2018/02/07/Myeclipse2017ci9Crack/MyeclipseCrackStep6.PNG" alt="Step 6"> 安装完成</p>
-<h2 id="破解myeclipse">破解Myeclipse</h2>
-<p>1.将破解文件patch全部内容复制到 安装目录的plugins文件夹中 <img data-src="/2018/02/07/Myeclipse2017ci9Crack/MyeclipseCrackStep7.PNG" alt="Step 7"> <img data-src="/2018/02/07/Myeclipse2017ci9Crack/MyeclipseCrackStep8.PNG" alt="Step 8"> <img data-src="/2018/02/07/Myeclipse2017ci9Crack/MyeclipseCrackStep9.PNG" alt="Step 9"></p>
-<p>2.点击crack.bat 启动破解文件 <img data-src="/2018/02/07/Myeclipse2017ci9Crack/MyeclipseCrackStep10.PNG" alt="Step 10"></p>
-<ol start="3" type="1">
-<li>在Usercode任意输入 选择blue 双击 SystemId 在点击 active 出现下面内容： <img data-src="/2018/02/07/Myeclipse2017ci9Crack/MyeclipseCrackStep11.PNG" alt="Step 11"></li>
-</ol>
-<p>4.点击Tools 选择 saveproperties ok!</p>
-<p>5.启动Myeclipse <img data-src="/2018/02/07/Myeclipse2017ci9Crack/MyeclipseCrackStep12.PNG" alt="Step 12"></p>
-<h2 id="查看是否激活成功">查看是否激活成功</h2>
-<p>1.点击help --- SubScription information <img data-src="/2018/02/07/Myeclipse2017ci9Crack/MyeclipseCrackStep13.PNG" alt="Step 13"></p>
-<h3 id="破解完成请勿用于商业用途喜欢请支持正版">破解完成，请勿用于商业用途。喜欢请支持正版！！！！！</h3>
-]]></content>
-      <categories>
-        <category>Tools</category>
-      </categories>
-      <tags>
-        <tag>Myeclipse</tag>
-        <tag>Tools</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>qutebrowser</title>
     <url>/2022/02/20/Qutebrowser/</url>
     <content><![CDATA[<hr>
@@ -603,7 +577,7 @@ e^{i\theta}=\cos(\theta)+i \sin(\theta)
 <p>qutebrowser modes:</p>
 <ul>
 <li><p>Normal Mode：你大部分时间浏览网页都处在 Normal Mode，和 vim 的 Normal Mode 相同。</p></li>
-<li><p>Insert Mode：现在你有个需要向网页中的搜索框输入。例如使用百度翻译或搜素引擎的搜索框。你需要先进入 Insert Mode 才能输入内容。Insert Mode 快捷键 <code>i</code>。退出模式到 Normal Mode 快捷键 <code>Esc</code>。</p></li>
+<li><p>Insert Mode：现在你有个需要向网页中的搜索框输入。例如使用百度翻译或搜素引擎的搜索框。你需要先进入 Insert Mode 才能输入内容。Insert Mode 快捷键 <code>i</code>。退出模式到 Normal Mode 快捷键 <code>Esc</code>。对于有些网页搜索框，进入 Insert Mode 还是无法输入搜素内容，可以试试 <code>gi</code>，或者像平常使用浏览器一样，鼠标点击搜索框，出现闪烁光标，代表可以输入文字。</p></li>
 </ul>
 <figure>
 <img data-src="/2022/02/20/Qutebrowser/InsertMode.gif" alt><figcaption>Insert mode Demo</figcaption>
