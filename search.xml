@@ -1762,7 +1762,7 @@ f(x)=e^{x}
       </tags>
   </entry>
   <entry>
-    <title>Debug-MATLAB-Code</title>
+    <title>Debug MATLAB Code Simple Tutorial</title>
     <url>/2022/03/29/Debug-MATLAB-Code/</url>
     <content><![CDATA[<hr>
 <h1 id="debug-matlab-code-tutorial">Debug MATLAB Code Tutorial</h1>
@@ -1771,6 +1771,9 @@ f(x)=e^{x}
 <h2 id="操作环境">操作环境：</h2>
 <p>MATLAB: R2021B OS: OS: Debian GNU/Linux 11 (bullseye) x86_64 Kernel: 5.10.0-13-amd64</p>
 <hr>
+<p><span class="math display">\[
+e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
+\]</span></p>
 <p>值得注意的是 MATLAB R2021B Linux 版本可能无法启动 simulink。出现闪退，并出现如下日志：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Inconsistency detected by ld.so: ../elf/dl-tls.c: 597: _dl_allocate_tls_init: Assertion `listp != NULL<span class="string">&#x27; failed!</span></span><br></pre></td></tr></table></figure>
 <p>该问题是因为 glibc 自身的 bug 所致，具体修复方案请参考 <a href="https://ww2.mathworks.cn/support/bugreports/2632298">MATLAB Bug Report</a> 的解决方案。</p>
