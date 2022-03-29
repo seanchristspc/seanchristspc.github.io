@@ -593,7 +593,12 @@ I welcome your suggestions for improvements, even tiny one. Please contact me by
 
 
 [qutebrowser quick start guide](https://www.qutebrowser.org/doc/quickstart.html)
+
 [qutebrowser userscripts](https://www.qutebrowser.org/doc/userscripts.html)
+
 [qutebrowser help](https://www.qutebrowser.org/doc/help/)
+
 [qutebrowser faq](https://www.qutebrowser.org/doc/faq.html)
+
 [arch linux qutebrowser wiki](https://wiki.archlinux.org/title/Qutebrowser)
+
