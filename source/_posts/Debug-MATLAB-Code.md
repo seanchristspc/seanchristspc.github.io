@@ -1,5 +1,5 @@
 ---
-title: Debug-MATLAB-Code
+title: Debug MATLAB Code Simple Tutorial
 comment: true
 mathjax: true
 date: 2022-03-29 15:43:01
@@ -29,6 +29,9 @@ Kernel: 5.10.0-13-amd64
 
 ---
 
+$$
+e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
+$$
 
 值得注意的是 MATLAB R2021B Linux 版本可能无法启动 simulink。出现闪退，并出现如下日志：
 
