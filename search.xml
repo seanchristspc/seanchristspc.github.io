@@ -741,14 +741,14 @@ e^{i\theta}=\cos(\theta)+i \sin(\theta)
 <h3 id="greasemonkey">greasemonkey</h3>
 <p>直接在文件夹 greasemonkey 中添加 <code>xxx.js</code> 脚本文件即可。脚本寻找网站：<a href="https://greasyfork.org/zh-CN/scripts">Greasemonkey</a>。</p>
 <p>移除Youtube广告脚本，直接添加到 greasemonkey 配置文件夹中。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ==UserScript==</span></span><br><span class="line"><span class="comment">// @name         Auto Skip YouTube Ads</span></span><br><span class="line"><span class="comment">// @version      1.0.0</span></span><br><span class="line"><span class="comment">// @description  Speed up and skip YouTube ads automatically</span></span><br><span class="line"><span class="comment">// @author       jso8910</span></span><br><span class="line"><span class="comment">// @match        *://*.youtube.com/*</span></span><br><span class="line"><span class="comment">// @exclude      *://*.youtube.com/subscribe_embed?*</span></span><br><span class="line"><span class="comment">// ==/UserScript==</span></span><br><span class="line"><span class="built_in">setInterval</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> btn = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;.videoAdUiSkipButton,.ytp-ad-skip-button&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> (btn) &#123;</span><br><span class="line">        btn.click()</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">const</span> ad = [...document.querySelectorAll(<span class="string">&#x27;.ad-showing&#x27;</span>)][<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">if</span> (ad) &#123;</span><br><span class="line">        <span class="built_in">document</span>.querySelector(<span class="string">&#x27;video&#x27;</span>).playbackRate = <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;, <span class="number">50</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ==UserScript==</span></span><br><span class="line"><span class="comment">// @name         Auto Skip YouTube Ads</span></span><br><span class="line"><span class="comment">// @version      1.0.0</span></span><br><span class="line"><span class="comment">// @description  Speed up and skip YouTube ads automatically</span></span><br><span class="line"><span class="comment">// @author       jso8910</span></span><br><span class="line"><span class="comment">// @match        *://*.youtube.com/*</span></span><br><span class="line"><span class="comment">// @exclude      *://*.youtube.com/subscribe_embed?*</span></span><br><span class="line"><span class="comment">// ==/UserScript==</span></span><br><span class="line"><span class="built_in">setInterval</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> btn = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.videoAdUiSkipButton,.ytp-ad-skip-button&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> (btn) &#123;</span><br><span class="line">        btn.<span class="title function_">click</span>()</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">const</span> ad = [...<span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">&#x27;.ad-showing&#x27;</span>)][<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">if</span> (ad) &#123;</span><br><span class="line">        <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;video&#x27;</span>).<span class="property">playbackRate</span> = <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;, <span class="number">50</span>)</span><br></pre></td></tr></table></figure>
 <h3 id="广告-block">广告 block</h3>
 <p>先安装 Python adblock library，因为里面含有 <a href="https://github.com/brave/adblock-rust">Brave's Rust adblock library</a> 可以改善广告 block.</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install adblock</span><br></pre></td></tr></table></figure>
 <p>qutebrowser 设置 host block list</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:<span class="built_in">set</span> content.blocking.adblock.lists <span class="string">&#x27;[&quot;https://easylist.to/easylist/easylist.txt&quot;, &quot;https://easylist.to/easylist/easyprivacy.txt&quot;, &quot;https://easylist-downloads.adblockplus.org/easylistdutch.txt&quot;, &quot;https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt&quot;, &quot;https://halflife.coding.net/p/list/d/list/git/raw/master/ad-pc.txt&quot;]&#x27;</span></span><br></pre></td></tr></table></figure>
 <p>推荐一些的广告 filter list。下面的 halflife 是支持国内网站 adblock 的。</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">https:<span class="comment">//easylist.to/easylist/easylist.txt</span></span><br><span class="line">https:<span class="comment">//easylist.to/easylist/easyprivacy.txt</span></span><br><span class="line">https:<span class="comment">//easylist.to/easylist/fanboy-social.txt</span></span><br><span class="line">https:<span class="comment">//halflife.coding.net/p/list/d/list/git/raw/master/ad-pc.txt</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">https<span class="punctuation">:</span><span class="comment">//easylist.to/easylist/easylist.txt</span></span><br><span class="line">https<span class="punctuation">:</span><span class="comment">//easylist.to/easylist/easyprivacy.txt</span></span><br><span class="line">https<span class="punctuation">:</span><span class="comment">//easylist.to/easylist/fanboy-social.txt</span></span><br><span class="line">https<span class="punctuation">:</span><span class="comment">//halflife.coding.net/p/list/d/list/git/raw/master/ad-pc.txt</span></span><br></pre></td></tr></table></figure>
 <p>Easylist list 获得 可以参考 <a href="https://easylist.to/">easylist web site</a>。</p>
 <p>阻止国内网站广告也可以参考这篇 blog <a href="https://wsgzao.github.io/post/adguard/">Adguad 过滤规则分享</a>。</p>
 <p>前面讲述的都是使用大佬们定义好的广告过滤规则，能解决大部分问题，但是不能解决所有问题。有可能你有自定义广告过滤规则的需求，可以参看 <a href="https://help.eyeo.com/en/adblockplus/how-to-write-filters">How to write filters</a>。等我那天闲的无聊，再学学如何写广告过滤规则。</p>
@@ -761,7 +761,7 @@ e^{i\theta}=\cos(\theta)+i \sin(\theta)
 </figure>
 <h3 id="zotero">zotero</h3>
 <p>主要自己长期使用 zotero 管理自己的文献，但是 qutebrowser 没有 zotero 插件，但是又想使用 qutebrowser 浏览器和 zotero 交互，在 github 上找到解决方案使用 qutebrowser 的 <strong>userscripts</strong> 功能，可以解决 zotero 交互问题。具体参考 <a href="https://github.com/parchd-1/qutebrowser-zotero">zotero userscript</a> 把上面脚本添加到 <code>~/.config/qutebrowser/userscripts</code> 中，并命名为zotero，同时添加执行权限。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">chmod +x zotero</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">chmod</span> +x zotero</span><br></pre></td></tr></table></figure>
 <p>就在IEEE上下载一篇论文到 zotero 演示吧！ <img data-src="/2022/02/20/Qutebrowser/Zotero.gif" alt="Zotero Demo"></p>
 <hr>
 <h2 id="快捷键图表">快捷键图表</h2>
@@ -774,7 +774,11 @@ e^{i\theta}=\cos(\theta)+i \sin(\theta)
 <p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please contact me by email 😏! Have fun!</p>
 <hr>
 <h2 id="参考">参考</h2>
-<p><a href="https://www.qutebrowser.org/doc/quickstart.html">qutebrowser quick start guide</a> <a href="https://www.qutebrowser.org/doc/userscripts.html">qutebrowser userscripts</a> <a href="https://www.qutebrowser.org/doc/help/">qutebrowser help</a> <a href="https://www.qutebrowser.org/doc/faq.html">qutebrowser faq</a> <a href="https://wiki.archlinux.org/title/Qutebrowser">arch linux qutebrowser wiki</a></p>
+<p><a href="https://www.qutebrowser.org/doc/quickstart.html">qutebrowser quick start guide</a></p>
+<p><a href="https://www.qutebrowser.org/doc/userscripts.html">qutebrowser userscripts</a></p>
+<p><a href="https://www.qutebrowser.org/doc/help/">qutebrowser help</a></p>
+<p><a href="https://www.qutebrowser.org/doc/faq.html">qutebrowser faq</a></p>
+<p><a href="https://wiki.archlinux.org/title/Qutebrowser">arch linux qutebrowser wiki</a></p>
 ]]></content>
       <categories>
         <category>Tools</category>
@@ -1755,6 +1759,88 @@ f(x)=e^{x}
       <tags>
         <tag>Java</tag>
         <tag>DesignPattern</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Debug-MATLAB-Code</title>
+    <url>/2022/03/29/Debug-MATLAB-Code/</url>
+    <content><![CDATA[<hr>
+<h1 id="debug-matlab-code-tutorial">Debug MATLAB Code Tutorial</h1>
+<h2 id="为什么需要-debug-matlab-代码">为什么需要 Debug MATLAB 代码</h2>
+<p>讲讲自己使用 MATLAB 的遭遇吧！最近在写一个仿真程序，其中的核心代码我是用 MATLAB Code 实现的。然后在 simulink 中使用示波器查看自己的仿真程序的输出结果是否正确。输出结果的波形趋势是正确的，但是在边界处和我设想的有偏差。因此需要进一步优化代码。在出现偏差的地方，我需要用仿真示波器查看结果，每次需要精确到具体的时刻，才能比较自己程序的输出结果和理论结果。有时我需要查看代码中另一个变量的值。如果用示波器的来显示结果，就需要再定义一个输出端口，然后再用示波器连接刚才定义的输出端口。同时，每个示波器都要调节到同一时刻，才能比对此时的仿真结果。这样用示波器来调试 simulink 中的代码方式属实麻烦。实际我使用示波器调试使用了接近一天，感觉自己这样调试的效率太低了。晚上，回寝室就向室友吐槽这样调试 simulink 代码太麻烦了。室友来了一句，"可以 debug MATLAB code 呀！" 问题是在 <code>.m</code> 文件书写的 MATLAB Code 可以进行 debug，在 simulink 中可行吗？第二天，尝试了一下在 simulink 中尝试了一下打断点，是可行的！因此用 debug 的方式调试 simulink 程序是一个可行的方案。这样调试的效率就提高了。</p>
+<h2 id="操作环境">操作环境：</h2>
+<p>MATLAB: R2021B OS: OS: Debian GNU/Linux 11 (bullseye) x86_64 Kernel: 5.10.0-13-amd64</p>
+<hr>
+<p>值得注意的是 MATLAB R2021B Linux 版本可能无法启动 simulink。出现闪退，并出现如下日志：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Inconsistency detected by ld.so: ../elf/dl-tls.c: 597: _dl_allocate_tls_init: Assertion `listp != NULL<span class="string">&#x27; failed!</span></span><br></pre></td></tr></table></figure>
+<p>该问题是因为 glibc 自身的 bug 所致，具体修复方案请参考 <a href="https://ww2.mathworks.cn/support/bugreports/2632298">MATLAB Bug Report</a> 的解决方案。</p>
+<p>Debug MATLAB Code Files 无论在 <code>.m</code> 文件（script），还是在 <code>.mlx</code> 文件（live script）或者 simulink 中的 <code>MATLAB function</code> debug 逻辑都是类似的。理论上只要会一种文件的调试，在其他类型文件 debug 都会无师自通。如果你使用过 C 语言等编程语言调试工具，自然的，你也会特别适应在 MATLAB 中 debug 程序。有一个 debug 的专业术语 <strong>断点</strong>，意思是程序执行到<strong>断点</strong>处，程序暂时冻结在此处，然后手动的点击继续运行，可跳过该断点。尽管在 <code>.m</code>，<code>.mlx</code> 和 <code>MATLAB function</code> 中的 debug 操作类似，但是接下来为了充分熟悉 debug 方式，会在上述三种环境中都会有演示教程。</p>
+<hr>
+<h2 id="debug-.m-文件">Debug <code>.m</code> 文件</h2>
+<p>Debug <code>.m</code> 文件的事例程序如下：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">% debug demo</span><br><span class="line">clear;</span><br><span class="line">t=linspace(<span class="number">0</span>,<span class="number">2</span>*pi,<span class="number">50</span>);</span><br><span class="line">y=<span class="built_in">exp</span>(-t).*<span class="built_in">sin</span>(t);</span><br><span class="line">plot(t,y);</span><br><span class="line">hold on;</span><br><span class="line"><span class="keyword">for</span> k=<span class="number">1</span>:length(t)</span><br><span class="line">    plot(t(k),y(k),<span class="string">&#x27;o&#x27;</span>); % breakpoint</span><br><span class="line">    <span class="title function_">pause</span><span class="params">(<span class="number">0.1</span>)</span>;</span><br><span class="line">end</span><br><span class="line">hold off;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>简单的调试流程：</p>
+<hr>
+<ol type="1">
+<li>设置断点：在需要打断点的位置的数字行号单击鼠标左键即可添加断点</li>
+<li>执行程序：点击 <code>Run</code></li>
+<li>继续运行：点击 <code>Continue</code>，程序直到遇到下一个断点才停止。</li>
+<li>执行下一步：点击 <code>Step</code></li>
+<li>查看当前运行程序变量值：在 <code>Command Window</code> 输入需要你需要查看的变量名，然后回车。</li>
+<li>停止调试：点击 <code>Stop</code></li>
+</ol>
+<hr>
+<p>Debug <code>.m</code> 文件各窗口或按钮功能解释</p>
+<figure>
+<img data-src="/2022/03/29/Debug-MATLAB-Code/DebugMFile.png" alt><figcaption>debug m-file 功能指示</figcaption>
+</figure>
+<p>debug 动态演示 gif 图</p>
+<figure>
+<img data-src="/2022/03/29/Debug-MATLAB-Code/DebugMatlabMFile.gif" alt><figcaption>Debug M-file Demo</figcaption>
+</figure>
+<p>除了使用 <code>Command Window</code> 窗口来查看当前变量，可以在程序调试程序处，鼠标移动到需要查看的变量，会自动显示当前变量值。感觉是不是特别方便呀！</p>
+<figure>
+<img data-src="/2022/03/29/Debug-MATLAB-Code/DebugMatlabMFile2.gif" alt><figcaption>Show current value</figcaption>
+</figure>
+<p>如果只需执行一次断点调试操作，可以把鼠标放置在数字行号右侧，会出现一个视频播放器，播放或暂停的符号。鼠标左键点击一下，便可执行单次的调试操作。</p>
+<figure>
+<img data-src="/2022/03/29/Debug-MATLAB-Code/DebugtoHere.png" alt><figcaption>Continue to Here</figcaption>
+</figure>
+<h2 id="debug-.mlx-文件">Debug <code>.mlx</code> 文件</h2>
+<p>Debug '.mlx' 文件的方法和 <code>.m</code> 文件类似，只是程序的结果在 <code>.mlx</code> 文件内部显示而已。</p>
+<p>debug live script 演示动图</p>
+<figure>
+<img data-src="/2022/03/29/Debug-MATLAB-Code/DebugMatlabLiveScriptFile.gif" alt><figcaption>Debug live script demo</figcaption>
+</figure>
+<hr>
+<h2 id="debug-simulink-matlab-function">Debug simulink <code>MATLAB function</code></h2>
+<p>简单的 debug simulink 仿真整体架构。 <img data-src="/2022/03/29/Debug-MATLAB-Code/DebugSimulinkOverview.png" alt="Overview Debug Simulink"></p>
+<p><code>MATLAB function</code> DebugDemo1 的程序如下：</p>
+<figure class="highlight c"><figcaption><span>DebugDemo1</span></figcaption><table><tr><td class="code"><pre><span class="line">function [out1,out2] = DebugDemo1(t,sample)</span><br><span class="line"></span><br><span class="line">persistent n lastout;</span><br><span class="line"><span class="keyword">if</span> <span class="title function_">isempty</span><span class="params">(n)</span></span><br><span class="line">    n=<span class="number">1</span>;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="title function_">isempty</span><span class="params">(lastout)</span></span><br><span class="line">    lastout=<span class="number">0</span>;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">out1=<span class="built_in">exp</span>(-t).*<span class="built_in">sin</span>(t);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> t&gt;n*sample</span><br><span class="line">    out2=out1;</span><br><span class="line">    lastout=out2;</span><br><span class="line">    n=n+<span class="number">1</span>;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    out2=lastout;</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<p>simulink debug 演示效果</p>
+<figure>
+<img data-src="/2022/03/29/Debug-MATLAB-Code/DebugMatlabSimulinkFunction.gif" alt><figcaption>Debug simulink demo</figcaption>
+</figure>
+<p>Debug 操作内容可以参看官方帮助文档。在 <code>Command Window</code> 输入如下命令，然后点击 <code>Debug MATLAB Code Files</code> 即可查看本地帮助文档 debug 内容。</p>
+<h2 id="section"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">doc Debug MATLAB Code Files</span><br></pre></td></tr></table></figure></h2>
+<h2 id="matlab-simulink-tip">matlab simulink tip</h2>
+<p>最近，使用 MATLAB R2021b 仿真，发现一个新功能，十分不错。我个人把他称为<em>便捷版的示波器</em>，当然他有专业的名字 <strong>Simulation Data Inspector</strong>。有是需要在仿真中比对多组数据，尤其是比对的数据比较多时，用仿真示波器来比对数据比较麻烦。需要连线，设置 <code>mux</code> 输入端口数等等操作。而使用 <strong>Simulation Data Inspector</strong> 就方便太多了。具体使用流程，请参考下面的动态图。</p>
+<figure>
+<img data-src="/2022/03/29/Debug-MATLAB-Code/SimulationDataInspector.gif" alt><figcaption>Simulation Data Inspector Demo</figcaption>
+</figure>
+<p>上面的动态演示只是演示了 Data Inspector 一些基本功能，更多功能请使用在 <code>Command Window</code> 中使用 <code>doc View Data in the Simulation Data Inspector</code>。</p>
+<h2 id="备注">备注</h2>
+<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please contact me by email 😏! Have fun!</p>
+<hr>
+<h2 id="参考">参考</h2>
+<p><a href="https://ww2.mathworks.cn/help/matlab/matlab_prog/debugging-process-and-features.html?lang=en">Debug MATLAB Code Files</a></p>
+<p><a href="https://ww2.mathworks.cn/help/simulink/ug/populate-sdi-with-your-data.html?lang=en">Simulation Data Inspector</a></p>
+]]></content>
+      <categories>
+        <category>MATLAB</category>
+      </categories>
+      <tags>
+        <tag>MATLAB</tag>
       </tags>
   </entry>
 </search>
