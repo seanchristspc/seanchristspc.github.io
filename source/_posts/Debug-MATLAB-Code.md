@@ -1,5 +1,5 @@
 ---
-title: Debug MATLAB Code Simple Tutorial
+title: A simple debug MATLAB code tutorial
 comment: true
 mathjax: true
 date: 2022-03-29 15:43:01
@@ -24,7 +24,9 @@ categories:
 操作环境：
 ---
 MATLAB: R2021B
-OS: OS: Debian GNU/Linux 11 (bullseye) x86\_64
+
+OS: Debian GNU/Linux 11 (bullseye) x86\_64
+
 Kernel: 5.10.0-13-amd64
 
 ---
