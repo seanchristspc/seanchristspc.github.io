@@ -3,7 +3,7 @@ title: qutebrowser
 comment: true
 mathjax: true
 date: 2022-02-19 21:15:38
-updated: 2022-02-25 18:53:48
+updated: 2022-03-29 21:44:45
 description: qutebrowser 用了大概有两个多月了，感觉可以写写关于 qutebrowser 的 Blog! 记录一下使用 qutebrowser 技巧！个人感觉用着还不错，可在网络世界里快速顺滑的遨游。如果你熟悉 vim，那么你可能几天（甚至半天）后就会非常适应它。如果你不熟悉 vim，也不用担心，多使用几天就会爱不释手啦。
 tags:	
    - Qutebrowser
@@ -19,7 +19,6 @@ categories:
 
 
 # qutebrowser tutorial
-
 
 
 ## 怎么接触到 qutebrowser
@@ -574,6 +573,18 @@ chmod +x zotero
 
 
 ---
+
+
+## do not copy to clipboard
+
+qutebrowser 对于有些网站的 copy 按钮无法使用，这个功能严重影响我工作。今天2022-03-29觉得该解决这个问题，所以去搜索引擎搜索了一下这个问题，直接就找到答案了 参考 [qutebrowser github issue 6719](https://github.com/qutebrowser/qutebrowser/issues/6719)。
+
+```bash
+:set content.javascript.can_access_clipboard true
+```
+
+
+--- 
 
 ## 快捷键图表
 ![shotcuts](Qutebrowser/cheatsheet.png)
