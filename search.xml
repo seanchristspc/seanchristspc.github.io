@@ -1792,7 +1792,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 <hr>
 <h2 id="debug-.m-文件">Debug <code>.m</code> 文件</h2>
 <p>Debug <code>.m</code> 文件的事例程序如下：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">% debug demo</span><br><span class="line">clear;</span><br><span class="line">t=linspace(<span class="number">0</span>,<span class="number">2</span>*pi,<span class="number">50</span>);</span><br><span class="line">y=<span class="built_in">exp</span>(-t).*<span class="built_in">sin</span>(t);</span><br><span class="line">plot(t,y);</span><br><span class="line">hold on;</span><br><span class="line"><span class="keyword">for</span> k=<span class="number">1</span>:length(t)</span><br><span class="line">    plot(t(k),y(k),<span class="string">&#x27;o&#x27;</span>); % breakpoint</span><br><span class="line">    <span class="title function_">pause</span><span class="params">(<span class="number">0.1</span>)</span>;</span><br><span class="line">end</span><br><span class="line">hold off;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">% debug demo</span><br><span class="line">clear;</span><br><span class="line">t=linspace(<span class="number">0</span>,<span class="number">2</span>*pi,<span class="number">50</span>);</span><br><span class="line">y=<span class="built_in">exp</span>(-t).*<span class="built_in">sin</span>(t);</span><br><span class="line">plot(t,y);</span><br><span class="line">hold on;</span><br><span class="line"><span class="keyword">for</span> k=<span class="number">1</span>:length(t)</span><br><span class="line">    plot(t(k),y(k),<span class="string">&#x27;o&#x27;</span>); % breakpoint</span><br><span class="line">    <span class="title function_">pause</span><span class="params">(<span class="number">0.1</span>)</span>;</span><br><span class="line">end</span><br><span class="line">hold off;</span><br></pre></td></tr></table></figure>
 <p>简单的调试流程：</p>
 <hr>
 <ol type="1">
@@ -1842,7 +1842,8 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 <figure>
 <img data-src="/2022/03/29/Debug-MATLAB-Code/SimulationDataInspector.gif" alt><figcaption>Simulation Data Inspector Demo</figcaption>
 </figure>
-<p>上面的动态演示只是演示了 Data Inspector 一些基本功能，更多功能请使用在 <code>Command Window</code> 中使用 <code>doc View Data in the Simulation Data Inspector</code>。</p>
+<p>上面的动态演示只是演示了 Data Inspector 一些基本功能，更多功能请使用在 <code>Command Window</code> 中使用 <code>doc</code> 命令查看帮助文档。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">doc View Data <span class="keyword">in</span> the Simulation Data Inspector</span><br></pre></td></tr></table></figure>
 <h2 id="备注">备注</h2>
 <p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please contact me by email 😏! Have fun!</p>
 <hr>
@@ -1860,7 +1861,9 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
   <entry>
     <title>Phase Locked Loop Learning Notes</title>
     <url>/2022/03/30/PLL-Learning-Notes/</url>
-    <content><![CDATA[<h1 id="phase-locked-loop-的目标">Phase Locked Loop 的目标</h1>
+    <content><![CDATA[<h1 id="接触锁相环的缘由">接触锁相环的缘由</h1>
+<p>学电力电子，尤其是新能源光伏或风电的并网运行需要同步电网信号，需要锁相环来同步相位信息。对于电力驱动领域，无位置传感器电力驱动有运用锁相环的需求。但是我最近研究的内容也有需求锁定一个未知信号的相位，因此需要了解并使用锁相环。大概花了一个月的时间来学习锁相环，对锁相环的基本原理有了一定的了解。尤其是自己明白原理后，看其他其他文献就容易理解了。不会像最开始学习锁相环阶段，看着锁相环就头大，头晕。实际锁相环的基本原理并不难，尤其是公式推导过程（公式偏多），不要抵触，多花点时间就可以掌握。接下来首先介绍锁相环的需要完成的目标。</p>
+<h1 id="phase-locked-loop-的目标">Phase Locked Loop 的目标</h1>
 <p>PLL 全称为 Phase Locked Loop，中文名把它叫做<strong>锁相环</strong>。PLL 的基本功能是<strong>跟踪</strong>、<strong>锁定</strong>交流信号的<strong>相位</strong>，且在必要时还 可以提供有关信号的<strong>频率</strong>和<strong>幅值</strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。</p>
 <hr>
 <h1 id="乘法鉴相锁相环">乘法鉴相锁相环</h1>
@@ -2089,7 +2092,8 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 <p><strong>现在分析锁相环是如何实现频率的锁定和相位的锁定？</strong></p>
 <p>根据图7来分析锁定问题。假设存在某一时刻<span class="math inline">\(\theta_1(t)&gt;\theta_2(t)\)</span>，<span class="math inline">\(0 &lt;\theta_e(t)&lt;\frac{\pi}{2}\)</span>，<span class="math inline">\(\theta_1(t)\)</span> 与 <span class="math inline">\(\theta_2(t)\)</span> 的差值在扩大，也就是说<span class="math inline">\(\theta_1(t)\)</span>对应的角频率大于<span class="math inline">\(\theta_2(t)\)</span> 的角频率。<span class="math inline">\(\theta_e(t)=\theta_1(t)-\theta_2(t)&gt;0\)</span> <span class="math inline">\(\uparrow\)</span>，那么 <span class="math inline">\(v_d(t)\)</span> <span class="math inline">\(\uparrow\)</span> ，那么 <span class="math inline">\(v_c(t)\)</span> <span class="math inline">\(\uparrow\)</span>，那么对应 VCO 的输出信号频率增加<span class="math inline">\(\omega_v\)</span>，那么<span class="math inline">\(\theta_2(t)\)</span>的频率在增加，以此来追上<span class="math inline">\(\theta_2(t)\)</span>的频率，当 <span class="math inline">\(\theta_1(t)\)</span>的频率和 <span class="math inline">\(\theta_2(t)\)</span>的频率相等时，<span class="math inline">\(\theta_e(t)\)</span>就是一个恒定值，整个闭环系统进入稳态。</p>
 <p><strong>现在的稳定状态是有输入输出信号是有相位差。为了实现相位偏差为零，可以在环路滤波器之后加一个PI，便可实现相位的零稳态误差。</strong></p>
-<h1 id="三相锁相环">三相锁相环</h1>
+<hr>
+<h1 id="经典的三相锁相环">经典的三相锁相环</h1>
 <p>经典的三相系统的锁相环主要参考文献 <a href="https://ieeexplore.ieee.org/document/567077">Operation of a phase locked loop system under distorted utility conditions</a><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>。</p>
 <p><img data-src="/2022/03/30/PLL-Learning-Notes/SSRFSPLLVector.png" title="图8 SSRF-SPLL 矢量图"></p>
 <p>SSRF-SPLL矢量图8各变量定义：</p>
@@ -2624,6 +2628,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 <p>那么只要控制<span class="math inline">\(\bar{p}\)</span>为0，便可以实现锁相。这也是 <span class="math inline">\(\bar{p}^{\*}=0\)</span>的原因。</p>
 <p>虚拟平均无功鉴相单相锁相环的整个原理，控制结构图15充分展现其原理。</p>
 <p>该方法简单，但该方法的动态性能比较弱。它对电网谐波不敏感，算一个优点吧。无法获得电网的幅值信息，算一个缺点吧。</p>
+<hr>
 <h1 id="增强型单相锁相环epll">增强型单相锁相环EPLL</h1>
 <p>为了解决<strong>虚拟平均无功鉴相单相锁相环</strong>动态响应速度慢的问题，采用基于自适应滤波理论的来重构输入信号的基波分量，同时可以实现对输入信号幅值、相位角与频率的估算。把这种基于自适应滤波理论的锁相环称为<strong>增强型单相锁相环</strong><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>.</p>
 <p><img data-src="/2022/03/30/PLL-Learning-Notes/SinglePhaseEPLLConfiguration.png" title="图16 增强型单相锁相环控制结构"></p>
@@ -2660,13 +2665,16 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 <p>该方案替换了低通滤波器，通过使<span class="math inline">\(\frac{V}{2} \sin (\theta + \hat{\theta})\)</span>、<span class="math inline">\(\frac{\hat{A}}{2} \sin 2 \hat{\theta}\)</span> 两者抵消的方案实现交流量的滤除。尽管提高了锁相环的响应速度，具有较好的动态性能。但是该锁相环方案对谐波比较敏感。不适合含有大量谐波的场合，需要先进行谐波滤除，才能应用该方案。</p>
 <p><img data-src="/2022/03/30/PLL-Learning-Notes/EPLL2.png" title="图17 增强型单相锁相环另一个控制结构"></p>
 <p>图16的控制结构和图17只是<span class="math inline">\(\sin\)</span>和<span class="math inline">\(\cos\)</span>互换，依然能实现锁相环的功能。</p>
+<hr>
 <h1 id="基于延迟法的虚拟两相的单相锁相环">基于延迟法的虚拟两相的单相锁相环</h1>
 <p>前面针对单相锁相环的处理都是集中在单个输入信号。当然，可以采取前面的三相锁相环的思路，来构造一个虚拟的正交信号，来模仿三相锁相环的原理。输入信号定义为<span class="math inline">\(v_{\beta}\)</span>，经过<span class="math inline">\(90^{\circ}\)</span>的延时来虚拟一个<span class="math inline">\(v_{\beta}\)</span>。而通过公式<span class="math inline">\(\eqref{eq:AlphaBetaVoltage}\)</span>可以知道， <span class="math inline">\(v_{\alpha}\)</span> 的相角和三相的<span class="math inline">\(v_a\)</span>相角对应(这句话实际没啥意义)。有了<span class="math inline">\(v_{\alpha}\)</span>和 <span class="math inline">\(v_{\beta}\)</span>，那么就可以使用三相锁相环的处理方案。</p>
 <p>如图18所示，为基于延迟法的虚拟两相的单相锁相环的控制结构。和经典的三相锁相环结构对比对比就可以理解啦！延迟<span class="math inline">\(90^{\circ}\)</span>的方法，影响响应速度。</p>
 <p><img data-src="/2022/03/30/PLL-Learning-Notes/SinglePhasePLLDelay90Degree.png" title="图18 基于延迟法虚拟两相的单相锁相环控制结构"></p>
+<hr>
 <h1 id="基于微分法的虚拟两相的单相锁相环">基于微分法的虚拟两相的单相锁相环</h1>
 <p>知道<span class="math inline">\(v_{\beta}\)</span> 获得 <span class="math inline">\(v_{\alpha}\)</span> 的方式，除了使用延迟方式，还可以使用微分的方式。但是有个一个前提， <strong>输入信号<span class="math inline">\(v_{\beta}\)</span>为理想的正弦信号</strong>。对于非理想电网就会出现问题。尽管速度提高了，但微分环节的引入，抗噪声能力严重下降。</p>
 <p>如果想把非理想正弦的信号变换为正弦的理想信号，又需要加入滤波器，这又引入了延迟。哈哈！进入无限死循环。该微分法的原理框图不在列出，本质上和基于延迟法的单相锁相环没有差别。</p>
+<hr>
 <h1 id="基于park反变换虚拟两相的单相锁相环">基于Park反变换虚拟两相的单相锁相环</h1>
 <p>基于Park反变换的方法有点意思，所以把控制结构图列出来，如图19所示。尽管文献<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>有其他分析思路，但是我更倾向于更简单有效的理解方式。把这个反Park变换作为估计<span class="math inline">\(v_{\beta}\)</span>的一种观测器来理解。同样和前面的基于虚拟两相的方法具有一曲同功之妙。已知输入信号<span class="math inline">\(v_{\alpha}\)</span>，通过坐标变换获得<span class="math inline">\(v_{\beta}\)</span>，然后使 <span class="math inline">\(v_d=0\)</span>,即可实现锁相环功能。</p>
 <p><img data-src="/2022/03/30/PLL-Learning-Notes/SinglePhasePLLInversePark.png" title="图19 基于Park反变换虚拟两相的单相锁相环"></p>
@@ -2717,6 +2725,64 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 \end{equation}
 \]</span></p>
 <hr>
+<h1 id="基于sogi的单相锁相环">基于SOGI的单相锁相环</h1>
+<p>SOGI全称为 <strong>Second-Order Generalized Integrator</strong>，翻译成中文为<strong>二阶广义积分器</strong>。基于SOGI的单相锁相环的核心就是就是<strong>SOGI</strong>，如果明白SOGI，剩下的问题就迎刃而解啦！</p>
+<p>简单的说一下SOGI的功能：SOGI的两个输出信号严格的满足<span class="math inline">\(90^{\circ}\)</span>的相位偏差(两输出信号严格的正交)，同时其中一个输出能精确的跟踪输入基频信号。</p>
+<p>如果能得到两个严格正交的信号，可以分别定义为<span class="math inline">\(v_{\alpha}\)</span>、<span class="math inline">\(v_{\beta}\)</span>，那么在利用前面经典的三相锁相环原理，便可实现锁相环功能。</p>
+<p>如图20所示，为SOGI-QSG(Second-Order Generalized Integrator Quadrature Signals Generation)的原理框图。</p>
+<p><img data-src="/2022/03/30/PLL-Learning-Notes/SOGI-QSG.png" title="图20 SOGI-QSG原理框图"></p>
+<h2 id="为什么sogi能精确跟踪为正弦的输入信号">为什么SOGI能精确跟踪为正弦的输入信号?</h2>
+<p>根据图20，可以得到SOGI的开环传递函数：</p>
+<p><span class="math display">\[
+\begin{equation}
+    \label{eq:SOGIOpenLoopTransferFunction}
+    \begin{aligned}
+    \frac{v_{\alpha}(s)}{K\varepsilon_v(s)}
+    &amp;=\frac{s \hat{\omega_o}}{s^2+\hat{\omega_o}^2}\\
+    \frac{v_{\beta}(s)}{K\varepsilon_v(s)}
+    &amp;=\frac{\hat{\omega_o}^2}{s^2+\hat{\omega_o}^2}
+    \end{aligned}
+\end{equation}
+\]</span></p>
+<p>正弦信号的 laplace 变换</p>
+<p><span class="math display">\[
+\begin{equation}
+    \label{eq:SinusoidalLaplaceTransfer}
+    \begin{aligned}
+        \mathcal{L}\{\sin(\omega t)\}&amp;=\frac{\omega}{s^2+\omega^2}\\
+        \mathcal{L}\{\cos(\omega t)\}&amp;=\frac{s}{s^2+\omega^2}
+    \end{aligned}
+\end{equation}
+\]</span></p>
+<p>根据<strong>内膜原理</strong><a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>，可以用一句简单的话来说，<strong>整个控制系统要使输入信号与输出信号无静差，完全精准跟踪输入信号，那么只要满足控制系统的开环传递函数中含有输入信号的s域模型的条件，便可实现精准无静差跟踪。</strong></p>
+<p>比较好的 <a href="https://engineering.purdue.edu/~zak/ECE_382-Fall_2018/hand_3.pdf">The Internal Model Principle</a> 教程是 Purdue 大学 Zak 教授的这一篇内膜原理笔记。有兴趣，可以读一读。</p>
+<p>观察公式 <span class="math inline">\(\eqref{eq:SOGIOpenLoopTransferFunction}\)</span>和公式<span class="math inline">\(\eqref{eq:SinusoidalLaplaceTransfer}\)</span>你会发现恰巧SOGI的开环传递函数含有正弦信号的s域模型。那么就解决了为什么SOGI可以精确跟踪正弦信号。</p>
+<h2 id="为什么sogi两输出信号严格正交">为什么SOGI两输出信号严格正交？</h2>
+<p>SOGI的闭环传递函数： <span class="math display">\[
+\begin{equation}
+    \label{eq:SOGIClosedLoopTransferFunction}
+    \begin{aligned}
+     G_{\alpha} &amp;=\frac{v_{\alpha}(s)}{v(s)}
+     =\frac{ks}{s^2+ks+\hat{\omega_o}^2}\\
+     G_{\beta} &amp;=\frac{v_{\beta}(s)}{v(s)}
+     =\frac{k\hat{\omega_o}}{s^2+ks+\hat{\omega_o}^2}
+    \end{aligned}
+\end{equation}
+\]</span></p>
+<p>可以直接看两闭环传递函数<span class="math inline">\(\eqref{eq:SOGIClosedLoopTransferFunction}\)</span>互差<span class="math inline">\(90^{\circ}\)</span>。</p>
+<p><span class="math display">\[
+\begin{equation}
+    \angle G_{\alpha} - \angle G_{\beta}=\frac{\pi}{2}
+\end{equation}
+\]</span></p>
+<p>因此SOGI的两输出信号严格正交。</p>
+<p><img data-src="/2022/03/30/PLL-Learning-Notes/SOGIBode.png" title="图21 SOGI闭环传递函数bode图"></p>
+<p>从闭环传递函数 Bode 图中也可以验证SOGI输出信号严格正交， <span class="math inline">\(G_{\alpha}\)</span>、 <span class="math inline">\(G_{\beta}\)</span> 相角严格互差<span class="math inline">\(\frac{\pi}{2}\)</span>。</p>
+<p>从图21可以发现，<span class="math inline">\(G_{\alpha}\)</span>可以看作一个带通滤波器，在频率 <span class="math inline">\(\hat{\omega_o}\)</span> 处无衰减，但在其它频率就有衰减作用，越偏离 <span class="math inline">\(\hat{\omega_o}\)</span>，衰减越厉害。这也是锁相环所期望的，锁定频率基本不衰减，其他次谐波都衰减，过滤。因此基于SOGI的单相锁相环性能不错，能抵抗谐波干扰。</p>
+<p>写了这么多理论，放一个基于 SOGI 的 simulink 的仿真波形吧！如图22所示。</p>
+<p><img data-src="/2022/03/30/PLL-Learning-Notes/SOGI_PLLResult.png" title="图22 SOGI PLL仿真波形"></p>
+<p>对SOGI单相锁相环有兴趣，可以参考文献<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>，该文献对SOGI单相锁相环写的清晰明了，图文并茂。</p>
+<hr>
 <h1 id="锁相环的性能指标">锁相环的性能指标</h1>
 <hr>
 <ul>
@@ -2728,7 +2794,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 <li>非平衡电网适应能力 line unbalance rejection</li>
 </ul>
 <hr>
-<h1 id="阅读pll相关文献">阅读PLL相关文献</h1>
+<h1 id="推荐阅读有关pll文献">推荐阅读有关PLL文献</h1>
 <p><a href="https://ieeexplore.ieee.org/document/1318659">A method for synchronization of power electronic converters in polluted and variable-frequency environments</a></p>
 <p><a href="https://ieeexplore.ieee.org/document/1348790">Performance evaluation of PLL algorithms for single-phase grid-connected systems</a></p>
 <p><a href="https://ieeexplore.ieee.org/document/4118328">Decoupled Double Synchronous Reference Frame PLL for Power Converters Control</a></p>
@@ -2742,7 +2808,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 <h1 id="备注">备注</h1>
 <p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please contact me by email 😏! Have fun!</p>
 <hr>
-<h1 id="参考">参考</h1>
+<h1 id="参考文献">参考文献</h1>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -2753,6 +2819,8 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 <li id="fn5" role="doc-endnote"><p>RODRIGUEZ P, POU J, BERGAS J, et al. Decoupled double synchronous reference frame pll for power converters control[J/OL]. IEEE Transactions on Power Electronics, 2007, 22(2):584-592. DOI: 10.1109/TPEL.2006.890000.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn6" role="doc-endnote"><p>KARIMI-GHARTEMANI M, IRAVANI M R. A method for synchronization of power electronic converters in polluted and variable-frequency environments[J]. IEEE Transactions on Power Systems, 2004, 19(3): 1263-1270.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn7" role="doc-endnote"><p>SILVA S M, LOPES B M, CAMPANA R P, et al. Performance evaluation of pll algorithms for single-phase grid-connected systems[C]//Conference Record of the 2004 IEEE Industry Applications Conference, 2004. 39th IAS Annual Meeting.: volume 4. IEEE, 2004: 2259-2263.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8" role="doc-endnote"><p>FRANCIS B A, WONHAM W M. The internal model principle for linear multivariable regulators[J]. Applied mathematics and optimization, 1975, 2(2): 170-194.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9" role="doc-endnote"><p>CIOBOTARU M, TEODORESCU R, BLAABJERG F. A new single-phase pll structure based on second order generalized integrator[C/OL]//2006 37th IEEE Power Electronics Specialists Conference. 2006: 1-6. DOI: 10.1109/pesc.2006.1711988.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 ]]></content>
