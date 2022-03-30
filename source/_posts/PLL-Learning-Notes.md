@@ -3,8 +3,8 @@ title: Phase Locked Loop Learning Notes
 comment: true
 mathjax: true
 date: 2022-03-30 10:33:55
-updated: 2022-03-30 15:42:60
-description: 本文主要记录锁相环的学习笔记。 
+updated: 2022-03-30 21:22:60
+description: 本文主要记录锁相环的学习笔记。 先从最简单的基础的锁相环概念讲起，然后通过理解基于乘法鉴相器的锁相环为突破口，加深对锁相环概念的理解。随后分别介绍三相锁相环的原理和单相锁相环的原理。笔记全篇比较长，可以挑选感兴趣的来看。最好先理解基于乘法鉴相器的锁相环原理，然后理解经典的三相锁相环原理，随后理解一个单相锁相环原理，然后就可随意挑选小节阅读。本片文章并没有包含所有锁相环的内容，只是选取了电力电子领域中的一些经典锁相环介绍。在理解这些经典的锁相环内容后，相信有能力可以追逐锁相环的前沿文献啦！
 tags:
   - PLL
   - Power Electronics
@@ -12,6 +12,11 @@ categories:
   - Power Electronics
 
 ---
+
+# 接触锁相环的缘由
+
+学电力电子，尤其是新能源光伏或风电的并网运行需要同步电网信号，需要锁相环来同步相位信息。对于电力驱动领域，无位置传感器电力驱动有运用锁相环的需求。但是我最近研究的内容也有需求锁定一个未知信号的相位，因此需要了解并使用锁相环。大概花了一个月的时间来学习锁相环，对锁相环的基本原理有了一定的了解。尤其是自己明白原理后，看其他其他文献就容易理解了。不会像最开始学习锁相环阶段，看着锁相环就头大，头晕。实际锁相环的基本原理并不难，尤其是公式推导过程（公式偏多），不要抵触，多花点时间就可以掌握。接下来首先介绍锁相环的需要完成的目标。
+
 
 # Phase Locked Loop 的目标
 
@@ -349,7 +354,10 @@ $$
 
 **现在的稳定状态是有输入输出信号是有相位差。为了实现相位偏差为零，可以在环路滤波器之后加一个PI，便可实现相位的零稳态误差。**
 
-# 三相锁相环 
+---
+
+
+# 经典的三相锁相环 
  
 经典的三相系统的锁相环主要参考文献 [Operation of a phase locked loop system under distorted utility conditions](https://ieeexplore.ieee.org/document/567077)[^2]。
 
@@ -1005,6 +1013,9 @@ $$
 
 该方法简单，但该方法的动态性能比较弱。它对电网谐波不敏感，算一个优点吧。无法获得电网的幅值信息，算一个缺点吧。
 
+---
+
+
 # 增强型单相锁相环EPLL
 
 为了解决**虚拟平均无功鉴相单相锁相环**动态响应速度慢的问题，采用基于自适应滤波理论的来重构输入信号的基波分量，同时可以实现对输入信号幅值、相位角与频率的估算。把这种基于自适应滤波理论的锁相环称为**增强型单相锁相环**[^6]. 
@@ -1057,6 +1068,9 @@ $K_v$ 为鉴相器的稳态增益， $K_v=\frac{V}{2}$。但是该闭环传递�
 
 图16的控制结构和图17只是$\sin$和$\cos$互换，依然能实现锁相环的功能。
 
+---
+
+
 # 基于延迟法的虚拟两相的单相锁相环
 
 前面针对单相锁相环的处理都是集中在单个输入信号。当然，可以采取前面的三相锁相环的思路，来构造一个虚拟的正交信号，来模仿三相锁相环的原理。输入信号定义为$v_{\beta}$，经过$90^{\circ}$的延时来虚拟一个$v_{\beta}$。而通过公式$\eqref{eq:AlphaBetaVoltage}$可以知道，
@@ -1066,12 +1080,18 @@ $v_{\alpha}$ 的相角和三相的$v_a$相角对应(这句话实际没啥意义)
 
 ![](PLL-Learning-Notes/SinglePhasePLLDelay90Degree.png "图18 基于延迟法虚拟两相的单相锁相环控制结构")
 
+
+---
+
+
 # 基于微分法的虚拟两相的单相锁相环
 
 
 知道$v_{\beta}$ 获得 $v_{\alpha}$ 的方式，除了使用延迟方式，还可以使用微分的方式。但是有个一个前提， **输入信号$v_{\beta}$为理想的正弦信号**。对于非理想电网就会出现问题。尽管速度提高了，但微分环节的引入，抗噪声能力严重下降。
 
 如果想把非理想正弦的信号变换为正弦的理想信号，又需要加入滤波器，这又引入了延迟。哈哈！进入无限死循环。该微分法的原理框图不在列出，本质上和基于延迟法的单相锁相环没有差别。
+
+---
 
 # 基于Park反变换虚拟两相的单相锁相环
 
@@ -1134,6 +1154,97 @@ $$
 
 ---
 
+
+# 基于SOGI的单相锁相环
+
+SOGI全称为 **Second-Order Generalized Integrator**，翻译成中文为**二阶广义积分器**。基于SOGI的单相锁相环的核心就是就是**SOGI**，如果明白SOGI，剩下的问题就迎刃而解啦！
+
+简单的说一下SOGI的功能：SOGI的两个输出信号严格的满足$90^{\circ}$的相位偏差(两输出信号严格的正交)，同时其中一个输出能精确的跟踪输入基频信号。
+
+如果能得到两个严格正交的信号，可以分别定义为$v_{\alpha}$、$v_{\beta}$，那么在利用前面经典的三相锁相环原理，便可实现锁相环功能。
+
+如图20所示，为SOGI-QSG(Second-Order Generalized Integrator Quadrature Signals Generation)的原理框图。
+
+![](PLL-Learning-Notes/SOGI-QSG.png "图20 SOGI-QSG原理框图")
+
+## 为什么SOGI能精确跟踪为正弦的输入信号?
+
+根据图20，可以得到SOGI的开环传递函数：
+
+$$
+\begin{equation}
+	\label{eq:SOGIOpenLoopTransferFunction}
+	\begin{aligned}
+	\frac{v_{\alpha}(s)}{K\varepsilon_v(s)}
+	&=\frac{s \hat{\omega_o}}{s^2+\hat{\omega_o}^2}\\
+	\frac{v_{\beta}(s)}{K\varepsilon_v(s)}
+	&=\frac{\hat{\omega_o}^2}{s^2+\hat{\omega_o}^2}
+	\end{aligned}
+\end{equation}
+$$
+
+正弦信号的 laplace 变换
+
+$$
+\begin{equation}
+	\label{eq:SinusoidalLaplaceTransfer}
+	\begin{aligned}
+		\mathcal{L}\{\sin(\omega t)\}&=\frac{\omega}{s^2+\omega^2}\\
+		\mathcal{L}\{\cos(\omega t)\}&=\frac{s}{s^2+\omega^2}
+	\end{aligned}
+\end{equation}
+$$
+
+根据**内膜原理**[^8]，可以用一句简单的话来说，**整个控制系统要使输入信号与输出信号无静差，完全精准跟踪输入信号，那么只要满足控制系统的开环传递函数中含有输入信号的s域模型的条件，便可实现精准无静差跟踪。**
+
+
+比较好的 [The Internal Model Principle](https://engineering.purdue.edu/~zak/ECE_382-Fall_2018/hand_3.pdf) 教程是 Purdue 大学 Zak 教授的这一篇内膜原理笔记。有兴趣，可以读一读。
+
+观察公式 $\eqref{eq:SOGIOpenLoopTransferFunction}$和公式$\eqref{eq:SinusoidalLaplaceTransfer}$你会发现恰巧SOGI的开环传递函数含有正弦信号的s域模型。那么就解决了为什么SOGI可以精确跟踪正弦信号。
+
+## 为什么SOGI两输出信号严格正交？
+
+
+SOGI的闭环传递函数：
+$$
+\begin{equation}
+	\label{eq:SOGIClosedLoopTransferFunction}
+	\begin{aligned}
+	 G_{\alpha} &=\frac{v_{\alpha}(s)}{v(s)}
+	 =\frac{ks}{s^2+ks+\hat{\omega_o}^2}\\
+	 G_{\beta} &=\frac{v_{\beta}(s)}{v(s)}
+	 =\frac{k\hat{\omega_o}}{s^2+ks+\hat{\omega_o}^2}
+	\end{aligned}
+\end{equation}
+$$
+
+可以直接看两闭环传递函数$\eqref{eq:SOGIClosedLoopTransferFunction}$互差$90^{\circ}$。
+
+$$
+\begin{equation}
+	\angle G_{\alpha} - \angle G_{\beta}=\frac{\pi}{2}
+\end{equation}
+$$
+
+因此SOGI的两输出信号严格正交。
+
+![](PLL-Learning-Notes/SOGIBode.png "图21 SOGI闭环传递函数bode图")
+
+从闭环传递函数 Bode 图中也可以验证SOGI输出信号严格正交，
+$G_{\alpha}$、 $G_{\beta}$ 相角严格互差$\frac{\pi}{2}$。
+
+从图21可以发现，$G_{\alpha}$可以看作一个带通滤波器，在频率 $\hat{\omega_o}$ 处无衰减，但在其它频率就有衰减作用，越偏离 $\hat{\omega_o}$，衰减越厉害。这也是锁相环所期望的，锁定频率基本不衰减，其他次谐波都衰减，过滤。因此基于SOGI的单相锁相环性能不错，能抵抗谐波干扰。
+
+写了这么多理论，放一个基于 SOGI 的 simulink 的仿真波形吧！如图22所示。
+
+![](PLL-Learning-Notes/SOGI_PLLResult.png "图22 SOGI PLL仿真波形")
+
+对SOGI单相锁相环有兴趣，可以参考文献[^9]，该文献对SOGI单相锁相环写的清晰明了，图文并茂。
+
+
+---
+
+
 # 锁相环的性能指标
 
 ---
@@ -1147,7 +1258,8 @@ $$
 
 ---
 
-# 阅读PLL相关文献
+
+# 推荐阅读有关PLL文献
 
 
 [A method for synchronization of power electronic converters in polluted and variable-frequency environments](https://ieeexplore.ieee.org/document/1318659)
@@ -1178,7 +1290,7 @@ I welcome your suggestions for improvements, even tiny one. Please contact me by
 
 ---
 
-# 参考
+# 参考文献
 
 [^1]: 张崇巍, 张兴. PWM 整流器及其控制 [M]. 北京: 机械工业出版社, 2012.
 
@@ -1193,3 +1305,7 @@ I welcome your suggestions for improvements, even tiny one. Please contact me by
 [^6]: KARIMI-GHARTEMANI M, IRAVANI M R. A method for synchronization of power electronic converters in polluted and variable-frequency environments[J]. IEEE Transactions on Power Systems, 2004, 19(3): 1263-1270.
 
 [^7]: SILVA S M, LOPES B M, CAMPANA R P, et al. Performance evaluation of pll algorithms for single-phase grid-connected systems[C]//Conference Record of the 2004 IEEE Industry Applications Conference, 2004. 39th IAS Annual Meeting.: volume 4. IEEE, 2004: 2259-2263.
+
+[^8]: FRANCIS B A, WONHAM W M. The internal model principle for linear multivariable regulators[J]. Applied mathematics and optimization, 1975, 2(2): 170-194.
+
+[^9]: CIOBOTARU M, TEODORESCU R, BLAABJERG F. A new single-phase pll structure based on second order generalized integrator[C/OL]//2006 37th IEEE Power Electronics Specialists Conference. 2006: 1-6. DOI: 10.1109/pesc.2006.1711988. 
