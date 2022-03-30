@@ -4,7 +4,7 @@ comment: true
 mathjax: true
 date: 2022-03-29 15:43:01
 updated: 2022-03-30 10:40:22
-description: 本文主要介绍一下 MATLAB debug 的使用方法。
+description: 本文主要介绍一下 MATLAB debug 的使用方法，并使用 gif 动图简单演示 debug 流程。
 tags:
   - MATLAB
 categories:
@@ -72,7 +72,6 @@ for k=1:length(t)
     pause(0.1);
 end
 hold off;
-
 ```
 
 简单的调试流程：
@@ -165,7 +164,11 @@ doc Debug MATLAB Code Files
 
 ![Simulation Data Inspector Demo](Debug-MATLAB-Code/SimulationDataInspector.gif)
 
-上面的动态演示只是演示了 Data Inspector 一些基本功能，更多功能请使用在 `Command Window` 中使用 `doc View Data in the Simulation Data Inspector`。
+上面的动态演示只是演示了 Data Inspector 一些基本功能，更多功能请使用在 `Command Window` 中使用 `doc` 命令查看帮助文档。
+
+```bash
+doc View Data in the Simulation Data Inspector
+```
 
 
 ## 备注
