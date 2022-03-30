@@ -3,8 +3,8 @@ title: A simple debug MATLAB code tutorial
 comment: true
 mathjax: true
 date: 2022-03-29 15:43:01
-updated: 2022-03-29 15:43:22
-description: 本文主要介绍一下 MATLAB 的 debug 的使用方法。
+updated: 2022-03-30 10:40:22
+description: 本文主要介绍一下 MATLAB debug 的使用方法。
 tags:
   - MATLAB
 categories:
@@ -22,7 +22,9 @@ categories:
 讲讲自己使用 MATLAB 的遭遇吧！最近在写一个仿真程序，其中的核心代码我是用 MATLAB Code 实现的。然后在 simulink 中使用示波器查看自己的仿真程序的输出结果是否正确。输出结果的波形趋势是正确的，但是在边界处和我设想的有偏差。因此需要进一步优化代码。在出现偏差的地方，我需要用仿真示波器查看结果，每次需要精确到具体的时刻，才能比较自己程序的输出结果和理论结果。有时我需要查看代码中另一个变量的值。如果用示波器的来显示结果，就需要再定义一个输出端口，然后再用示波器连接刚才定义的输出端口。同时，每个示波器都要调节到同一时刻，才能比对此时的仿真结果。这样用示波器来调试 simulink 中的代码方式属实麻烦。实际我使用示波器调试使用了接近一天，感觉自己这样调试的效率太低了。晚上，回寝室就向室友吐槽这样调试 simulink 代码太麻烦了。室友来了一句，"可以 debug MATLAB code 呀！" 问题是在 `.m` 文件书写的 MATLAB Code 可以进行 debug，在 simulink 中可行吗？第二天，尝试了一下在 simulink 中尝试了一下打断点，是可行的！因此用 debug 的方式调试 simulink 程序是一个可行的方案。这样调试的效率就提高了。
 
 操作环境：
+
 ---
+
 MATLAB: R2021B
 
 OS: Debian GNU/Linux 11 (bullseye) x86\_64
@@ -32,8 +34,14 @@ Kernel: 5.10.0-13-amd64
 ---
 
 $$
+\begin{equation}
+\label{ComplexOutputSignal}
 e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
+\end{equation}
 $$
+
+引用公式 $\eqref{ComplexOutputSignal}$。
+
 
 值得注意的是 MATLAB R2021B Linux 版本可能无法启动 simulink。出现闪退，并出现如下日志：
 
