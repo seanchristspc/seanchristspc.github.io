@@ -1954,7 +1954,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
     v_d(t)=\frac{1}{2} K_m V_i V_o\sin[\theta_1(t)-\theta_2(t)]
 \end{equation}
 \]</span></p>
-<p>看公式<span class="math inline">\(\eqref{simple output singal}\)</span> 中的 <span class="math inline">\(\theta_1(t)-\theta_2(t)\)</span>，这不是出现了两瞬时相位之差了吗？可以解决本小节最开始提出的问题。</p>
+<p>看公式<span class="math inline">\(\eqref{eq:simple output singal}\)</span> 中的 <span class="math inline">\(\theta_1(t)-\theta_2(t)\)</span>，这不是出现了两瞬时相位之差了吗？可以解决本小节最开始提出的问题。</p>
 <p><strong><em>"实际要分析的是为什么乘法器能实现相位的比较?"</em></strong></p>
 <p>再进一步简化<span class="math inline">\(v_d(t)\)</span>。</p>
 <p>定义瞬时相位差： <span class="math display">\[
@@ -2807,7 +2807,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 <p><a href="%7Bhttps://ieeexplore.ieee.org/document/986202">A new phase-locked loop (PLL) system</a></p>
 <hr>
 <h1 id="备注">备注</h1>
-<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please contact me by email 😏! Have fun!</p>
+<p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please contact me by email 😜! Have fun!</p>
 <hr>
 <h1 id="参考文献">参考文献</h1>
 <section class="footnotes" role="doc-endnotes">
