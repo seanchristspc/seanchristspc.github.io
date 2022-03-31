@@ -1862,12 +1862,13 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
     <title>Phase Locked Loop Learning Notes</title>
     <url>/2022/03/30/PLL-Learning-Notes/</url>
     <content><![CDATA[<h1 id="接触锁相环的缘由">接触锁相环的缘由</h1>
-<p>学电力电子，尤其是新能源光伏或风电的并网运行需要同步电网信号，需要锁相环来同步相位信息。对于电力驱动领域，无位置传感器电力驱动有运用锁相环的需求。但是我最近研究的内容也有需求锁定一个未知信号的相位，因此需要了解并使用锁相环。大概花了一个月的时间来学习锁相环，对锁相环的基本原理有了一定的了解。尤其是自己明白原理后，看其他其他文献就容易理解了。不会像最开始学习锁相环阶段，看着锁相环就头大，头晕。实际锁相环的基本原理并不难，尤其是公式推导过程（公式偏多），不要抵触，多花点时间就可以掌握。接下来首先介绍锁相环的需要完成的目标。</p>
+<p>学电力电子，尤其是新能源光伏或风电的并网运行需要同步电网，需要锁相环来同步相位信息。对于电力驱动领域，无位置传感器电力驱动有运用锁相环的需求。我最近研究的电力驱动内容也有需求锁定一个未知信号的相位，因此需要了解并使用锁相环。大概花了一个月的时间来学习锁相环，对锁相环的基本原理有了一定的了解。尤其是自己明白原理后，看其他文献就容易理解了。不会像最开始学习锁相环阶段，看着锁相环就头大，头晕。实际锁相环的基本原理并不难，尤其是公式推导过程（公式偏多），不要抵触，多花点时间就可以掌握。接下来首先介绍锁相环的需要完成的目标。</p>
+<hr>
 <h1 id="phase-locked-loop-的目标">Phase Locked Loop 的目标</h1>
-<p>PLL 全称为 Phase Locked Loop，中文名把它叫做<strong>锁相环</strong>。PLL 的基本功能是<strong>跟踪</strong>、<strong>锁定</strong>交流信号的<strong>相位</strong>，且在必要时还 可以提供有关信号的<strong>频率</strong>和<strong>幅值</strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。</p>
+<p>PLL 全称为 Phase Locked Loop，中文名把它叫做<strong>锁相环</strong>。PLL 的基本功能是<strong>跟踪</strong>、<strong>锁定</strong>交流信号的<strong>相位</strong>，且在必要时还可以提供有关信号的<strong>频率</strong>和<strong>幅值</strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。</p>
 <hr>
 <h1 id="乘法鉴相锁相环">乘法鉴相锁相环</h1>
-<p>基于乘法鉴相器的锁相环是最基础的一种。主要参看文献 <strong>PWM 整流器及其控制</strong>来学习锁相环，以此来掌握核心的概念，并加深对锁相环的理解。</p>
+<p>基于乘法鉴相器的锁相环是最基础的一种。主要参看文献<strong>《PWM 整流器及其控制》</strong>来学习锁相环，以此来掌握核心的概念，并加深对锁相环的理解。</p>
 <h2 id="锁相环的基本构成">锁相环的基本构成</h2>
 <p>基本锁相环的闭环控制回路一般含有<strong>鉴相器</strong>（PD）、<strong>环路滤波器</strong>（LF）和<strong>压控振荡器</strong>（VCO）这三种结构，如图1所示。乘法鉴相锁相环是指鉴相器采用<strong>乘法器</strong>的锁相环。</p>
 <p><img data-src="/2022/03/30/PLL-Learning-Notes/BasicPllConfiguration.png" title="图1 基本闭环锁相环控制结构"></p>
@@ -1878,7 +1879,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 <li>压控振荡器：完成电压和频率的变换，即压控振荡器的输出信号的频率与误差信号<span class="math inline">\(v_{d}(t)\)</span>的大小成正比。</li>
 </ol>
 <hr>
-<p>接下来就分析三个基本单元(PD,LP,VCO)的功能和数学模型。</p>
+<p>接下来就分别分析锁相环的三个基本单元<strong>鉴相器、环路滤波器、压控振荡器</strong>(PD,LP,VCO)的功能和数学模型。其中，锁相环最核心的部分是<strong>鉴相器</strong>。</p>
 <hr>
 <h2 id="乘法鉴相器-pd">乘法鉴相器 PD</h2>
 <p>实际要分析的是为什么<strong>乘法器</strong>能实现相位的比较? 带着这个问题去理解<strong>乘法鉴相器</strong>。</p>
@@ -1892,7 +1893,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
     v_{o}(t) = V_o \cos[\omega_o t +\theta_o(t)]
 \end{equation}
 \]</span></p>
-<p>这样一看这两个信号就含有 <span class="math inline">\(\omega_i\)</span>、<span class="math inline">\(\omega_o\)</span>、<span class="math inline">\(\theta_{i}(t)\)</span>、 <span class="math inline">\(\theta_o(t)\)</span>、<span class="math inline">\(V_i\)</span> 和 <span class="math inline">\(V_o\)</span> 6个变量，看来需要简化简化，方便后续的分析。</p>
+<p>这样一看这两个信号就含有 <span class="math inline">\(\omega_i\)</span>、<span class="math inline">\(\omega_o\)</span>、<span class="math inline">\(\theta_{i}(t)\)</span>、 <span class="math inline">\(\theta_o(t)\)</span>、<span class="math inline">\(V_i\)</span> 和 <span class="math inline">\(V_o\)</span>，总共6个变量，看来需要简化简化，方便后续的分析。</p>
 <p>注意：<strong>输入输出信号为两正交信号</strong>（<span class="math inline">\(\sin, \cos\)</span>）</p>
 <p>以 <span class="math inline">\(\omega_o\)</span> 为参考频率，重新定义输入信号的瞬时相位：</p>
 <p><span class="math display">\[
@@ -1922,7 +1923,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 \end{equation}
 \]</span></p>
 <p>和最初定义相比，减少了一个频率变量<span class="math inline">\(\omega_i\)</span>。</p>
-<p>乘法鉴相器结构如图2所示，简单数学表达式理解就是<span class="math inline">\(v_d(t)=K_m v_i(t) v_o(t)\)</span>，其中<span class="math inline">\(K_m\)</span> 为乘法器的比列系数。</p>
+<p>乘法鉴相器结构框图，如图2所示，简单的数学表达式为<span class="math inline">\(v_d(t)=K_m v_i(t) v_o(t)\)</span>，其中<span class="math inline">\(K_m\)</span> 为乘法器的比列系数。</p>
 <p><img data-src="/2022/03/30/PLL-Learning-Notes/Multiplier.png" title="图2 乘法鉴相器结构"></p>
 <p>再用个积化和差公式：</p>
 <p><span class="math display">\[
@@ -1931,6 +1932,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
     [\sin(\alpha+\beta)+\sin(\alpha-\beta) ]\\
 \end{equation}
 \]</span></p>
+<p>在乘法鉴相器数学表达式中，应用三角函数积化和差公式化简过程：</p>
 <p><span class="math display">\[
 \begin{equation}
     \label{eq:complex output signal}
@@ -1951,11 +1953,10 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
     \label{eq:simple output singal}
     v_d(t)=\frac{1}{2} K_m V_i V_o\sin[\theta_1(t)-\theta_2(t)]
 \end{equation}
-\]</span> 这不是出现了两瞬时相位之差了吗？可以解决最开始提出的问题。</p>
-<blockquote>
-<p>实际要分析的是为什么<strong>乘法器</strong>能实现相位的比较?</p>
-</blockquote>
-<p>在进一步简化<span class="math inline">\(v_d(t)\)</span>。</p>
+\]</span></p>
+<p>看公式<span class="math inline">\(\eqref{simple output singal}\)</span> 中的 <span class="math inline">\(\theta_1(t)-\theta_2(t)\)</span>，这不是出现了两瞬时相位之差了吗？可以解决本小节最开始提出的问题。</p>
+<p><strong><em>"实际要分析的是为什么乘法器能实现相位的比较?"</em></strong></p>
+<p>再进一步简化<span class="math inline">\(v_d(t)\)</span>。</p>
 <p>定义瞬时相位差： <span class="math display">\[
 \begin{equation}
     \begin{aligned}
@@ -2106,7 +2107,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 </ul>
 <hr>
 <p><img data-src="/2022/03/30/PLL-Learning-Notes/SSRFSPLLConfiguration.png" title="图9 SSRF-SPLL 控制结构原理框图"></p>
-<p><span class="math inline">\(\omega_{ff}\)</span> 是检测电压的额定频率，那这个物理量的作用是什么？主要是设置一个检测信号的额定频率，实际信号的频率是在这个频率 <span class="math inline">\(\omega_{ff}\)</span>上下波动，主要降低PI控制器输出的压力，这样PI输出就没必要和额定频率一样大，只需一个较小的量<span class="math inline">\(\Delta \omega_o\)</span>即可。</p>
+<p><span class="math inline">\(\omega_{ff}\)</span> 是检测电压的额定频率，那这个物理量的作用是什么？主要是设置一个检测信号的额定频率，实际信号的频率是在这个频率<span class="math inline">\(\omega_{ff}\)</span>上下波动，主要降低PI控制器输出的压力，这样PI输出就没必要和额定频率一样大，只需一个较小的量<span class="math inline">\(\Delta \omega_o\)</span>即可。同时，<span class="math inline">\(\omega_{ff}\)</span>给系统的频率一个初始值，有维持系统稳定的作用（不必要从0直接突变到<span class="math inline">\(\omega_{ff}\)</span>附近，而是直接在<span class="math inline">\(\omega_{ff}\)</span>附近变换）。</p>
 <p>上面的锁相环控制框图有点复杂，可以简化简化。</p>
 <p>简化版的三相锁相环控制框图，如图10所示。</p>
 <p><img data-src="/2022/03/30/PLL-Learning-Notes/SSRFSPLLConfigurationSimple.png" title="图10 简化版的三相锁相环控制框图"></p>
@@ -2289,7 +2290,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 <p>由公式<span class="math inline">\(\eqref{eq:AmplitudeAndPhaseForUnbalance}\)</span>可以知道，不平衡的电网电压会出现波动的幅值和频率。</p>
 <p><strong>对应该公式，可以提出使用低通滤波器滤波，来抑制谐波分量。但是引入滤波器会降低响应速度。</strong></p>
 <p><strong><em>Se Kyo Chung 的三相锁相环闭环传递函数推导以及相角不平衡，谐波和直流偏置对三相锁相环误差理论分析写的不错<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>，值得一提的是该文献的实验结果图简单明了，值得一读。</em></strong></p>
-<p>为了用于不平衡的三相电网，也可以采取提取不平衡电网中正序电压电压。那么需要了解<strong>对称分量法</strong>的原理，来提取正序电压。</p>
+<p>为了用于不平衡的三相电网，也可以采取提取不平衡电网中正序电压电压。那么需要了解<strong>对称分量法</strong>的原理，以此来提取正序电压。</p>
 <hr>
 <h1 id="对称分量法">对称分量法</h1>
 <p><span class="math inline">\(ABC\longrightarrow NP0\)</span> 对于三相非平衡ABC（可以是电压，也可以是电流，甚至其他信号）可以分解成 <span class="math inline">\(N\)</span>(negative sequence)，<span class="math inline">\(P\)</span>(positive sequence)，<span class="math inline">\(0\)</span>(zero sequence)，这个方式被称为<strong>对称分量法</strong>。</p>
@@ -2339,8 +2340,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 \]</span></p>
 <p><strong>提取的正序分量直接用于平衡三相锁相环的原理</strong>,便可解决三相锁相不平衡问题。但是该方法对变换频率的三相电网适应性差。提取正序分量用于锁相环的方法可参考文献<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>。</p>
 <h1 id="双同步坐标系解耦锁相环">双同步坐标系解耦锁相环</h1>
-<p>针对三相电网不平衡的锁相问题，Rodriguez 等人提出了双同步坐标系解耦锁相环<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>，具有较高的响应速度、较高的鲁棒性和较精确的性能这一节的内容主要是理解<strong>双同步坐标系解耦锁相环原理</strong>。这一小节稍微有点复杂，不想看可以跳过，感兴趣闲来没事可以看看。</p>
-<p><img data-src="/2022/03/30/PLL-Learning-Notes/DSRF.png" title="图11 双同步坐标系及坐标系的电压矢量"></p>
+<p>针对三相电网不平衡的锁相问题，Rodriguez 等人提出了双同步坐标系解耦锁相环<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>，具有较高的响应速度、较高的鲁棒性和较精确的性能这一节的内容主要是理解<strong>双同步坐标系解耦锁相环原理</strong>。这一小节稍微有点复杂，不想看可以跳过，感兴趣或者闲来没事倒是可以看看。</p>
 <p><strong>双同步坐标系</strong>故名思意该锁相环方法含有两个同步坐标系。</p>
 <p><strong>因此定义两个同步坐标系</strong>：</p>
 <hr>
@@ -2351,6 +2351,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 <hr>
 <p><strong>备注</strong>： 对于不平衡的三相电网电压系统，合成的电压矢量 <span class="math inline">\(\mathbf{V}\)</span> 虽然频率是固定的，但是幅值是不断变化的。而当把三相不平衡电压使用对称分量法，可以分解成<strong>正序</strong>、<strong>负序</strong>和<strong>零序</strong>。因为中性点连接的系统，不存在零序分量。故只剩下<strong>正序和负序</strong>。同时单个负序或正序的电压矢量的幅值是恒定的。正、负序分别对应<span class="math inline">\(dq^+\)</span>、<span class="math inline">\(dq^-\)</span>同步坐标系。用<span class="math inline">\(dq^+\)</span> 来锁相正序， <span class="math inline">\(dq^-\)</span> 来锁相负序是没有问题。</p>
 <p>定义的双坐标系和电压矢量如图11所示。</p>
+<p><img data-src="/2022/03/30/PLL-Learning-Notes/DSRF.png" title="图11 双同步坐标系及坐标系的电压矢量"></p>
 <hr>
 <h2 id="双同步坐标系的一些数学公式">双同步坐标系的一些数学公式</h2>
 <p>conventional $ dq$ transformation matrix</p>
@@ -2475,10 +2476,10 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
     \end{aligned}
 \end{equation}
 \]</span></p>
-<p>至于得到简化的公式有何意义？<span class="math inline">\(dq^+\)</span> 和 <span class="math inline">\(dq^-\)</span> 坐标系的直流分量与电网电压的正序和负序分量的幅值有关。而2次谐波分量是分解两同步旋转坐标系而造成的耦合分量。接下来主要目标就是<strong>解耦耦合分量</strong>。</p>
+<p>至于得到简化的公式有何意义？<span class="math inline">\(dq^+\)</span> 和 <span class="math inline">\(dq^-\)</span> 坐标系的直流分量与电网电压的正序和负序分量的幅值有关，而2次谐波分量是分解两同步旋转坐标系而造成的耦合分量。接下来主要目标就是<strong>解耦耦合分量</strong>，或者说消除耦合分量。</p>
 <hr>
 <h2 id="解耦网络">解耦网络</h2>
-<p>进行一般化分析，假设任意电压矢量包括正、负序分量两部分，分别以角速度 <span class="math inline">\(n\omega\)</span> 和 <span class="math inline">\(m\omega\)</span> 旋转，其中 <span class="math inline">\(n\)</span> 、<span class="math inline">\(m\)</span> 分别表示正、负序。电网角频率<span class="math inline">\(\omega\)</span>。通过公式<span class="math inline">\(\eqref{eq:PositiveAndNegativeComponentAlphaBeta}\)</span>，可以得电压矢量的正、负序分量表示为：</p>
+<p>为进行一般化分析，假设任意电压矢量包括正、负序分量两部分，分别以角速度 <span class="math inline">\(n\omega\)</span> 和 <span class="math inline">\(m\omega\)</span> 旋转，其中 <span class="math inline">\(n\)</span> 、<span class="math inline">\(m\)</span> 分别表示正、负序。电网角频率<span class="math inline">\(\omega\)</span>。通过公式<span class="math inline">\(\eqref{eq:PositiveAndNegativeComponentAlphaBeta}\)</span>，可以得电压矢量的正、负序分量表示为：</p>
 <p><span class="math display">\[
 \begin{equation}
     \label{eq:GeneralPositiveAndNegativeComponentAlphaBeta}
@@ -2572,14 +2573,14 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 \]</span></p>
 <p>从公式<span class="math inline">\(\eqref{eq:MNDoubelSychrounousDQ}\)</span>，我们得到了在<strong>锁相状态(<span class="math inline">\(\omega t = \hat{\theta}\)</span>)</strong>下的 <span class="math inline">\(\mathbf{v}_{dq^n}\)</span>和<span class="math inline">\(\mathbf{v}_{dq^n}\)</span>的表达式。通过表达式可以知道，<span class="math inline">\(dq^n\)</span>坐标系下的交流量(振荡量)的幅值由 <span class="math inline">\(dq^m\)</span> 坐标系下的平均值所决定。与之对应的， <span class="math inline">\(dq^m\)</span> 坐标系下的<strong>交流量</strong>的幅值由<span class="math inline">\(dq^n\)</span>坐标系下的平均值决定。<strong>解耦的目标就是消除振荡量(交流量)。</strong>既然实际的<span class="math inline">\(\mathbf{v}_{dq^n}\)</span> 和 <span class="math inline">\(\mathbf{v}_{dq^m}\)</span> 中含有交流量部分，为了消除交流量，可以，便可消除交流部分。 以消除交流分量为目标，如图12所示，为<span class="math inline">\(dq^n\)</span> 坐标系下的解耦网络。</p>
 <p><img data-src="/2022/03/30/PLL-Learning-Notes/DQMNDecouple.png" title="图12 $dq^n$坐标系的解耦网络"></p>
-<p>针对<span class="math inline">\(dq^m\)</span>坐标系也可以根据公式<span class="math inline">\(\eqref{eq:MNDoubelSychrounousDQ}\)</span>$，构造对应的解耦网络。</p>
+<p>针对<span class="math inline">\(dq^m\)</span>坐标系，可以根据公式<span class="math inline">\(\eqref{eq:MNDoubelSychrounousDQ}\)</span>，构造对应的解耦网络。</p>
 <p>那么<span class="math inline">\(dq^n\)</span>和<span class="math inline">\(dq^m\)</span>双同步坐标系的解耦网络如图13所示。其中LPF是一个一阶低通滤波器，其传递函数可表示为：</p>
 <p><span class="math display">\[
 \begin{equation}
     LPF(s)=\frac{\omega_f}{s+\omega_f}
 \end{equation}
 \]</span></p>
-<p>文献[5]中，在这个解耦网络的基础上，进一步用状态空间方程来表示该解耦网络。个人认为，对于理解双坐标系的锁相环原理到此，就可以完全理解其核心理念了。用状态空间模型的目的大概在于表达形式更统一，简便吧！</p>
+<p>文献[5]中，在这个解耦网络的基础上，进一步用状态空间方程来表示该解耦网络。个人认为，对于理解双坐标系的锁相环原理到此，就可以完全理解其核心理念了。文献[5]用状态空间模型的目的大概在于表达形式更统一，简便吧！</p>
 <p>通过对解耦网络图13和传统的三相锁相环结构图10整合，可以得到双同步坐标系下锁相环整个原理框图，如图14所示。 <strong><span class="math inline">\(n\)</span> 或 <span class="math inline">\(m\)</span> 分别代表正负序的意义。</strong></p>
 <p><img data-src="/2022/03/30/PLL-Learning-Notes/DDSRFSPLL.png" title="图14 DDSRF-SPLL原理框图"></p>
 <p>该方法解决了前面提取正序方案无法应对变换频率的问题。对频率具有良好的适应性。尽管该接偶环节加了一个一阶低通滤波器降低了响应速度，但是该锁相环的效果还是不错的。三相锁相环的研究就告一段落。接下来开始研究单相锁相环。</p>
@@ -2625,14 +2626,14 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
     \bar{p} = \frac{V}{2}(\hat{\theta} - \theta)
 \end{equation}
 \]</span></p>
-<p>那么只要控制<span class="math inline">\(\bar{p}\)</span>为0，便可以实现锁相。这也是 <span class="math inline">\(\bar{p}^{\*}=0\)</span>的原因。</p>
+<p>那么只要控制<span class="math inline">\(\bar{p}\)</span>为0，便可以实现锁相。这也是 <span class="math inline">\(\bar{p}^{ * }=0\)</span> 的原因。</p>
 <p>虚拟平均无功鉴相单相锁相环的整个原理，控制结构图15充分展现其原理。</p>
-<p>该方法简单，但该方法的动态性能比较弱。它对电网谐波不敏感，算一个优点吧。无法获得电网的幅值信息，算一个缺点吧。</p>
+<p>该方法简单，但该方法的动态性能比较弱(添加了低通滤波器LPF)。它对电网谐波不敏感，算一个优点吧。无法获得电网的幅值信息，算一个缺点吧。</p>
 <hr>
 <h1 id="增强型单相锁相环epll">增强型单相锁相环EPLL</h1>
 <p>为了解决<strong>虚拟平均无功鉴相单相锁相环</strong>动态响应速度慢的问题，采用基于自适应滤波理论的来重构输入信号的基波分量，同时可以实现对输入信号幅值、相位角与频率的估算。把这种基于自适应滤波理论的锁相环称为<strong>增强型单相锁相环</strong><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>.</p>
 <p><img data-src="/2022/03/30/PLL-Learning-Notes/SinglePhaseEPLLConfiguration.png" title="图16 增强型单相锁相环控制结构"></p>
-<p>该控制结构多了一个比较陌生的变量<span class="math inline">\(\hat{A}\)</span>,他的是估算线电压幅值。</p>
+<p>该控制结构多了一个比较陌生的变量<span class="math inline">\(\hat{A}\)</span>，他是用来估算输入锁相信号的幅值。</p>
 <p>根据图16的控制结构，可以写出<span class="math inline">\(e_d\)</span></p>
 <p><span class="math display">\[
 \begin{equation}
@@ -2667,7 +2668,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 <p>图16的控制结构和图17只是<span class="math inline">\(\sin\)</span>和<span class="math inline">\(\cos\)</span>互换，依然能实现锁相环的功能。</p>
 <hr>
 <h1 id="基于延迟法的虚拟两相的单相锁相环">基于延迟法的虚拟两相的单相锁相环</h1>
-<p>前面针对单相锁相环的处理都是集中在单个输入信号。当然，可以采取前面的三相锁相环的思路，来构造一个虚拟的正交信号，来模仿三相锁相环的原理。输入信号定义为<span class="math inline">\(v_{\beta}\)</span>，经过<span class="math inline">\(90^{\circ}\)</span>的延时来虚拟一个<span class="math inline">\(v_{\beta}\)</span>。而通过公式<span class="math inline">\(\eqref{eq:AlphaBetaVoltage}\)</span>可以知道， <span class="math inline">\(v_{\alpha}\)</span> 的相角和三相的<span class="math inline">\(v_a\)</span>相角对应(这句话实际没啥意义)。有了<span class="math inline">\(v_{\alpha}\)</span>和 <span class="math inline">\(v_{\beta}\)</span>，那么就可以使用三相锁相环的处理方案。</p>
+<p>前面针对单相锁相环的处理都是集中在单个输入信号。当然，可以采取前面的三相锁相环的思路，来构造一个虚拟的正交信号，来模仿三相锁相环的原理。输入信号定义为<span class="math inline">\(v_{\beta}\)</span>，经过<span class="math inline">\(90^{\circ}\)</span>的延时来虚拟一个<span class="math inline">\(v_{\alpha}\)</span>。而通过公式<span class="math inline">\(\eqref{eq:AlphaBetaVoltage}\)</span>可以知道，<span class="math inline">\(v_{\alpha}\)</span> 的相角和三相的<span class="math inline">\(v_a\)</span>相角对应(这句话实际没啥意义，可以忽略！)。有了<span class="math inline">\(v_{\alpha}\)</span>和 <span class="math inline">\(v_{\beta}\)</span>，那么就可以使用三相锁相环的处理方案。</p>
 <p>如图18所示，为基于延迟法的虚拟两相的单相锁相环的控制结构。和经典的三相锁相环结构对比对比就可以理解啦！延迟<span class="math inline">\(90^{\circ}\)</span>的方法，影响响应速度。</p>
 <p><img data-src="/2022/03/30/PLL-Learning-Notes/SinglePhasePLLDelay90Degree.png" title="图18 基于延迟法虚拟两相的单相锁相环控制结构"></p>
 <hr>
@@ -2726,9 +2727,9 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 \]</span></p>
 <hr>
 <h1 id="基于sogi的单相锁相环">基于SOGI的单相锁相环</h1>
-<p>SOGI全称为 <strong>Second-Order Generalized Integrator</strong>，翻译成中文为<strong>二阶广义积分器</strong>。基于SOGI的单相锁相环的核心就是就是<strong>SOGI</strong>，如果明白SOGI，剩下的问题就迎刃而解啦！</p>
-<p>简单的说一下SOGI的功能：SOGI的两个输出信号严格的满足<span class="math inline">\(90^{\circ}\)</span>的相位偏差(两输出信号严格的正交)，同时其中一个输出能精确的跟踪输入基频信号。</p>
-<p>如果能得到两个严格正交的信号，可以分别定义为<span class="math inline">\(v_{\alpha}\)</span>、<span class="math inline">\(v_{\beta}\)</span>，那么在利用前面经典的三相锁相环原理，便可实现锁相环功能。</p>
+<p>SOGI全称为 <strong>Second-Order Generalized Integrator</strong>，翻译成中文为<strong>二阶广义积分器</strong>。基于SOGI的单相锁相环的核心就是<strong>SOGI</strong>，如果明白SOGI，剩下的问题就迎刃而解啦！</p>
+<p>简单的说一下SOGI的功能：<strong>SOGI的两个输出信号严格的满足<span class="math inline">\(90^{\circ}\)</span>的相位偏差(两输出信号严格的正交)，同时其中一个输出能精确的跟踪输入基频信号。</strong></p>
+<p>如果能得到两个严格正交的信号，可以分别定义为<span class="math inline">\(v_{\alpha}\)</span>、<span class="math inline">\(v_{\beta}\)</span>，那么再利用前面经典的三相锁相环原理，便可实现锁相环功能。</p>
 <p>如图20所示，为SOGI-QSG(Second-Order Generalized Integrator Quadrature Signals Generation)的原理框图。</p>
 <p><img data-src="/2022/03/30/PLL-Learning-Notes/SOGI-QSG.png" title="图20 SOGI-QSG原理框图"></p>
 <h2 id="为什么sogi能精确跟踪为正弦的输入信号">为什么SOGI能精确跟踪为正弦的输入信号?</h2>
