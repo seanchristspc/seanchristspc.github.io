@@ -3,7 +3,7 @@ title: qutebrowser tutorial
 comment: true
 mathjax: true
 date: 2022-02-19 21:15:38
-updated: 2022-03-31 16:44:45
+updated: 2022-04-02 19:38:45
 description: qutebrowser 用了大概有两个多月了，感觉可以写写关于 qutebrowser 的 Blog! 记录一下使用 qutebrowser 技巧！个人感觉用着还不错，可在网络世界里快速顺滑的遨游。如果你熟悉 vim，那么你可能几天（甚至半天）后就会非常适应它。如果你不熟悉 vim，也不用担心，多使用几天就会爱不释手啦。
 tags:	
    - Qutebrowser
@@ -594,12 +594,13 @@ qutebrowser 对于有些网站的 copy 按钮无法使用，这个功能严重�
 
 # Firefox Addon: Tridactyl 实现 vim keyboard-driven
 
-浏览器插件 Vimperator　和 Pentadactyl　已经退出历史舞台。但是对于对于有强力需求使用　Firefox 浏览器的用户，可以使用 Firefox addon **Tridactyl** 来实现 vim 键盘驱动。在 Firefox [ADD-ONS](https://addons.mozilla.org/en-US/) 搜索 **Tridactyl** ，并安装插件即可。就可直接键盘驱动 Firefox 啦！使用方式和 qutebrowser 差不多。推荐运行命令 `:tutor` 来查看使用教程。虽然没有 qutebrowser 支持 vim 快捷键全面，但是还是可以尝试一下的，至少比鼠标快多了。值得一提的是，使用 `o` 命令快捷打开历史记录和浏览器书签，不是使用方向键选择需要打开的历史记录或浏览器书签，而是使用 `tab` 或 `shift+tab` 移动选择需要打开的历史记录或书签。
+浏览器插件 Vimperator 和 Pentadactyl 已经退出历史舞台。但是对于对于有强力需求使用 Firefox 浏览器的用户，可以使用 Firefox addon [**Tridactyl**](https://github.com/tridactyl/tridactyl) 来实现 vim 键盘驱动。在 Firefox [ADD-ONS](https://addons.mozilla.org/en-US/) 搜索 **Tridactyl** ，并安装插件即可。就可直接键盘驱动 Firefox 啦！使用方式和 qutebrowser 差不多。推荐运行命令 `:tutor` 来查看使用教程。虽然没有 qutebrowser 支持 vim 快捷键全面，还是可以尝试一下的，至少比用鼠标快多了。值得一提的是，*使用 `o` 命令快捷打开历史记录和浏览器书签，不是使用方向键选择需要打开的历史记录或浏览器书签，而是使用 `tab` 或 `shift+tab` 移动选择需要打开的历史记录或书签。*
+
+当然还有其他浏览器插件可以实现 vim 键盘驱动功能，如果好奇，可以自己尝试其他 vim 插件。对于 Chrome 系列的 vim 插件，可以尝试 [Vimium](https://vimium.github.io/)。因为自己不用 Chrome, 所以 Vimium 的体验效果如何不知道哈！
 
 # 备注
 
-I would greatly appreciate hearing about any error in this article, even minor ones.
-I welcome your suggestions for improvements, even tiny one. Please contact me by email 😏! Have fun!
+I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please contact me by email 😏! Have fun!
 
 ---
 
