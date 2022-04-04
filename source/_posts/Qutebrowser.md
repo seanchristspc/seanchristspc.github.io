@@ -598,6 +598,11 @@ qutebrowser 对于有些网站的 copy 按钮无法使用，这个功能严重�
 
 当然还有其他浏览器插件可以实现 vim 键盘驱动功能，如果好奇，可以自己尝试其他 vim 插件。对于 Chrome 系列的 vim 插件，可以尝试 [Vimium](https://vimium.github.io/)。因为自己不用 Chrome, 所以 Vimium 的体验效果如何不知道哈！
 
+Firefox Tridactyl 使用演示 gif 动图。
+
+![Tridactyl Demo](Qutebrowser/TridactyDemo.gif)
+
+
 # 备注
 
 I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please contact me by email 😏! Have fun!
