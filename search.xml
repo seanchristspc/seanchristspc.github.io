@@ -776,6 +776,10 @@ e^{i\theta}=\cos(\theta)+i \sin(\theta)
 <h1 id="firefox-addon-tridactyl-实现-vim-keyboard-driven">Firefox Addon: Tridactyl 实现 vim keyboard-driven</h1>
 <p>浏览器插件 Vimperator 和 Pentadactyl 已经退出历史舞台。但是对于对于有强力需求使用 Firefox 浏览器的用户，可以使用 Firefox addon <a href="https://github.com/tridactyl/tridactyl"><strong>Tridactyl</strong></a> 来实现 vim 键盘驱动。在 Firefox <a href="https://addons.mozilla.org/en-US/">ADD-ONS</a> 搜索 <strong>Tridactyl</strong> ，并安装插件即可。就可直接键盘驱动 Firefox 啦！使用方式和 qutebrowser 差不多。推荐运行命令 <code>:tutor</code> 来查看使用教程。虽然没有 qutebrowser 支持 vim 快捷键全面，还是可以尝试一下的，至少比用鼠标快多了。值得一提的是，<em>使用 <code>o</code> 命令快捷打开历史记录和浏览器书签，不是使用方向键选择需要打开的历史记录或浏览器书签，而是使用 <code>tab</code> 或 <code>shift+tab</code> 移动选择需要打开的历史记录或书签。</em></p>
 <p>当然还有其他浏览器插件可以实现 vim 键盘驱动功能，如果好奇，可以自己尝试其他 vim 插件。对于 Chrome 系列的 vim 插件，可以尝试 <a href="https://vimium.github.io/">Vimium</a>。因为自己不用 Chrome, 所以 Vimium 的体验效果如何不知道哈！</p>
+<p>Firefox Tridactyl 使用演示 gif 动图。</p>
+<figure>
+<img data-src="/2022/02/20/Qutebrowser/TridactyDemo.gif" alt><figcaption>Tridactyl Demo</figcaption>
+</figure>
 <h1 id="备注">备注</h1>
 <p>I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please contact me by email 😏! Have fun!</p>
 <hr>
