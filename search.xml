@@ -800,7 +800,7 @@ e^{i\theta}=\cos(\theta)+i \sin(\theta)
       </tags>
   </entry>
   <entry>
-    <title>搭建hexo和github遇到问题</title>
+    <title>meet the problems of buiding the hexo blog</title>
     <url>/2018/02/06/build_hexo_problem/</url>
     <content><![CDATA[<h1 id="搭建hexo和github遇到问题">搭建hexo和github遇到问题</h1>
 <p>学习一样新事物，总是要经历磕磕碰碰，才能有所成长！脚踏实地，一步一个脚印，走好每一步，不要给自己留遗憾！</p>
@@ -819,7 +819,7 @@ e^{i\theta}=\cos(\theta)+i \sin(\theta)
 </ol>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli g</span><br></pre></td></tr></table></figure>
 <p>创建一个文件夹 <code>hexo</code>。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir hexo </span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> hexo </span><br></pre></td></tr></table></figure>
 <p>初始化 <code>hexo</code> 文件夹。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init hexo</span><br></pre></td></tr></table></figure>
 <p>安装hexo插件，都安装了吧!</p>
@@ -2951,6 +2951,281 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
       <tags>
         <tag>PLL</tag>
         <tag>Power Electronics</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>some common transform matrices for the motor drive</title>
+    <url>/2022/04/08/CommonTransformMatrixMotorDrive/</url>
+    <content><![CDATA[<h1 id="preface">preface</h1>
+<p><span class="math display">\[
+\theta = \omega t + \phi
+\]</span></p>
+<ul>
+<li><span class="math inline">\(\theta\)</span> angular position</li>
+<li><span class="math inline">\(\omega\)</span> angular frequency</li>
+<li><span class="math inline">\(\phi\)</span> initial phase</li>
+</ul>
+<h1 id="three-phase-machine">three phase machine</h1>
+<h2 id="abc-longrightarrow-dq0"><span class="math inline">\(abc \longrightarrow dq0\)</span></h2>
+<p><span class="math display">\[
+\begin{equation}
+    \begin{bmatrix}
+        d\\
+        q\\
+        0
+    \end{bmatrix}
+    =\frac{2}{3}
+    \begin{bmatrix}
+        \cos(\theta) &amp; \cos(\theta-\frac{2\pi}{3}) &amp; \cos(\theta+\frac{2\pi}{3})\\
+        -\sin(\theta) &amp; -\sin(\theta-\frac{2\pi}{3}) &amp; -\sin(\theta+\frac{2\pi}{3})\\
+        \frac{1}{2} &amp; \frac{1}{2} &amp; \frac{1}{2}
+    \end{bmatrix}
+    \begin{bmatrix}
+        a\\
+        b\\
+        c
+    \end{bmatrix}
+\end{equation}
+\]</span></p>
+<h2 id="dq0-longrightarrow-abc"><span class="math inline">\(dq0 \longrightarrow abc\)</span></h2>
+<p><span class="math display">\[
+\begin{equation}
+    \begin{bmatrix}
+        a\\
+        b\\
+        c
+    \end{bmatrix}
+    =\frac{2}{3}
+    \begin{bmatrix}
+        \cos(\theta) &amp; -\sin(\theta) &amp; 1\\
+        \cos(\theta-\frac{2\pi}{3}) &amp; -\sin(\theta-\frac{2\pi}{3}) &amp; 1\\
+        \cos(\theta+\frac{2\pi}{3}) &amp; -\sin(\theta+\frac{2\pi}{3}) &amp; 1
+    \end{bmatrix}
+    \begin{bmatrix}
+        d\\
+        q\\
+        0
+    \end{bmatrix}
+\end{equation}
+\]</span></p>
+<h2 id="abc-longrightarrow-alpha-beta-0"><span class="math inline">\(abc \longrightarrow \alpha \beta 0\)</span></h2>
+<p><span class="math display">\[
+\begin{equation}
+    \begin{bmatrix}
+        \alpha\\
+        \beta\\
+        0
+    \end{bmatrix}
+    =\frac{2}{3}
+    \begin{bmatrix}
+        \cos(0) &amp; \cos(-\frac{2\pi}{3}) &amp; \cos(\frac{2\pi}{3})\\
+        -\sin(0) &amp; -\sin(-\frac{2\pi}{3} &amp; -\sin(\frac{2\pi}{3})\\
+        \frac{1}{2} &amp; \frac{1}{2} &amp; \frac{1}{2}
+    \end{bmatrix}
+    \begin{bmatrix}
+        a\\
+        b\\
+        c
+    \end{bmatrix}
+    =\frac{2}{3}
+    \begin{bmatrix}
+        1 &amp; -\frac{1}{2} &amp; -\frac{1}{2}\\
+        0 &amp; \frac{\sqrt{3}}{2} &amp; -\frac{\sqrt{3}}{2}\\
+        \frac{1}{2} &amp; \frac{1}{2} &amp; \frac{1}{2}
+    \end{bmatrix}
+    \begin{bmatrix}
+        a\\
+        b\\
+        c
+    \end{bmatrix}
+\end{equation}
+\]</span></p>
+<h2 id="alpha-beta-0-longrightarrow-abc"><span class="math inline">\(\alpha \beta 0 \longrightarrow abc\)</span></h2>
+<p><span class="math display">\[
+\begin{equation}
+    \begin{bmatrix}
+        a\\
+        b\\
+        c
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        1 &amp; 0 &amp; 1\\
+        -\frac{1}{2} &amp; \frac{\sqrt{3}}{2} &amp; 1\\
+        -\frac{1}{2} &amp; -\frac{\sqrt{3}}{2} &amp; 1
+    \end{bmatrix}
+    \begin{bmatrix}
+        \alpha\\
+        \beta\\
+        0
+    \end{bmatrix}
+\end{equation}
+\]</span></p>
+<h2 id="alpha-beta-longrightarrow-dq"><span class="math inline">\(\alpha \beta \longrightarrow dq\)</span></h2>
+<p><span class="math display">\[
+\begin{equation}
+    \begin{bmatrix}
+        d\\
+        q
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        \cos(\theta) &amp; \sin(\theta)\\
+        -\sin(\theta) &amp; \cos(\theta)
+    \end{bmatrix}
+    \begin{bmatrix}
+        \alpha\\
+        \beta
+    \end{bmatrix}
+\end{equation}
+\]</span></p>
+<h2 id="dq-longrightarrow-alpha-beta"><span class="math inline">\(dq \longrightarrow \alpha \beta\)</span></h2>
+<p><span class="math display">\[
+\begin{equation}
+    \begin{bmatrix}
+        \alpha\\
+        \beta
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        \cos(\theta) &amp; -\sin(\theta)\\
+        \sin(\theta) &amp; \cos(\theta)
+    \end{bmatrix}
+    \begin{bmatrix}
+        d\\
+        q
+    \end{bmatrix}
+\end{equation}
+\]</span></p>
+<h2 id="abclongrightarrow-np0"><span class="math inline">\(ABC\longrightarrow NP0\)</span></h2>
+<ul>
+<li><span class="math inline">\(N\)</span> (negative sequence)</li>
+<li><span class="math inline">\(P\)</span> (positive sequence)</li>
+<li><span class="math inline">\(0\)</span> (zero sequence)</li>
+</ul>
+<p><span class="math display">\[
+\begin{equation}
+    \begin{bmatrix}
+        P\\
+        N\\
+        0
+    \end{bmatrix}
+    =
+    \frac{1}{3}
+    \begin{bmatrix}
+        1 &amp; \alpha &amp; \alpha^2\\
+        1 &amp; \alpha^2 &amp; \alpha\\
+        1 &amp; 1 &amp; 1\\
+    \end{bmatrix}
+    \begin{bmatrix}
+        A\\
+        B\\
+        C\\
+    \end{bmatrix}
+\end{equation}
+\]</span></p>
+<p><span class="math display">\[\alpha = e^{j\frac{2\pi}{3}}\]</span></p>
+<h2 id="np0-longrightarrow-abc"><span class="math inline">\(NP0 \longrightarrow ABC\)</span></h2>
+<p><span class="math display">\[
+\begin{equation}
+    \begin{bmatrix}
+        A\\
+        B\\
+        C\\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        1 &amp; 1 &amp; 1\\
+        \alpha^2 &amp; \alpha &amp; 1\\
+        \alpha &amp; \alpha^2 &amp; 1\\
+    \end{bmatrix}
+    \begin{bmatrix}
+        P\\
+        N\\
+        0
+    \end{bmatrix}
+\end{equation}
+\]</span></p>
+<hr>
+<h1 id="dual-three-phase-machine">dual three-phase machine</h1>
+<h2 id="adbcdef-longrightarrow-alpha-beta-x-y-o_1-o_2"><span class="math inline">\(ADBCDEF \longrightarrow \alpha \beta x y o_1 o_2\)</span></h2>
+<p><span class="math display">\[
+\begin{equation}
+    \label{eq:VSD Matrix}
+    \begin{bmatrix}
+        \alpha\\
+        \beta\\
+        x\\
+        y\\
+        o_1\\
+        o_2
+    \end{bmatrix}
+    =\mathbf{T}_{VSD}
+    \begin{bmatrix}
+        A\\
+        B\\
+        C\\
+        D\\
+        E\\
+        F
+    \end{bmatrix}
+    =\frac{1}{6}
+    \begin{bmatrix}
+        2 &amp; -1 &amp; -1 &amp; \sqrt{3} &amp; -\sqrt{3} &amp; 0\\
+        0 &amp; \sqrt{3} &amp; -\sqrt{3} &amp; 1 &amp; 1 &amp; -2\\
+        2 &amp; -1 &amp; -1 &amp; -\sqrt{3} &amp; \sqrt{3} &amp; 0\\
+        0 &amp; -\sqrt{3} &amp; \sqrt{3} &amp; 1 &amp; 1 &amp; -2\\
+        2 &amp; 2 &amp; 2 &amp; 0 &amp; 0 &amp; 0\\
+        0 &amp; 0 &amp; 0 &amp; 2 &amp; 2 &amp; 2
+    \end{bmatrix}
+    \begin{bmatrix}
+        A\\
+        B\\
+        C\\
+        D\\
+        E\\
+        F
+    \end{bmatrix}
+\end{equation}
+\]</span></p>
+<h2 id="abcdef-longrightarrow-alpha-beta-x-y-o_1-o_2"><span class="math inline">\(ABCDEF \longrightarrow \alpha \beta x y o_1 o_2\)</span></h2>
+<p><span class="math display">\[
+\begin{equation}
+    \label{eq: inverse VSD Matrix}
+    \begin{bmatrix}
+        A\\
+        B\\
+        C\\
+        D\\
+        E\\
+        F
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0\\
+        -\frac{1}{2} &amp; \frac{\sqrt{3}}{2} &amp; -\frac{1}{2} &amp; -\frac{\sqrt{3}}{2} &amp; 1 &amp; 0\\
+        -\frac{1}{2} &amp; -\frac{\sqrt{3}}{2} &amp; -\frac{1}{2} &amp; \frac{\sqrt{3}}{2} &amp; 1 &amp; 0\\
+        \frac{\sqrt{3}}{2} &amp; \frac{1}{2} &amp; -\frac{\sqrt{3}}{2} &amp; \frac{1}{2} &amp; 0 &amp; 1\\
+        -\frac{\sqrt{3}}{2}&amp; \frac{1}{2} &amp; \frac{\sqrt{3}}{2} &amp; \frac{1}{2} &amp; 0 &amp; 1\\
+        0 &amp; -1 &amp; 0 &amp; -1 &amp; 0 &amp; 1
+    \end{bmatrix}
+    \begin{bmatrix}
+        \alpha\\
+        \beta\\
+        x\\
+        y\\
+        o_1\\
+        o_2
+    \end{bmatrix}
+\end{equation}
+\]</span></p>
+]]></content>
+      <categories>
+        <category>Power Electronics</category>
+      </categories>
+      <tags>
+        <tag>Power Electronics</tag>
+        <tag>Motor Drive</tag>
       </tags>
   </entry>
 </search>
