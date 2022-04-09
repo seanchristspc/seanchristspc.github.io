@@ -3,7 +3,7 @@ title: Recommend Softwares
 comment: true
 mathjax: true
 date: 2021-07-23 09:08:25
-updated: 2022-04-04 15:07:41
+updated: 2022-04-09 21:29:41
 description: 本文主要记录自己爱使用的一些 PC 软件，会持续不断的更新。 
 tags:
    - Tools
@@ -209,7 +209,7 @@ linux平台上的视频播放软件太多了，也有比较纯粹简洁的视频
 
 ![goldendict](Recommend-Softwares/goldendict.png)
 
-离线的字典在无网络的时候是挺有用的。但是有时我们需要知道一些单词的具体用法，或者例句。离线的 Goldendict 可能不够使用，这里推荐一些在线的字典网站。当然[百度翻译](https://fanyi.baidu.com/)和[微软字典](https://cn.bing.com/dict?FORM=HDRSC6).
+离线的字典在无网络的时候是挺有用的。但是有时我们需要知道一些单词的具体用法，或者例句。离线的 Goldendict 可能不够使用，这里推荐一些在线的字典网站。当然[百度翻译](https://fanyi.baidu.com/)和[微软字典](https://cn.bing.com/dict?FORM=HDRSC6)也是不错的查字典网站.
 
 
 ---
