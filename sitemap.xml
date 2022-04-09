@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://seanchristspc.github.io/2021/07/23/Recommend-Softwares/</loc>
+    
+    <lastmod>2022-04-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seanchristspc.github.io/about/index.html</loc>
     
     <lastmod>2022-04-09</lastmod>
@@ -14,15 +23,6 @@
     <loc>https://seanchristspc.github.io/2022/04/08/CommonTransformMatrixMotorDrive/</loc>
     
     <lastmod>2022-04-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/2021/07/23/Recommend-Softwares/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
