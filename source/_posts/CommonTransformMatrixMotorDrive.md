@@ -1,9 +1,9 @@
 ---
-title: some common transform matrices for the motor drive
+title: some common transform matrices
 comment: true
 mathjax: true
-date: 2022-04-07 21:46:58
-description: This article is about the common transform matrices for the motor drive. It help me quickly look up useful transform matrices. These transformers is based on the principle of equal amplitude. These matrices is frequently used in power electronics. It contains the classical three phase machine and prospective  dual three phase machine.
+date: 2022-04-10 21:46:58
+description: This article is mainly about the common transform matrices for the motor drive. It help me quickly look up useful transform matrices. These transformers is based on the principle of equal amplitude. These matrices is frequently used in power electronics. It contains the classical three phase machine and prospective dual three phase machine.
 tags:
   - Motor Drive
   - Power Electronics
@@ -299,3 +299,10 @@ $$
 	\end{bmatrix}
 \end{equation}
 $$
+
+---
+
+
+# 备注
+
+I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please contact me by email 😏! Have fun!
