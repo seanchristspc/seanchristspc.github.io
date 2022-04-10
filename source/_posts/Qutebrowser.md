@@ -137,6 +137,8 @@ qutebrowser modes:
 
 * Insert Mode：现在你有个需要向网页中的搜索框输入。例如使用百度翻译或搜素引擎的搜索框。你需要先进入 Insert Mode 才能输入内容。Insert Mode 快捷键 `i`。退出模式到 Normal Mode 快捷键 `Esc`。对于有些网页搜索框，进入 Insert Mode 还是无法输入搜素内容，可以试试 `gi`，或者像平常使用浏览器一样，鼠标点击搜索框，出现闪烁光标，代表可以输入文字。
 
+`gi` 进入搜索框后，可能有退出搜索框需求(进入搜索框输入后，无法使用 `jkhl` 来移动网页)。一个是用鼠标点击网页界面其他空白区域，可以退出搜索框。如果使用快捷键，可以先按 `Esc` 退出 insert mode，然后再按 `Tab`，便退出搜索框。
+
 ![Insert mode Demo](Qutebrowser/InsertMode.gif)
 
 * Caret Mode：会在当前网页产生一个光标，然后你会觉得就像该网页像文本编辑器的操作一样。其中一个使用就是选择网页文本并复制选择文本。稍后会有演示。Caret Mode 快捷键 `v`。退出模式到 Normal Mode 快捷键 `Esc`。
