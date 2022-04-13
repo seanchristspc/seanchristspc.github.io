@@ -1,5 +1,5 @@
 ---
-title: meet the problems of buiding the hexo blog 
+title: the problems of buiding the hexo blog 
 comments: false
 date: 2018-02-06 15:59:44
 updated: 2022-02-28 09:19:40
