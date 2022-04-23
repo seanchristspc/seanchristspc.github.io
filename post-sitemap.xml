@@ -9,6 +9,14 @@
 
 
     <url>
+        <loc>https://seanchristspc.github.io/2021/06/17/matlab-mex-tutorial/</loc>
+        <lastmod>2022-04-23T15:25:40.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://seanchristspc.github.io/2022/04/11/CommonTransformMatrixMotorDrive/</loc>
         <lastmod>2022-04-10T21:46:58.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -99,14 +107,6 @@
     <url>
         <loc>https://seanchristspc.github.io/2018/03/19/Linux_Introduction/</loc>
         <lastmod>2021-06-30T10:27:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://seanchristspc.github.io/2021/06/17/matlab-mex-tutorial/</loc>
-        <lastmod>2021-06-27T22:37:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
