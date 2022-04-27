@@ -768,6 +768,18 @@ e^{i\theta}=\cos(\theta)+i \sin(\theta)
 <p>qutebrowser 对于有些网站的 copy 按钮无法使用，这个功能严重影响我工作。今天2022-03-29觉得该解决这个问题，所以去搜索引擎搜索了一下这个问题，直接就找到答案了 参考 <a href="https://github.com/qutebrowser/qutebrowser/issues/6719">qutebrowser github issue 6719</a>。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:<span class="built_in">set</span> content.javascript.can_access_clipboard <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <hr>
+<h1 id="show-or-hide-statusbar-and-tabs">show or hide statusbar and tabs</h1>
+<p>有时你需要隐藏 qutebrowser 的上方的的 Tab 栏，和下方的状态栏。可以在 <code>autoconfig.yml</code> 文件添加如下内容。设置状态栏或 Tab 栏隐藏的快捷键。</p>
+<figure class="highlight python"><figcaption><span>autoconfig.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">xb: config-cycle statusbar.show always never</span><br><span class="line">xt: config-cycle tabs.show always never</span><br><span class="line">xx: config-cycle statusbar.show always never;;config-cycle tabs.show always</span><br><span class="line">  never</span><br></pre></td></tr></table></figure>
+<figure>
+<img data-src="/2022/02/20/Qutebrowser/CycleShowTab.gif" alt><figcaption>show or hide tabs and statusbar by shortcut way</figcaption>
+</figure>
+<p>当然，你可以通过使用 qutebrowser 的命令行设置状态栏和 Tab 栏的显示还是隐藏。qutebroser cmd 设置如下。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:<span class="built_in">set</span> statusbar.show always</span><br><span class="line">:<span class="built_in">set</span> statusbar.show never</span><br><span class="line">:<span class="built_in">set</span> tabs.show always </span><br><span class="line">:<span class="built_in">set</span> tabs.show never</span><br></pre></td></tr></table></figure>
+<figure>
+<img data-src="/2022/02/20/Qutebrowser/CmdShowTabs.gif" alt><figcaption>show or hide tabs and statusbar by cmd way</figcaption>
+</figure>
+<hr>
 <h1 id="快捷键图表">快捷键图表</h1>
 <figure>
 <img data-src="/2022/02/20/Qutebrowser/cheatsheet.png" alt><figcaption>shotcuts</figcaption>
