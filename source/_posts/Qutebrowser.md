@@ -3,7 +3,7 @@ title: qutebrowser tutorial
 comment: true
 mathjax: true
 date: 2022-02-19 21:15:38
-updated: 2022-04-02 19:38:45
+updated: 2022-04-27 19:38:45
 description: qutebrowser 用了大概有两个多月了，感觉可以写写关于 qutebrowser 的 Blog! 记录一下使用 qutebrowser 技巧！个人感觉用着还不错，可在网络世界里快速顺滑的遨游。如果你熟悉 vim，那么你可能几天（甚至半天）后就会非常适应它。如果你不熟悉 vim，也不用担心，多使用几天就会爱不释手啦。
 tags:	
    - Qutebrowser
@@ -586,6 +586,35 @@ qutebrowser 对于有些网站的 copy 按钮无法使用，这个功能严重�
 
 
 --- 
+
+
+
+# show or hide statusbar and tabs
+
+有时你需要隐藏 qutebrowser 的上方的的 Tab 栏，和下方的状态栏。可以在 `autoconfig.yml` 文件添加如下内容。设置状态栏或 Tab 栏隐藏的快捷键。
+
+```python autoconfig.yml
+xb: config-cycle statusbar.show always never
+xt: config-cycle tabs.show always never
+xx: config-cycle statusbar.show always never;;config-cycle tabs.show always
+  never
+```
+
+![show or hide tabs and statusbar by shortcut way](Qutebrowser/CycleShowTab.gif)
+
+当然，你可以通过使用 qutebrowser 的命令行设置状态栏和 Tab 栏的显示还是隐藏。qutebroser cmd 设置如下。
+
+```bash
+:set statusbar.show always
+:set statusbar.show never
+:set tabs.show always 
+:set tabs.show never
+```
+![show or hide tabs and statusbar by cmd way](Qutebrowser/CmdShowTabs.gif)
+
+
+---
+
 
 # 快捷键图表
 ![shotcuts](Qutebrowser/cheatsheet.png)
