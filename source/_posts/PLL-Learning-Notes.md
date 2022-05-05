@@ -155,13 +155,13 @@ $$
 $$
 
 
-看公式$\eqref{simple output singal}$ 中的 $\theta_1(t)-\theta_2(t)$，这不是出现了两瞬时相位之差了吗？可以解决本小节最开始提出的问题。
+看公式$\eqref{eq:simple output singal}$ 中的 $\theta_1(t)-\theta_2(t)$，这不是出现了两瞬时相位之差了吗？可以解决本小节最开始提出的问题。
 
 
 ***"实际要分析的是为什么乘法器能实现相位的比较?"***
 
 
-再进一步简化$v_d(t)$。
+进一步简化$v_d(t)$
 
 定义瞬时相位差：
 $$
@@ -180,7 +180,7 @@ $$
 \end{equation}
 $$
 
-在进一步简化
+再进一步简化
 $$
 \begin{equation}
 	v_d(t) = V_d \sin \theta_e(t)
@@ -366,6 +366,10 @@ $$
  
 经典的三相系统的锁相环主要参考文献 [Operation of a phase locked loop system under distorted utility conditions](https://ieeexplore.ieee.org/document/567077)[^2]。
 
+
+## 经典三相锁相环原理图
+
+
 ![](PLL-Learning-Notes/SSRFSPLLVector.png "图8 SSRF-SPLL 矢量图")
 
 SSRF-SPLL矢量图8各变量定义：
@@ -381,7 +385,7 @@ SSRF-SPLL矢量图8各变量定义：
 
 ![](PLL-Learning-Notes/SSRFSPLLConfiguration.png "图9 SSRF-SPLL 控制结构原理框图")
 
-$\omega_{ff}$ 是检测电压的额定频率，那这个物理量的作用是什么？主要是设置一个检测信号的额定频率，实际信号的频率是在这个频率$\omega_{ff}$上下波动，主要降低PI控制器输出的压力，这样PI输出就没必要和额定频率一样大，只需一个较小的量$\Delta \omega_o$即可。同时，$\omega_{ff}$给系统的频率一个初始值，有维持系统稳定的作用（不必要从0直接突变到$\omega_{ff}$附近，而是直接在$\omega_{ff}$附近变换）。
+$\omega_{ff}$ 是检测电压的额定频率，那这个物理量的作用是什么？主要是设置一个检测信号的额定频率，实际信号的频率是在这个频率$\omega_{ff}$上下波动，主要降低PI控制器输出的压力，这样PI输出就没必要和额定频率一样大，只需一个较小的量$\Delta \omega_o$即可。同时，$\omega_{ff}$给系统的频率一个初始值，有维持系统稳定的作用（不必要从0直接突变到$\omega_{ff}$附近，而是直接在$\omega_{ff}$附近变化）。
 
 
 上面的锁相环控制框图有点复杂，可以简化简化。
@@ -389,6 +393,8 @@ $\omega_{ff}$ 是检测电压的额定频率，那这个物理量的作用是什
 简化版的三相锁相环控制框图，如图10所示。
 
 ![](PLL-Learning-Notes/SSRFSPLLConfigurationSimple.png "图10 简化版的三相锁相环控制框图")
+
+## 经典三相锁相环有关数学公式
 
 平衡的三相电网电压：
 $$
@@ -524,7 +530,7 @@ $$
 
 进行了一堆的数学推到过程，开始通过最后的数学表达式$\eqref{eq:SimpleAlphaBetaToDQ}$和图9开始分析三相锁相环原理。
 
-**三相锁相环原理分析**
+## 经典三相锁相环原理分析
 
 ---
 
@@ -534,7 +540,11 @@ $$
 *前面分析的三相锁相环的实现需要一个三相电网电压平衡的条件，对于不平衡的电网，无法适用。*
 
 
-**不平衡电网电压用正、负和零序电压表示**：
+## 不平衡电网电压对锁相环的影响
+
+*不平衡的电网电压可以用对称分量法分解成正序、负序和零序电压。*
+
+**不平衡电网电压用正、负和零序电压表达式：**：
 
 $$
 \begin{equation}
@@ -593,9 +603,10 @@ $$
 \end{equation}
 $$
 
-由公式$\eqref{eq:AmplitudeAndPhaseForUnbalance}$可以知道，不平衡的电网电压会出现波动的幅值和频率。
+由公式$\eqref{eq:AmplitudeAndPhaseForUnbalance}$可以知道，不平衡的电网电压会出现波动的幅值和相角（角频率）。而波动的幅值和相角对经典的三相锁相环有不利的影响。经典的三相锁相环适应理想的平衡三相电网电压，但对其他非理想情况需要额外的处理措施，来弥补其对非理想电网电压适应不足问题。
 
-**对应该公式，可以提出使用低通滤波器滤波，来抑制谐波分量。但是引入滤波器会降低响应速度。**
+
+**对应公式$\eqref{eq:AmplitudeAndPhaseForUnbalance}$，可以提出使用低通滤波器滤波方案，来抑制不平衡电压中的谐波分量。但是引入滤波器会降低响应速度。** 经典的三相锁相环适应理想的平衡三相电网电压，但对其他非理想情况需要额外的处理措施，来弥补其对非理想电网电压适应不足问题。
 
 ***Se Kyo Chung 的三相锁相环闭环传递函数推导以及相角不平衡，谐波和直流偏置对三相锁相环误差理论分析写的不错[^3]，值得一提的是该文献的实验结果图简单明了，值得一读。***
 
@@ -932,7 +943,7 @@ $$
 从公式$\eqref{eq:MNDoubelSychrounousDQ}$，我们得到了在**锁相状态($\omega t = \hat{\theta}$)**下的 $\mathbf{v}_{dq^n}$和$\mathbf{v}_{dq^n}$的表达式。通过表达式可以知道，$dq^n$坐标系下的交流量(振荡量)的幅值由 $dq^m$ 坐标系下的平均值所决定。与之对应的， $dq^m$ 坐标系下的**交流量**的幅值由$dq^n$坐标系下的平均值决定。**解耦的目标就是消除振荡量(交流量)。**既然实际的$\mathbf{v}_{dq^n}$ 和 $\mathbf{v}_{dq^m}$ 中含有交流量部分，为了消除交流量，可以\textbf{构造一个等量的交流量来与之做差}，便可消除交流部分。
 以消除交流分量为目标，如图12所示，为$dq^n$ 坐标系下的解耦网络。
 
-![](PLL-Learning-Notes/DQMNDecouple.png "图12 $dq^n$坐标系的解耦网络")
+![](PLL-Learning-Notes/DQDecouple.png "图12 $dq^n$坐标系的解耦网络")
 
 针对$dq^m$坐标系，可以根据公式$\eqref{eq:MNDoubelSychrounousDQ}$，构造对应的解耦网络。
 
@@ -945,13 +956,15 @@ $$
 $$
 
 
+![](PLL-Learning-Notes/DQMNDecouple.png "图13 $dq^n$ 和 $dq^m$坐标系的解耦网络")
+
 文献[5]中，在这个解耦网络的基础上，进一步用状态空间方程来表示该解耦网络。个人认为，对于理解双坐标系的锁相环原理到此，就可以完全理解其核心理念了。文献[5]用状态空间模型的目的大概在于表达形式更统一，简便吧！
 
 通过对解耦网络图13和传统的三相锁相环结构图10整合，可以得到双同步坐标系下锁相环整个原理框图，如图14所示。 **$n$ 或 $m$ 分别代表正负序的意义。**
 
 ![](PLL-Learning-Notes/DDSRFSPLL.png "图14 DDSRF-SPLL原理框图")
 
-该方法解决了前面提取正序方案无法应对变换频率的问题。对频率具有良好的适应性。尽管该接偶环节加了一个一阶低通滤波器降低了响应速度，但是该锁相环的效果还是不错的。三相锁相环的研究就告一段落。接下来开始研究单相锁相环。
+该方法解决了前面提取正序方案无法应对变换频率的问题。对频率具有良好的适应性。尽管该接偶环节加了一个一阶低通滤波器降低了响应速度，但是该锁相环的效果还是不错的。三相锁相环的研究就告一段落。接下来开始研究**单相锁相环**。
 
 ---
 
@@ -1292,12 +1305,13 @@ $G_{\alpha}$、 $G_{\beta}$ 相角严格互差$\frac{\pi}{2}$。
 
 # 备注
 
-I would greatly appreciate hearing about any error in this article, even minor ones.
-I welcome your suggestions for improvements, even tiny one. Please contact me by email 😏! Have fun!
+I would greatly appreciate hearing about any error in this article, even minor ones. I welcome your suggestions for improvements, even tiny one. Please contact me by email 😜! Have fun!
 
 ---
 
+
 # 参考文献
+
 
 [^1]: 张崇巍, 张兴. PWM 整流器及其控制 [M]. 北京: 机械工业出版社, 2012.
 
@@ -1316,3 +1330,5 @@ I welcome your suggestions for improvements, even tiny one. Please contact me by
 [^8]: FRANCIS B A, WONHAM W M. The internal model principle for linear multivariable regulators[J]. Applied mathematics and optimization, 1975, 2(2): 170-194.
 
 [^9]: CIOBOTARU M, TEODORESCU R, BLAABJERG F. A new single-phase pll structure based on second order generalized integrator[C/OL]//2006 37th IEEE Power Electronics Specialists Conference. 2006: 1-6. DOI: 10.1109/pesc.2006.1711988. 
+
+
