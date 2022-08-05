@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://seanchristspc.github.io/2022/03/30/PLL-Learning-Notes/</loc>
+    
+    <lastmod>2022-08-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seanchristspc.github.io/2022/04/11/CommonTransformMatrixMotorDrive/</loc>
     
     <lastmod>2022-08-05</lastmod>
@@ -41,15 +50,6 @@
     <loc>https://seanchristspc.github.io/about/index.html</loc>
     
     <lastmod>2022-04-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seanchristspc.github.io/2022/03/30/PLL-Learning-Notes/</loc>
-    
-    <lastmod>2022-03-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
