@@ -994,7 +994,7 @@ e^{i\theta}=\cos(\theta)+i \sin(\theta)
 <h2 id="二阶数字滤波器宏定义">二阶数字滤波器宏定义</h2>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// IIR Butterworth second order sections</span></span><br><span class="line"><span class="comment">// fs=10kHz,fc=600Hz</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> LPF2_k1      0.02786		<span class="comment">//gain</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> LPF2_a11     -1.47548		<span class="comment">//denominator</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> LPF2_a12     0.58692</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> LPF2_b10     1*LPF2_k1		<span class="comment">//numerator</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> LPF2_b11     2*LPF2_k1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> LPF2_b12     1*LPF2_k1</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PI 3.14159</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">filterValues</span> &#123;</span></span><br><span class="line">	<span class="type">float</span> x[<span class="number">3</span>];	<span class="comment">/* input values: x(n):x[0], x(n-1):x[1], x(n-2)=x[2]  */</span></span><br><span class="line">	<span class="type">float</span> y[<span class="number">3</span>];	<span class="comment">/* output values: y(n):y[0], y(n-1):y[1], y(n-2)=y[2]  */</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h2 id="二阶滤波函数">二阶滤波函数</h2>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*! \brief low pass filter</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * second order low pass filter:</span></span><br><span class="line"><span class="comment"> * 	fs=10khz(sample frequency), fc=600hz(cutoff frequency)</span></span><br><span class="line"><span class="comment"> * 	z transfer function:</span></span><br><span class="line"><span class="comment"> * 			   		1+2z^(-1)+z^(-2)</span></span><br><span class="line"><span class="comment"> * 		h(z)=0.02786  ---------------------------------</span></span><br><span class="line"><span class="comment"> *				1-1.47548z^(-1)+0.58692z^(-2)</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * \param inputvalue: current input value</span></span><br><span class="line"><span class="comment"> * \param values: pointer to filtervalues</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * \return no return</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">lowpassfilter</span><span class="params">(<span class="type">float</span> inputvalue, <span class="keyword">struct</span> filtervalues *values)</span></span><br><span class="line">&#123;</span><br><span class="line">	values-&gt;x[<span class="number">0</span>]=inputvalue;</span><br><span class="line">	values-&gt;y[<span class="number">0</span>] =LPF2_b10*(values-&gt;x[<span class="number">0</span>])+LPF2_b11*(values-&gt;x[<span class="number">1</span>])+LPF2_b12*(values-&gt;x[<span class="number">2</span>])-LPF2_a11*(values-&gt;y[<span class="number">1</span>])-LPF2_a12*(values-&gt;y[<span class="number">2</span>]);</span><br><span class="line"></span><br><span class="line">	values-&gt;x[<span class="number">2</span>]=values-&gt;x[<span class="number">1</span>];                                                  <span class="comment">//x存储值更新</span></span><br><span class="line">    	values-&gt;x[<span class="number">1</span>]=values-&gt;x[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">    	values-&gt;y[<span class="number">2</span>]=values-&gt;y[<span class="number">1</span>];                                                <span class="comment">//y存储值更新</span></span><br><span class="line">    	values-&gt;y[<span class="number">1</span>]=values-&gt;y[<span class="number">0</span>];                                                <span class="comment">//y[0]为最终滤波输出</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*! \brief low pass filter</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * second order low pass filter:</span></span><br><span class="line"><span class="comment"> * 	fs=10khz(sample frequency), fc=600hz(cutoff frequency)</span></span><br><span class="line"><span class="comment"> * 	z transfer function:</span></span><br><span class="line"><span class="comment"> * 			   		1+2z^(-1)+z^(-2)</span></span><br><span class="line"><span class="comment"> * 		h(z)=0.02786  ---------------------------------</span></span><br><span class="line"><span class="comment"> *				1-1.47548z^(-1)+0.58692z^(-2)</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * \param inputvalue: current input value</span></span><br><span class="line"><span class="comment"> * \param values: pointer to filtervalues</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * \return no return</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">lowpassfilter</span><span class="params">(<span class="type">float</span> inputvalue, <span class="keyword">struct</span> filterValues *values)</span></span><br><span class="line">&#123;</span><br><span class="line">	values-&gt;x[<span class="number">0</span>]=inputvalue;</span><br><span class="line">	values-&gt;y[<span class="number">0</span>] =LPF2_b10*(values-&gt;x[<span class="number">0</span>])+LPF2_b11*(values-&gt;x[<span class="number">1</span>])+LPF2_b12*(values-&gt;x[<span class="number">2</span>])-LPF2_a11*(values-&gt;y[<span class="number">1</span>])-LPF2_a12*(values-&gt;y[<span class="number">2</span>]);</span><br><span class="line"></span><br><span class="line">	values-&gt;x[<span class="number">2</span>]=values-&gt;x[<span class="number">1</span>];                                                  <span class="comment">//x存储值更新</span></span><br><span class="line">    	values-&gt;x[<span class="number">1</span>]=values-&gt;x[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">    	values-&gt;y[<span class="number">2</span>]=values-&gt;y[<span class="number">1</span>];                                                <span class="comment">//y存储值更新</span></span><br><span class="line">    	values-&gt;y[<span class="number">1</span>]=values-&gt;y[<span class="number">0</span>];                                                <span class="comment">//y[0]为最终滤波输出</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h2 id="需要导入的头文件">需要导入的头文件</h2>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;mex.h&quot;</span></span></span><br></pre></td></tr></table></figure>
 <p><strong>math.h</strong> 文件主要用于计算 sin 的值，用于产生正弦信号。 <strong>mex.h</strong> 主要用于 C 语言和 matlab 数据交互。</p>
@@ -2986,7 +2986,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
       </tags>
   </entry>
   <entry>
-    <title>some common transform matrices</title>
+    <title>Some Useful Transform Matrices for Power electronics</title>
     <url>/2022/04/11/CommonTransformMatrixMotorDrive/</url>
     <content><![CDATA[<h1 id="preface">preface</h1>
 <p><span class="math display">\[
@@ -2998,7 +2998,9 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 <li><span class="math inline">\(\phi\)</span> initial phase</li>
 </ul>
 <h1 id="three-phase-machine">three phase machine</h1>
+<p><img data-src="/2022/04/11/CommonTransformMatrixMotorDrive/ThreePhaseMachine.svg" title="Fig.1 Three Phase Machine Schematic"></p>
 <h2 id="abc-longrightarrow-dq0"><span class="math inline">\(abc \longrightarrow dq0\)</span></h2>
+<p>stationary <span class="math inline">\(ABC\)</span> frame into synchronous <span class="math inline">\(dq\)</span> frame</p>
 <p><span class="math display">\[
 \begin{equation}
     \begin{bmatrix}
@@ -3020,6 +3022,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 \end{equation}
 \]</span></p>
 <h2 id="dq0-longrightarrow-abc"><span class="math inline">\(dq0 \longrightarrow abc\)</span></h2>
+<p>synchronous <span class="math inline">\(dq\)</span> frame into stationary <span class="math inline">\(ABC\)</span> frame</p>
 <p><span class="math display">\[
 \begin{equation}
     \begin{bmatrix}
@@ -3041,6 +3044,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 \end{equation}
 \]</span></p>
 <h2 id="abc-longrightarrow-alpha-beta-0"><span class="math inline">\(abc \longrightarrow \alpha \beta 0\)</span></h2>
+<p>stationary <span class="math inline">\(ABC\)</span> frame into stationary <span class="math inline">\(\alpha\beta\)</span> frame</p>
 <p><span class="math display">\[
 \begin{equation}
     \begin{bmatrix}
@@ -3051,7 +3055,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
     =\frac{2}{3}
     \begin{bmatrix}
         \cos(0) &amp; \cos(-\frac{2\pi}{3}) &amp; \cos(\frac{2\pi}{3})\\
-        -\sin(0) &amp; -\sin(-\frac{2\pi}{3} &amp; -\sin(\frac{2\pi}{3})\\
+        -\sin(0) &amp; -\sin(-\frac{2\pi}{3}) &amp; -\sin(\frac{2\pi}{3})\\
         \frac{1}{2} &amp; \frac{1}{2} &amp; \frac{1}{2}
     \end{bmatrix}
     \begin{bmatrix}
@@ -3073,6 +3077,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 \end{equation}
 \]</span></p>
 <h2 id="alpha-beta-0-longrightarrow-abc"><span class="math inline">\(\alpha \beta 0 \longrightarrow abc\)</span></h2>
+<p>stationary <span class="math inline">\(\alpha\beta\)</span> frame into stationary <span class="math inline">\(ABC\)</span> frame</p>
 <p><span class="math display">\[
 \begin{equation}
     \begin{bmatrix}
@@ -3094,6 +3099,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 \end{equation}
 \]</span></p>
 <h2 id="alpha-beta-longrightarrow-dq"><span class="math inline">\(\alpha \beta \longrightarrow dq\)</span></h2>
+<p>stationary <span class="math inline">\(\alpha\beta\)</span> frame into synchronous <span class="math inline">\(dq\)</span> frame</p>
 <p><span class="math display">\[
 \begin{equation}
     \begin{bmatrix}
@@ -3112,6 +3118,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 \end{equation}
 \]</span></p>
 <h2 id="dq-longrightarrow-alpha-beta"><span class="math inline">\(dq \longrightarrow \alpha \beta\)</span></h2>
+<p>synchronous <span class="math inline">\(dq\)</span> frame into stationary <span class="math inline">\(\alpha\beta\)</span> frame</p>
 <p><span class="math display">\[
 \begin{equation}
     \begin{bmatrix}
@@ -3180,6 +3187,7 @@ e^{x}=1+\frac{1}{1!}x+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots
 \]</span></p>
 <hr>
 <h1 id="dual-three-phase-machine">dual three-phase machine</h1>
+<p><img data-src="/2022/04/11/CommonTransformMatrixMotorDrive/DualThreePhaseMachine.svg" title="Fig.2 Dual Three Phase Machine Schematic"></p>
 <h2 id="adbcdef-longrightarrow-alpha-beta-x-y-o_1-o_2"><span class="math inline">\(ADBCDEF \longrightarrow \alpha \beta x y o_1 o_2\)</span></h2>
 <p><span class="math display">\[
 \begin{equation}
